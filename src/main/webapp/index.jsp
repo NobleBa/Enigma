@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <html>
+    <h1>test</h1>
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="app.css" />
