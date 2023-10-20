@@ -11,7 +11,7 @@
         L1 = "Enigma"
         L2 = "Bienvenue sur le site aux 1001 énigmes"
         L3 = 'Après avoir clique sur le bouton "Commencer", cela vous lancera un énigme.'
-        L4 = "L'objectif est de résoudre les X énigmes."
+        L4 = "L'objectif est de résoudre les 7 énigmes."
         L5 = "Commencer"
 
         A = "⌰⍜⏃⎅⟟⋏☌⟒⏁⋔¢ß¥£™©®ª×±¼½¾µ¿¶·¸º°¯§¤¦≠‰"
@@ -46,6 +46,16 @@
             T[r1][r2] = c
             documennt.getElementById(r1.toString()).innerHTML=T[r1].join('')
         }
+
+        function change() {
+            var changer = document.getElementById("rules")
+
+            if (changer.style.visibility == 'hidden') {
+                changer.style.visibility = 'visible'
+            } else {
+                changer.style.visibility = 'hidden'
+            }
+        }
     </script>
     <body>
         <main>
@@ -53,16 +63,28 @@
                 <h1 id="0" >Enigma</h1>
                 <h3 id="1">Bienvenue sur le site aux 1001 énigmes</h3>
                 <p id="2">Après avoir clique sur le bouton "Commencer", cela vous lancera un énigme.</p>
-                <p id="3">L'objectif est de résoudre les X énigmes.</p>
+                <p id="3">L'objectif est de résoudre les 7 énigmes.</p>
                 <button id="4">Commencer</button>  
-                <p class="card-footer">Crée par Rémi D., Ugo L. et Raphaël J.</p>        
+                <div class="card-footer" style="display: flex; justify-content: space-between;">
+                    <p>Crée par Rémi D., Ugo L. et Raphaël J.</p>
+                    <p onclick="change()">Règles</p>
+                </div>        
+            </div>
+            <div class="card1 box" id="rules" style="visibility: hidden;">
+                <div>
+                    <button class="menu__icon" onclick="change()"></button>
+                    <h2 style="margin-top: 6%;">Règles</h2>
+                </div>
+                <p>Lorem ipsum dolor sit amet. Sit architecto dolores vel magni numquam est ullam soluta est nesciunt repudiandae sed natus tempore est architecto quisquam sit quas nesciunt. Ea officiis quia sed temporibus sapiente At dicta officiis a repellendus nemo. Id expedita provident non quos rerum At tenetur tenetur et obcaecati repellendus eum exercitationem magnam non iusto quidem ut Quis porro.</p>
             </div>
         </main>
     </body>
     <script>
         document.querySelector(".card").addEventListener("mouseover",(e)=>{
-            console.log("add event...")
             magic()
+        })
+        document.querySelector("#rules").addEventListener("click",(e)=>{
+            regles()
         })
     </script>
 </html>
