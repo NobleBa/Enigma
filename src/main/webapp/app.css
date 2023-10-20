@@ -4,7 +4,7 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.back {
+html {
     --s: 100px; /* control the size */
     --c1: #c3ccaf;
     --c2: #67434f;
@@ -53,10 +53,11 @@ body {
     }
   }
 
-header {
+main {
     display: flex;
     flex-direction: column; 
     justify-content: center;
+    margin-top: 15%;
 }
 
 button {
@@ -65,13 +66,39 @@ button {
     align-items: center;
     border-radius: 20px;
     border: none;
-    background-color: red;
+    background-color: #95556a;
     color: blanchedalmond;
     font-size: 120%;
     width: 30%;
     height: 30px;
+    margin-left: 35%;
 }
 
 button:active {
     transform: scale(0.95);
 }
+
+.card {
+    max-width: 300px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 500px;
+    height: 300px;
+    padding: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    color: rgb(229, 224, 224);
+    text-align: center;
+  }
+
+  .card-footer {
+    font-size: 0.65em;
+    color: rgb(224, 224, 246);
+    margin-left: -60%;
+    margin-top: 5%;
+  }
