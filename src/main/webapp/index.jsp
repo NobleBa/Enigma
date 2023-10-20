@@ -14,7 +14,7 @@
         L4 = "L'objectif est de résoudre les X énigmes."
         L5 = "Commencer"
 
-        A = "¢ß¥£™©®ª×±¼½¾µ¿¶·¸º°¯§¤¦≠‰"
+        A = "⌰⍜⏃⎅⟟⋏☌⟒⏁⋔¢ß¥£™©®ª×±¼½¾µ¿¶·¸º°¯§¤¦≠‰"
 
 
         T1 = L1.split("")
