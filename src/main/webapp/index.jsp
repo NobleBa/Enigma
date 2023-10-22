@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="app.css" />
-        <!-- <script src="index.js"/> -->
+        <link rel="icon" type="image/png" href="img/noun-enigma-1875558.png"/>
         <title>Enigma</title>
     </head>
     <script>
@@ -67,7 +67,7 @@
                 <button id="4">Commencer</button>  
                 <div class="card-footer" style="display: flex; justify-content: space-between;">
                     <p>Crée par Rémi D., Ugo L. et Raphaël J.</p>
-                    <p onclick="change()">Règles</p>
+                    <p style="cursor:help;" onclick="change()">Règles</p>
                 </div>        
             </div>
             <div class="card1 box" id="rules" style="visibility: hidden;">
