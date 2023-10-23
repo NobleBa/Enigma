@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<html>
+<html class="html">
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="app.css" />
@@ -64,7 +64,7 @@
                 <h3 id="1">Bienvenue sur le site aux 1001 énigmes</h3>
                 <p id="2">Après avoir clique sur le bouton "Commencer", cela vous lancera un énigme.</p>
                 <p id="3">L'objectif est de résoudre les 7 énigmes.</p>
-                <button id="4">Commencer</button>  
+                <a href="charade.jsp"><button id="4">Commencer</button></a>
                 <div class="card-footer" style="display: flex; justify-content: space-between;">
                     <p>Crée par Rémi D., Ugo L. et Raphaël J.</p>
                     <p style="cursor:help;" onclick="change()">Règles</p>

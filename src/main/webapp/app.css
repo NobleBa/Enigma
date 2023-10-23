@@ -5,7 +5,12 @@ body {
     cursor: default;
 }
 
-html {
+.charade {
+  background-image: url(img/the-office-photo-steve-carell-1402399-large.png);
+  background-size: cover;
+}
+
+.html {
     --s: 100px; /* control the size */
     --c1: #c3ccaf;
     --c2: #67434f;
@@ -70,13 +75,17 @@ button {
     background-color: #95556a;
     color: blanchedalmond;
     font-size: 120%;
-    width: 30%;
+    width: 35%;
     height: 30px;
     margin-left: 35%;
 }
 
 button:active {
     transform: scale(0.95);
+}
+
+a {
+  text-decoration: none;
 }
 
 .card {
@@ -86,7 +95,7 @@ button:active {
     flex-direction: column;
     justify-content: space-between;
     max-width: 500px;
-    height: 400px;
+    height: 450px;
     padding: 35px;
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 20px;
@@ -122,7 +131,6 @@ button:active {
     margin-top: -82%;
   }
 
-
 .menu__icon {
   width: 2rem;
   height: 2rem;
@@ -148,3 +156,22 @@ button:active {
   transform: rotate(45deg) scale(1.08);
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.col-md-4 {
+  margin-right: 10%;
+}
+
+input {
+  border-radius: 10px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0);
+  color: rgb(0, 0, 0);
+  height: 30px;
+  width: 80%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  margin-bottom: 15px;
+}
