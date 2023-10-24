@@ -14,8 +14,8 @@ import jakarta.persistence.*;
 @NoArgsConstructor
 public class Geoguesser {
     @Id
-    @Column(length = 50, name = "Idgeo")
-    private String Idgeo;
+    @Column(length = 50, name = "IdGeo")
+    private String IdGeo;
     @Column(length = 250, name = "guess")
     private String guess;
 
