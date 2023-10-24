@@ -17,11 +17,11 @@ public class Pays {
     @Column(length = 50, name = "Nompays")
     private String Nompays;
     @ManyToOne
-    @JoinColumn(name = "Idpoeme")
-    private Poeme Idpoeme;
+    @JoinColumn(name = "IdPoeme")
+    private Poeme IdPoeme;
     @ManyToOne
-    @JoinColumn(name = "Idgeo")
-    private Geoguesser Idgeo;
+    @JoinColumn(name = "IdGeo")
+    private Geoguesser IdGeo;
     @Column(length = 10, name = "Q1")
     private boolean Q1;
     @Column(length = 10, name = "Q2")

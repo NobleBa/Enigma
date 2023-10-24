@@ -14,8 +14,8 @@ import jakarta.persistence.*;
 @NoArgsConstructor
 public class Charade {
     @Id
-    @Column(length = 50, name = "Idcharade")
-    private String Idcharade;
+    @Column(length = 50, name = "IdCharade")
+    private String IdCharade;
     @Column(length = 250, name = "charade")
     private String charade;
     @Column(length = 250, name = "solution")

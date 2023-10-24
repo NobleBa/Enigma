@@ -14,8 +14,8 @@ import jakarta.persistence.*;
 @NoArgsConstructor
 public class Forme {
     @Id
-    @Column(length = 50, name = "Idforme")
-    private String Idforme;
+    @Column(length = 50, name = "IdForme")
+    private String IdForme;
     @Column(length = 10, name = "NbRond")
     private int NbRond;
     @Column(length = 10, name = "NbTriangle")
