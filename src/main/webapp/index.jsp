@@ -58,6 +58,17 @@
         }
     </script>
     <body>
+        <div class="back">
+            <header>
+                <h1>Enigma1</h1>
+                <h3>Bienvenue sur le site aux 1001 énigmes</h3>
+                <p>Après avoir clique sur le bouton "Commencer", ce qui vous lancera un énigme./p>
+                <p>L'objectif est de résoudre les X énigmes.</p>
+                <button>Commencer</button>
+            </header>
+        </div>
+    </body>
+</html>
         <main>
             <div class="card">
                 <h1 id="0" >Enigma</h1>
