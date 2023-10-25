@@ -35,7 +35,7 @@ public class BlocCalculServiceImpl implements BlocCalculService{
 
     @Override
     public String supprimer(String IdBloc) {
-        blocCalcul.deleteById(IdBloc);
+        blocCalculDAO.deleteById(IdBloc);
         return "Bloc supprimé";
     }
 }   

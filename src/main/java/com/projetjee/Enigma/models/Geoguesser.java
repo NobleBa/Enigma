@@ -16,7 +16,7 @@ public class Geoguesser {
     @Id
     @Column(length = 50, name = "IdGeo")
     private String IdGeo;
-    @Column(length = 250, name = "guess")
-    private String guess;
+    @Column(length = 250, name = "Guess")
+    private String Guess;
 
 }

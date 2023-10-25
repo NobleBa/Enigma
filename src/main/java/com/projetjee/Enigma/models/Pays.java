@@ -14,8 +14,8 @@ import jakarta.persistence.*;
 @NoArgsConstructor
 public class Pays {
     @Id
-    @Column(length = 50, name = "Nompays")
-    private String Nompays;
+    @Column(length = 50, name = "NomPays")
+    private String NomPays;
     @ManyToOne
     @JoinColumn(name = "IdPoeme")
     private Poeme IdPoeme;
