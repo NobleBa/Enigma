@@ -6,14 +6,25 @@ body {
 }
 
 .charade {
-background-image: url(img/the-office-photo-steve-carell-1402399-large.png);
+background-image: url(img/wallpaper/charade.png);
 background-size: cover;
 }
 
 .calcul {
-background-image: url(img/F3VPqxvagAAqhN1.jpeg);
+background-image: url(img/wallpaper/Reuss.png);
 background-size: contain;
 }
+
+.departement {
+  background-image: url(img/wallpaper/departement.png);
+  background-size: cover;
+}
+
+.geoguessr {
+  background-image: url(img/wallpaper/geoguessr.png);
+  background-size: cover;
+}
+
 
 .html {
   --s: 100px; /* control the size */
@@ -189,6 +200,14 @@ padding: 2rem 0rem 0rem 0rem;
 max-width: 500px;
 }
 
+.table1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 2rem 0rem 0rem 0rem;
+  max-width: 500px;
+  }
+
 .table-cell {
 box-sizing: border-box;
 flex-grow: 1;
@@ -222,12 +241,17 @@ font-size: 18px;
 
 /* Table columns
 ================================== */
-.table-cell {
+.table .table-cell {
 width: calc(50% - 1px);
 }
-@media only screen and (max-width: 768px) {
-.table-cell.cell-feature {
-  width: 100%;
-  text-align: center;
+
+.table1 .table-cell {
+  width: calc(70% - 1px);
 }
+
+@media only screen and (max-width: 768px) {
+  .table-cell .cell-feature {
+    width: 100%;
+    text-align: center;
+  }
 }
