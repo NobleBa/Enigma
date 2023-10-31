@@ -17,6 +17,6 @@ public class Poeme {
     @Column(length = 50, name = "IdPoeme")
     private String IdPoeme;
     @Column(length = 250, name = "Poeme")
-    private String charade;
+    private String Poeme;
 
 }
