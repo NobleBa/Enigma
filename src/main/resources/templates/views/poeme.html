@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="calcul">
+<html class="poeme">
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="app.css" />
@@ -10,13 +10,71 @@
     <script>
         function change() {
             
-            var changer = document.getElementById("reponse").value
+            var r1 = document.getElementById("r1").value
+            var r2 = document.getElementById("r2").value
+            var r3 = document.getElementById("r3").value
+            var r4 = document.getElementById("r4").value
+            var r5 = document.getElementById("r5").value
+            var r6 = document.getElementById("r6").value
+            var r7 = document.getElementById("r7").value
+            var r8 = document.getElementById("r8").value
+            var r9 = document.getElementById("r9").value
+            var r10 = document.getElementById("r10").value
+            var a1, a2, a3, a4, a5, a6, a7, a8, a9, a10 = 0
             var btn = document.getElementById("btn")
 
-            if (changer.toUpperCase()=="TEST") {
+            if (r1.toUpperCase()=="MALI") {
+                a1 = 1
+                document.getElementById("r1").disabled = true
+            }
+
+            if (r2.toUpperCase()=="IRAK") {
+                a2 = 1
+                document.getElementById("r2").disabled = true
+            }
+
+            if (r3.toUpperCase()=="HAITI" || r3.toUpperCase()=="HAÏTI") {
+                a3 = 1
+                document.getElementById("r3").disabled = true
+            }
+
+            if (r4.toUpperCase()=="VIETNAM") {
+                a4 = 1
+                document.getElementById("r4").disabled = true
+            }
+
+            if (r5.toUpperCase()=="NIGER") {
+                a5 = 1
+                document.getElementById("r5").disabled = true
+            }
+
+            if (r6.toUpperCase()=="GRECE" || r6.toUpperCase()=="GRéCE") {
+                a6 = 1
+                document.getElementById("r6").disabled = true
+            }
+
+            if (r7.toUpperCase()=="CUBA") {
+                a7 = 1
+                document.getElementById("r7").disabled = true
+            }
+
+            if (r8.toUpperCase()=="ESPAGNE") {
+                a8 = 1
+                document.getElementById("r8").disabled = true
+            }
+
+            if (r9.toUpperCase()=="TONGA") {
+                a9 = 1
+                document.getElementById("r9").disabled = true
+            }
+
+            if ((r10.toUpperCase()=="NEPAL") || (r10.toUpperCase()=="NÉPAL")) {
+                a10 = 1
+                document.getElementById("r10").disabled = true
+            }
+
+            if ((a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 + a10) == 10) {
                 btn.style.visibility = 'visible'
-            } else {
-                btn.style.visibility = 'hidden'
             }
         }
     </script>
@@ -25,7 +83,7 @@
             <div class="row" style="margin-top: -5%;">
                 <div class="table1">
                     <div class="table-cell" style="width: 100%;">
-                        Un pays est cachée dans chacune des lignes du poèmes suivant. Saurez vous tous les retrouvez ?
+                        <p>Un pays est cachée dans chacune des lignes du poèmes suivant. Saurez vous tous les retrouvez ?<p>
                     </div>
                     <div class="table-cell col1">
                         <h3>Poème</h3>
@@ -37,7 +95,7 @@
                         <p>Cher Ruel Stroud, malicieux énutrof,</p>
                     </div>
                     <div class="table-cell col2">
-                        <input id="r1" type="text" placeholder="Entrez le résultat">
+                        <input id="r1" type="text" placeholder="Entrez le résultat" onchange="change()">
                     </div>
                     <div class="table-cell col1">
                         <p>"Il s'en ira, kamas ou pas.", qu'ils me disaient. Je refusais de les croire. "Il</p>
@@ -85,15 +143,19 @@
                         <p>sandales: voilà vingt-cinq ans qu'il te faut en changer. Ton gain prime sur </p>
                     </div>
                     <div class="table-cell col2">
-                        <input id="r8" type="text" placeholder="Entrez le résultat" onchange="change()">
+                        <input id="r9" type="text" placeholder="Entrez le résultat" onchange="change()">
                     </div>
                     <div class="table-cell col1">
                         <p>ta vieille Arpagone... Pallier mon déficit sentimental ne t'intéresse pas.</p>
                     </div>
                     <div class="table-cell col2">
-                        <input id="r9" type="text" placeholder="Entrez le résultat" onchange="change()">
+                        <input id="r10" type="text" placeholder="Entrez le résultat" onchange="change()">
                     </div>
                 </div>
+            </div>
+            <div class="row" style="margin-top:4%;">
+                <a th:href="@{/departement}"><button>Enigme précedente</button></a>
+                <a th:href="@{/pays}"><button id="btn" style="visibility: hidden;">Enigme suivante</button></a>
             </div>
         </main>
     </body>

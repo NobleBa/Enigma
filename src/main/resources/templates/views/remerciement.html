@@ -47,14 +47,18 @@
     </script>
     <body>
         <main>
-            <div class="card" style="margin-top: -30%;">
+            <div class="card">
                 <h1 id="0" >Enigma</h1>
                 <h3 id="1">Merci beaucoup d'avoir joué</h3>
                 <p id="2">Score : 23</p>
                 <p id="3">Nombre d'essai : 4</p>
                 <div class="card-footer" style="display: flex; justify-content: space-between;">
-                    <p>Crée par Rémi D., Ugo L. et Raphaël J.</p>
+                    <p>Crée par Rémi Depreter, Ugo Latry et Raphaël Jeanningros</p>
                 </div>        
+            </div>
+            <div class="row" style="margin-top:5%; margin-left: -20%;">
+                <a th:href="@{/symbol}"><button id="btn">Enigme précedente</button></a>
+                <a th:href="@{/}"><button id="btn">Accueil</button></a>
             </div>
         </main>
     </body>

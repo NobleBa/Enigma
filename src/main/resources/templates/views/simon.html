@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html class="simon">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="app.css" />
+        <!-- <link rel= "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+        <link rel="icon" type="image/png" href="img/noun-enigma-1875558.png"/>
+        <title>Enigma</title>
+    </head>
+    <script>
+        function change1() {
+            var changer = document.getElementById("rules")
+
+            if (changer.style.visibility == 'visible') {
+                changer.style.visibility = 'hidden'
+            } else {
+                changer.style.visibility = 'visible'
+            }
+        }
+    </script>
+    <body>
+        <main>
+            <div class="card" style="align-items: center;">
+                <h1 id="0">Le jeu de Simon</h1>
+                <h3> En cnstruction </h3>
+                <img src="/img/5a60ad40eace967f8e0269fb.png" style="margin-top: -10%;">
+            </div>
+            <div class="row" style="margin-top:5%;">
+                <a th:href="@{/pays}"><button>Enigme précedente</button></a>
+                <a th:href="@{/geoguessr}"><button id="btn" style="visibility: visble;">Epreuve suivante</button></a>
+            </div> 
+        </main>
+    </body>
+</html>

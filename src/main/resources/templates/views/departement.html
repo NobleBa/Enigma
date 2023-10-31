@@ -31,8 +31,11 @@
                 <p>Pour le découvrir, suivez le chemin de l'art et des écrivains sereins.</p>
                 <p>Prenez les noms et prénoms de créateurs,</p>
                 <p>Ajoutez-les avec soin, et le mystère se dévoilera dès que le total est clos.</p>
-                <input id="reponse" type="text" style="margin-left: 10%;" placeholder="Entrez le département" onchange="change()">
-                <button id="btn" style="visibility: hidden;">Enigme suivante</button>   
+                <input id="reponse" type="text" style="margin-left: 10%;" placeholder="Entrez le département" onchange="change()"> 
+            </div>
+            <div class="row" style="margin-top:5%;">
+                <a th:href="@{/calcul}"><button>Enigme précedente</button></a>
+                <a th:href="@{/poeme}"><button id="btn" style="visibility: hidden;">Enigme suivante</button></a>
             </div>
         </main>
     </body>

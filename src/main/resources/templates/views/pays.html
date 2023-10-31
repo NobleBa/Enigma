@@ -8,92 +8,151 @@
         <title>Enigma</title>
     </head>
     <script>
-        function change() {
-            
-            var changer = document.getElementById("reponse").value
-            var btn = document.getElementById("btn")
+        function change1() {
 
-            if (changer.toUpperCase()=="TEST") {
+            var r1 = document.getElementById("r1", this).value
+            var q2 = document.getElementById("q2")
+            var btn = document.getElementById("botn")
+
+            if (r1.toUpperCase()=="IRLANDE") {
                 btn.style.visibility = 'visible'
             } else {
+                q2.style.visibility = 'visible'
+                document.getElementById("r1").disabled = true
                 btn.style.visibility = 'hidden'
+            }
+        }
+
+        function change2() {
+
+            var r2 = document.getElementById("r2", this).value
+            var btn = document.getElementById("botn")
+
+            if (r2.toUpperCase()=="IRLANDE") {
+                btn.style.visibility = 'visible'
+            } else {
+                document.getElementById("q3").style.visibility = 'visible'
+                document.getElementById("r2").disabled = true
+                btn.style.visibility = 'hidden'
+            }
+        }
+
+        function change3() {
+
+            var r3 = document.getElementById("r3", this).value
+            var btn = document.getElementById("botn")
+
+            if (r3.toUpperCase()=="IRLANDE") {
+                btn.style.visibility = 'visible'
+            } else {
+                document.getElementById("q4").style.visibility = 'visible'
+                document.getElementById("r3").disabled = true
+                btn.style.visibility = 'hidden'
+            }
+        }
+
+        function change4() {
+
+            var r4 = document.getElementById("r4", this).value
+            var btn = document.getElementById("botn")
+
+            if (r4.toUpperCase()=="IRLANDE") {
+                btn.style.visibility = 'visible'
+            } else {
+                document.getElementById("q5").style.visibility = 'visible'
+                document.getElementById("r4").disabled = true
+                btn.style.visibility = 'hidden'
+            }
+        }
+
+        function change5() {
+
+            var r5 = document.getElementById("r5", this).value
+            var btn = document.getElementById("botn")
+
+            if (r5.toUpperCase()=="IRLANDE") {
+                btn.style.visibility = 'visible'
+            } else {
+                document.getElementById("q6").style.visibility = 'visible'
+                document.getElementById("r5").disabled = true
+                btn.style.visibility = 'hidden'
+            }
+        }
+
+        function change6() {
+
+            var r6 = document.getElementById("r6", this).value
+            var btn = document.getElementById("botn")
+
+            if (r6.toUpperCase()=="IRLANDE") {
+                btn.style.visibility = 'visible'
             }
         }
     </script>
     <body>
-        <main style="width: 100%;">
+        <main>
             <div class="row" style="margin-top: -5%;">
                 <div class="table1">
                     <div class="table-cell" style="width: 100%;">
-                        Un pays est cachée dans chacune des lignes du poèmes suivant. Saurez vous tous les retrouvez ?
+                        <p>Vous avez 6 questions pour trouver un pays allant de la plus dur a la plus facile<p>
                     </div>
                     <div class="table-cell col1">
-                        <h3>Poème</h3>
+                        <h3>Questions</h3>
                     </div>
                     <div class="table-cell col2">
-                        <h3>Pays</h3>
+                        <h3>Réponses</h3>
                     </div>
-                    <div class="table-cell col1">
-                        <p>Cher Ruel Stroud, malicieux énutrof,</p>
+                    <div class="table-cell col1" style="max-height: 80px;">
+                        <p>Dans quelle nation insulaire de l'Europe de l'Ouest se trouve la Chaussée des Géants, une formation géologique spectaculaire composée de colonnes de basalte ?</p>
                     </div>
-                    <div class="table-cell col2">
-                        <input id="r1" type="text" placeholder="Entrez le résultat">
+                    <div class="table-cell col2" style="max-height: 80px;">
+                        <input id="r1" type="text" placeholder="Entrez la réponse" onchange="change1()">
                     </div>
-                    <div class="table-cell col1">
-                        <p>"Il s'en ira, kamas ou pas.", qu'ils me disaient. Je refusais de les croire. "Il</p>
+                    <div id="q2" style="width: 100%; display: flex; visibility: hidden;">
+                        <div class="table-cell col1" style="max-height: 80px;">
+                            <p>Quelle nation a été le lieu de naissance du célèbre explorateur Ernest Shackleton, qui a mené une expédition périlleuse en Antarctique au début du XXe siècle ?</p>
+                        </div>
+                        <div class="table-cell col2" style="max-height: 80px;">
+                            <input id="r2" type="text" placeholder="Entrez la réponse" onchange="change2()">
+                        </div>
                     </div>
-                    <div class="table-cell col2">
-                        <input id="r2" type="text" placeholder="Entrez le résultat" onchange="change()">
+                    <div id="q3" style="width: 100%; display: flex; visibility: hidden">
+                        <div class="table-cell col1">
+                            <p>Où peut-on visiter le trésor médiéval du Livre de Kells, renfermant des manuscrits richement enluminés, notamment les Évangiles ?</p>
+                        </div>
+                        <div class="table-cell col2">
+                            <input id="r3" type="text" placeholder="Entrez la réponse" onchange="change3()">
+                        </div>
                     </div>
-                    <div class="table-cell col1">
-                        <p>te hait indiciblement, à cause de tout ce que tu lui coûtes." J'étais dévastée.</p>
+                    <div id="q4" style="width: 100%; display: flex; visibility: hidden">
+                        <div class="table-cell col1">
+                            <p>Dans quelle nation européenne se trouve le parc national de Killarney, célèbre pour ses paysages de montagnes, ses lacs et ses forêts ?</p>
+                        </div>
+                        <div class="table-cell col2">
+                            <input id="r4" type="text" placeholder="Entrez la reponse" onchange="change4()">
+                        </div>
                     </div>
-                    <div class="table-cell col2">
-                        <input id="r3" type="text" placeholder="Entrez le résultat" onchange="change()">
+                    <div id="q5" style="width: 100%; display: flex; visibility: hidden">
+                        <div class="table-cell col1">
+                            <p>Quelle nation a un drapeau tricolore vertical avec des bandes de couleur verte, blanche et orange, symbolisant l'unité entre les communautés ?</p>
+                        </div>
+                        <div class="table-cell col2">
+                            <input id="r5" type="text" placeholder="Entrez la reponse" onchange="change5()">
+                        </div>
                     </div>
-                    <div class="table-cell col1">
-                        <p>Pourtant, nous nous aimions à l'envi, et n'amenions que bonheur partout</p>
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r4" type="text" placeholder="Entrez le résultat" onchange="change()">
-                    </div>
-                    <div class="table-cell col1">
-                        <p>où nous passions. Ni gérants ni rois n'étaient plus riches que nous, car</p>
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r5" type="text" placeholder="Entrez le résultat" onchange="change()">
-                    </div>
-                    <div class="table-cell col1">
-                        <p>notre amour valait tout l'or du Krosmoz. Malgré cette attitude infâme,</p>
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r6" type="text" placeholder="Entrez le résultat" onchange="change()">
-                    </div>
-                    <div class="table-cell col1">
-                        <p>j'osais, et j'ose encore, espérer... Tu seras vaincu. Battre en retraite ne</p>
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r7" type="text" placeholder="Entrez le résultat" onchange="change()">
-                    </div>
-                    <div class="table-cell col1">
-                        <p>te sauveras plus. Tu as l'air d'un pouilleux; radin que tu es. Pagne, haut,</p>
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r8" type="text" placeholder="Entrez le résultat" onchange="change()">
-                    </div>
-                    <div class="table-cell col1">
-                        <p>sandales: voilà vingt-cinq ans qu'il te faut en changer. Ton gain prime sur </p>
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r8" type="text" placeholder="Entrez le résultat" onchange="change()">
-                    </div>
-                    <div class="table-cell col1">
-                        <p>ta vieille Arpagone... Pallier mon déficit sentimental ne t'intéresse pas.</p>
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r9" type="text" placeholder="Entrez le résultat" onchange="change()">
+                    <div id="q6" style="width: 100%; display: flex; visibility: hidden">
+                        <div class="table-cell col1">
+                            <p>De quel pays est originaire la musique traditionnelle celtique, notamment les violons et les flûtes, ainsi que les danses comme la gigue irlandaise ?</p>
+                        </div>
+                        <div class="table-cell col2">
+                            <input id="r6" type="text" placeholder="Entrez la réponse" onchange="change6()">
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="row" id="btn" style="margin-top:5%;">
+                <a th:href="@{/poeme}"><button>Enigme précedente</button></a>
+                <a th:href="@{/simon}"><button id="botn" style="visibility: hidden;">Enigme suivante</button></a>
             </div>
         </main>
     </body>

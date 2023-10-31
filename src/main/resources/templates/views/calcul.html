@@ -21,9 +21,12 @@
         }
     </script>
     <body>
-        <main style="width: 100%;">
+        <main>
             <div class="row">
                 <div class="table">
+                    <div class="table-cell" style="width: 100%;">
+                        <p>Résolver les calculs pour trouver le premier indice du code. La réponse suivra dans la foulée.<p>
+                    </div>
                     <div class="table-cell">
                         <h3>Calcul</h3>
                     </div>
@@ -40,12 +43,15 @@
                         <p>(12x4)/6</p>
                     </div>
                     <div class="table-cell">
-                        <input id="r1" type="text" placeholder="Entrez le résultat" onchange="change()">
+                    <input id="r1" type="text" placeholder="Entrez le résultat" onchange="change()">
                     </div>
                 </div>
             </div>
             <input id="reponse" type="text" style="margin-left: 40%; margin-top:5%; width: 20%" placeholder="Entrez la réponse" onchange="change()">
-                <button id="btn" style="visibility: hidden;">Enigme suivante</button>
+            <div class="row" style="margin-top: 5%;">
+                <a th:href="@{/charade}"><button>Enigme précedente</button></a>
+                <a th:href="@{/departement}"><button id="btn" style="visibility: hidden;">Enigme suivante</button></a>
+            </div>
         </main>
     </body>
 </html>
