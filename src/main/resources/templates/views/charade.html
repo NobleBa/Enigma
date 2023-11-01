@@ -51,7 +51,7 @@
                             <h6 class="card-subtitle mb-2 text-muted">Cool trip a Las Vegas</h6>
                             <p class="card-text" th:utext="${charade.charade}"></p>
                             <form action="/verifyAnswer" method="post">
-                                <input type="text" id="answer" name="answer" placeholder="Entrez votre réponse" onchange="change()" />
+                                <input type="text" id="answer" name="answer" placeholder="Entrez votre réponse" onchange="charade.verifyAnswer()" />
                                 <button type="submit">Soumettre</button>
                             </form>
                             <p th:text="${result}"></p>

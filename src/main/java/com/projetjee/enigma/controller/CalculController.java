@@ -23,6 +23,6 @@ public class CalculController {
         String idCalcr = "1";
         Calcul calcul = calculDAO.findById(idCalcr).orElse(null);
         model.addAttribute("calcul", calcul);
-        return "views/calcul";
+        return "views/charade";
     }
 }

@@ -30,6 +30,6 @@ public class CharadeController {
         } else {
             model.addAttribute("result", "Mauvaise réponse. Réessayez !");
         }
-        return ("views/charade");
+        return ("views/index");
     }
 }
