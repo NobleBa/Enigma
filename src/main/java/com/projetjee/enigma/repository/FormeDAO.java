@@ -1,6 +1,6 @@
-package com.projetjee.Enigma.repository;
+package com.projetjee.enigma.repository;
 
-import com.projetjee.Enigma.models.Forme;
+import com.projetjee.enigma.models.Forme;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface FormeDAO extends JpaRepository<Forme, String> {

@@ -1,7 +1,7 @@
-package com.projetjee.Enigma.service;
+package com.projetjee.enigma.service;
 
-import com.projetjee.Enigma.models.Utilisateur;
-import com.projetjee.Enigma.repository.UtilisateurDAO;
+import com.projetjee.enigma.models.Utilisateur;
+import com.projetjee.enigma.repository.UtilisateurDAO;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

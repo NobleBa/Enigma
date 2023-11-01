@@ -1,6 +1,6 @@
-package com.projetjee.Enigma.service;
+package com.projetjee.enigma.service;
 
-import com.projetjee.Enigma.models.BlocCalcul;
+import com.projetjee.enigma.models.BlocCalcul;
 
 import java.util.List;
 

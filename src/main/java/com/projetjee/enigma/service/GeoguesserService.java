@@ -1,6 +1,6 @@
-package com.projetjee.Enigma.service;
+package com.projetjee.enigma.service;
 
-import com.projetjee.Enigma.models.Geoguesser;
+import com.projetjee.enigma.models.Geoguesser;
 
 import java.util.List;
 

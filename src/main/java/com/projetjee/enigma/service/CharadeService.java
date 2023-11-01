@@ -1,6 +1,6 @@
-package com.projetjee.Enigma.service;
+package com.projetjee.enigma.service;
 
-import com.projetjee.Enigma.models.Charade;
+import com.projetjee.enigma.models.Charade;
 
 import java.util.List;
 

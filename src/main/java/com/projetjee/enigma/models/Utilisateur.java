@@ -1,4 +1,4 @@
-package com.projetjee.Enigma.models;
+package com.projetjee.enigma.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

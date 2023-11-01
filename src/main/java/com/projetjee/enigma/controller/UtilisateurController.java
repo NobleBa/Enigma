@@ -1,7 +1,7 @@
-package com.projetjee.Enigma.controller;
+package com.projetjee.enigma.controller;
 
-import com.projetjee.Enigma.models.Utilisateur;
-import com.projetjee.Enigma.service.UtilisateurService;
+import com.projetjee.enigma.models.Utilisateur;
+import com.projetjee.enigma.service.UtilisateurService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

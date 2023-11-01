@@ -1,6 +1,6 @@
-package com.projetjee.Enigma.service;
+package com.projetjee.enigma.service;
 
-import com.projetjee.Enigma.models.Forme;
+import com.projetjee.enigma.models.Forme;
 
 import java.util.List;
 
