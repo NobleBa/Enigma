@@ -11,8 +11,8 @@ body {
 }
 
 .calcul {
-    background-image: url(img/wallpaper/Reuss.png);
-    background-size: contain;
+    background-image: url(img/wallpaper/calcul.png);
+    background-size: cover;
 }
 
 .departement {
@@ -20,8 +20,28 @@ body {
     background-size: cover;
 }
 
+.poeme {
+    background-image: url(img/wallpaper/poeme.png);
+    background-size: cover;
+}
+
+.pays {
+    background-image: url(img/wallpaper/pays.png);
+    background-size: cover;
+}
+
+.simon {
+    background-image: url(img/wallpaper/simon.png);
+    background-size: cover;
+}
+
 .geoguessr {
     background-image: url(img/wallpaper/geoguessr.png);
+    background-size: cover;
+}
+
+.symbol {
+    background-image: url(img/wallpaper/symbol.png);
     background-size: cover;
 }
 
@@ -91,8 +111,8 @@ button {
     background-color: #95556a;
     color: blanchedalmond;
     font-size: 120%;
-    width: 35%;
-    height: 30px;
+    min-width: 40%;
+    min-height: 30px;
     margin-left: 35%;
 }
 
@@ -162,7 +182,7 @@ a {
     display: block;
     content: "+";
     color: rgb(245, 245, 247);
-    font-size: 1.125rem;
+    font-size: 2rem;
     font-weight: 400;
     transition: transform .3s ease-out;
     transform-origin: center;
