@@ -48,14 +48,13 @@
                         <img src="https://www.fan-fortboyard.fr/medias/images/fort-boyard-personnages-passe-partout-2015-01.jpg?fx=c_450_314" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Charade n°1</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Cool trip a Las Vegas</h6>
-                                <p class="card-text">Mon premier est une couleur.<p>
-                                <p class="card-text">Mon deuxième est la 9ième lettre de l'alphabet.</p>
-                                <p class="card-text">Mon troisième comporte six faces numérotées de 1 à  6.</p>
-                                <p class="card-text">Mon quatrième est le verbe pouvoir, au présent, à  la première personne.</p>
-                                <p class="card-text">Mon tout est un acteur américain.</p>
-                                <input type="text" id="r1" name="r1" placeholder="Entrez votre réponse" onchange="change()"/>
-                                <button>Soumettre</button>
+                            <h6 class="card-subtitle mb-2 text-muted">Cool trip a Las Vegas</h6>
+                            <p class="card-text" th:utext="${charade.charade}"></p>
+                            <form action="/verifyAnswer" method="post">
+                                <input type="text" id="answer" name="answer" placeholder="Entrez votre réponse" onchange="change()" />
+                                <button type="submit">Soumettre</button>
+                            </form>
+                            <p th:text="${result}"></p>
                         </div>
                     </div>
                 </div> 
