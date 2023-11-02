@@ -1,83 +1,13 @@
 <!DOCTYPE html>
 <html class="poeme">
     <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="app.css" />
         <!-- <link rel= "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
         <link rel="icon" type="image/png" href="img/noun-enigma-1875558.png"/>
         <title>Enigma</title>
     </head>
-    <script>
-        function change() {
-            
-            var r1 = document.getElementById("r1").value
-            var r2 = document.getElementById("r2").value
-            var r3 = document.getElementById("r3").value
-            var r4 = document.getElementById("r4").value
-            var r5 = document.getElementById("r5").value
-            var r6 = document.getElementById("r6").value
-            var r7 = document.getElementById("r7").value
-            var r8 = document.getElementById("r8").value
-            var r9 = document.getElementById("r9").value
-            var r10 = document.getElementById("r10").value
-            var a1, a2, a3, a4, a5, a6, a7, a8, a9, a10 = 0
-            var btn = document.getElementById("btn")
-
-            if (r1.toUpperCase()=="MALI") {
-                a1 = 1
-                document.getElementById("r1").disabled = true
-            }
-
-            if (r2.toUpperCase()=="IRAK") {
-                a2 = 1
-                document.getElementById("r2").disabled = true
-            }
-
-            if (r3.toUpperCase()=="HAITI" || r3.toUpperCase()=="HAÏTI") {
-                a3 = 1
-                document.getElementById("r3").disabled = true
-            }
-
-            if (r4.toUpperCase()=="VIETNAM") {
-                a4 = 1
-                document.getElementById("r4").disabled = true
-            }
-
-            if (r5.toUpperCase()=="NIGER") {
-                a5 = 1
-                document.getElementById("r5").disabled = true
-            }
-
-            if (r6.toUpperCase()=="GRECE" || r6.toUpperCase()=="GRéCE") {
-                a6 = 1
-                document.getElementById("r6").disabled = true
-            }
-
-            if (r7.toUpperCase()=="CUBA") {
-                a7 = 1
-                document.getElementById("r7").disabled = true
-            }
-
-            if (r8.toUpperCase()=="ESPAGNE") {
-                a8 = 1
-                document.getElementById("r8").disabled = true
-            }
-
-            if (r9.toUpperCase()=="TONGA") {
-                a9 = 1
-                document.getElementById("r9").disabled = true
-            }
-
-            if ((r10.toUpperCase()=="NEPAL") || (r10.toUpperCase()=="NÉPAL")) {
-                a10 = 1
-                document.getElementById("r10").disabled = true
-            }
-
-            if ((a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 + a10) == 10) {
-                btn.style.visibility = 'visible'
-            }
-        }
-    </script>
     <body>
         <main style="width: 100%;">
             <div class="row" style="margin-top: -5%;">
@@ -92,37 +22,37 @@
                         <h3>Pays</h3>
                     </div>
                     <div>
-                        <img src="img/Poeme1.png" class="card-img-top" alt="Poeme">
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r1" type="text" placeholder="Entrez le résultat" onchange="change()">
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r2" type="text" placeholder="Entrez le résultat" onchange="change()">
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r3" type="text" placeholder="Entrez le résultat" onchange="change()">
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r4" type="text" placeholder="Entrez le résultat" onchange="change()">
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r5" type="text" placeholder="Entrez le résultat" onchange="change()">
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r6" type="text" placeholder="Entrez le résultat" onchange="change()">
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r7" type="text" placeholder="Entrez le résultat" onchange="change()">
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r8" type="text" placeholder="Entrez le résultat" onchange="change()">
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r9" type="text" placeholder="Entrez le résultat" onchange="change()">
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r10" type="text" placeholder="Entrez le résultat" onchange="change()">
+                        <img th:src="${poeme.poeme}" class="card-img-top" alt="Poeme">
+                        <form id="poemeForm" th:object="${poeme}">
+                            <input type="hidden" name="poemeId" th:value="${poeme.idPoeme}" />
+                            <input type="text" name="vers1" placeholder="Entrez la solution" />
+                            <input type="text" name="vers2" placeholder="Entrez la solution" />
+                            <input type="text" name="vers3" placeholder="Entrez la solution" />
+                            <input type="text" name="vers4" placeholder="Entrez la solution" />
+                            <input type="text" name="vers5" placeholder="Entrez la solution" />
+                            <input type="text" name="vers6" placeholder="Entrez la solution" />
+                            <input type="text" name="vers7" placeholder="Entrez la solution" />
+                            <input type="text" name="vers8" placeholder="Entrez la solution" />
+                            <input type="text" name="vers9" placeholder="Entrez la solution" />
+                            <input type="text" name="vers10" placeholder="Entrez la solution" />
+                            <input type="text" name="vers11" placeholder="Entrez la solution" />
+                            <input type="text" name="vers12" placeholder="Entrez la solution" />
+                            <input type="text" name="vers13" placeholder="Entrez la solution" />
+                            <input type="text" name="vers14" placeholder="Entrez la solution" />
+                            <input type="text" name="vers15" placeholder="Entrez la solution" />
+                            <input type="text" name="vers16" placeholder="Entrez la solution" />
+                            <input type="text" name="vers17" placeholder="Entrez la solution" />
+                            <input type="text" name="vers18" placeholder="Entrez la solution" />
+                            <input type="text" name="vers19" placeholder="Entrez la solution" />
+                            <input type="text" name="vers20" placeholder="Entrez la solution" />
+                            <input type="text" name="vers21" placeholder="Entrez la solution" />
+                            <input type="text" name="vers22" placeholder="Entrez la solution" />
+                            <input type="text" name="vers23" placeholder="Entrez la solution" />
+                            <input type="text" name="vers24" placeholder="Entrez la solution" />
+                            <input type="text" name="vers25" placeholder="Entrez la solution" />
+                            <button type="submit">Vérifier</button>
+                        </form>
+                        <div id="message"></div>
                     </div>
                 </div>
             </div>
@@ -132,4 +62,29 @@
             </div>
         </main>
     </body>
+    <script>
+        $(document).ready(function() {
+            $('#poemeForm').submit(function (event) {
+                event.preventDefault();
+                var poemeId = $('input[name="poemeId"]').val();
+                var inputSolution = '';
+                for (var i = 1; i <= 25; i++) {
+                    var vers = $('input[name="vers' + i + '"]').val().toUpperCase();
+                    if (vers != null) {
+                        inputSolution += vers;
+                    }
+                }
+                inputSolution=inputSolution.trim();
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/checkSolutionPoeme',
+                    data: {inputSolution: inputSolution, poemeId: poemeId},
+                    success: function (response) {
+                        $('#message').text(response.message);
+                    }
+                });
+            });
+        });
+    </script>
 </html>
