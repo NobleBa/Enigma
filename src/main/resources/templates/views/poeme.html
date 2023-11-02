@@ -22,7 +22,7 @@
                         <h3>Pays</h3>
                     </div>
                     <div>
-                        <img th:src="${poeme.poeme}" class="card-img-top" alt="Poeme">
+                        <p class="card-text" th:utext="${poeme.poeme}"></p>
                         <form id="poemeForm" th:object="${poeme}">
                             <input type="hidden" name="poemeId" th:value="${poeme.idPoeme}" />
                             <input type="text" name="vers1" placeholder="Entrez la solution" />
@@ -35,21 +35,6 @@
                             <input type="text" name="vers8" placeholder="Entrez la solution" />
                             <input type="text" name="vers9" placeholder="Entrez la solution" />
                             <input type="text" name="vers10" placeholder="Entrez la solution" />
-                            <input type="text" name="vers11" placeholder="Entrez la solution" />
-                            <input type="text" name="vers12" placeholder="Entrez la solution" />
-                            <input type="text" name="vers13" placeholder="Entrez la solution" />
-                            <input type="text" name="vers14" placeholder="Entrez la solution" />
-                            <input type="text" name="vers15" placeholder="Entrez la solution" />
-                            <input type="text" name="vers16" placeholder="Entrez la solution" />
-                            <input type="text" name="vers17" placeholder="Entrez la solution" />
-                            <input type="text" name="vers18" placeholder="Entrez la solution" />
-                            <input type="text" name="vers19" placeholder="Entrez la solution" />
-                            <input type="text" name="vers20" placeholder="Entrez la solution" />
-                            <input type="text" name="vers21" placeholder="Entrez la solution" />
-                            <input type="text" name="vers22" placeholder="Entrez la solution" />
-                            <input type="text" name="vers23" placeholder="Entrez la solution" />
-                            <input type="text" name="vers24" placeholder="Entrez la solution" />
-                            <input type="text" name="vers25" placeholder="Entrez la solution" />
                             <button type="submit">Vérifier</button>
                         </form>
                         <div id="message"></div>
@@ -68,7 +53,7 @@
                 event.preventDefault();
                 var poemeId = $('input[name="poemeId"]').val();
                 var inputSolution = '';
-                for (var i = 1; i <= 25; i++) {
+                for (var i = 1; i <= 10; i++) {
                     var vers = $('input[name="vers' + i + '"]').val().toUpperCase();
                     if (vers != '') {
                         vers = removeSpecialChars(vers.trim());
