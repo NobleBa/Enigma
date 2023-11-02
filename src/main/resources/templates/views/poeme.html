@@ -1,83 +1,13 @@
 <!DOCTYPE html>
 <html class="poeme">
     <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="app.css" />
         <!-- <link rel= "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
         <link rel="icon" type="image/png" href="img/noun-enigma-1875558.png"/>
         <title>Enigma</title>
     </head>
-    <script>
-        function change() {
-            
-            var r1 = document.getElementById("r1").value
-            var r2 = document.getElementById("r2").value
-            var r3 = document.getElementById("r3").value
-            var r4 = document.getElementById("r4").value
-            var r5 = document.getElementById("r5").value
-            var r6 = document.getElementById("r6").value
-            var r7 = document.getElementById("r7").value
-            var r8 = document.getElementById("r8").value
-            var r9 = document.getElementById("r9").value
-            var r10 = document.getElementById("r10").value
-            var a1, a2, a3, a4, a5, a6, a7, a8, a9, a10 = 0
-            var btn = document.getElementById("btn")
-
-            if (r1.toUpperCase()=="MALI") {
-                a1 = 1
-                document.getElementById("r1").disabled = true
-            }
-
-            if (r2.toUpperCase()=="IRAK") {
-                a2 = 1
-                document.getElementById("r2").disabled = true
-            }
-
-            if (r3.toUpperCase()=="HAITI" || r3.toUpperCase()=="HAÏTI") {
-                a3 = 1
-                document.getElementById("r3").disabled = true
-            }
-
-            if (r4.toUpperCase()=="VIETNAM") {
-                a4 = 1
-                document.getElementById("r4").disabled = true
-            }
-
-            if (r5.toUpperCase()=="NIGER") {
-                a5 = 1
-                document.getElementById("r5").disabled = true
-            }
-
-            if (r6.toUpperCase()=="GRECE" || r6.toUpperCase()=="GRéCE") {
-                a6 = 1
-                document.getElementById("r6").disabled = true
-            }
-
-            if (r7.toUpperCase()=="CUBA") {
-                a7 = 1
-                document.getElementById("r7").disabled = true
-            }
-
-            if (r8.toUpperCase()=="ESPAGNE") {
-                a8 = 1
-                document.getElementById("r8").disabled = true
-            }
-
-            if (r9.toUpperCase()=="TONGA") {
-                a9 = 1
-                document.getElementById("r9").disabled = true
-            }
-
-            if ((r10.toUpperCase()=="NEPAL") || (r10.toUpperCase()=="NÉPAL")) {
-                a10 = 1
-                document.getElementById("r10").disabled = true
-            }
-
-            if ((a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 + a10) == 10) {
-                btn.style.visibility = 'visible'
-            }
-        }
-    </script>
     <body>
         <main style="width: 100%;">
             <div class="row" style="margin-top: -5%;">
@@ -91,65 +21,23 @@
                     <div class="table-cell col2">
                         <h3>Pays</h3>
                     </div>
-                    <div class="table-cell col1">
-                        <p>Cher Ruel Stroud, malicieux énutrof,</p>
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r1" type="text" placeholder="Entrez le résultat" onchange="change()">
-                    </div>
-                    <div class="table-cell col1">
-                        <p>"Il s'en ira, kamas ou pas.", qu'ils me disaient. Je refusais de les croire. "Il</p>
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r2" type="text" placeholder="Entrez le résultat" onchange="change()">
-                    </div>
-                    <div class="table-cell col1">
-                        <p>te hait indiciblement, à cause de tout ce que tu lui coûtes." J'étais dévastée.</p>
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r3" type="text" placeholder="Entrez le résultat" onchange="change()">
-                    </div>
-                    <div class="table-cell col1">
-                        <p>Pourtant, nous nous aimions à l'envi, et n'amenions que bonheur partout</p>
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r4" type="text" placeholder="Entrez le résultat" onchange="change()">
-                    </div>
-                    <div class="table-cell col1">
-                        <p>où nous passions. Ni gérants ni rois n'étaient plus riches que nous, car</p>
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r5" type="text" placeholder="Entrez le résultat" onchange="change()">
-                    </div>
-                    <div class="table-cell col1">
-                        <p>notre amour valait tout l'or du Krosmoz. Malgré cette attitude infâme,</p>
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r6" type="text" placeholder="Entrez le résultat" onchange="change()">
-                    </div>
-                    <div class="table-cell col1">
-                        <p>j'osais, et j'ose encore, espérer... Tu seras vaincu. Battre en retraite ne</p>
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r7" type="text" placeholder="Entrez le résultat" onchange="change()">
-                    </div>
-                    <div class="table-cell col1">
-                        <p>te sauveras plus. Tu as l'air d'un pouilleux; radin que tu es. Pagne, haut,</p>
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r8" type="text" placeholder="Entrez le résultat" onchange="change()">
-                    </div>
-                    <div class="table-cell col1">
-                        <p>sandales: voilà vingt-cinq ans qu'il te faut en changer. Ton gain prime sur </p>
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r9" type="text" placeholder="Entrez le résultat" onchange="change()">
-                    </div>
-                    <div class="table-cell col1">
-                        <p>ta vieille Arpagone... Pallier mon déficit sentimental ne t'intéresse pas.</p>
-                    </div>
-                    <div class="table-cell col2">
-                        <input id="r10" type="text" placeholder="Entrez le résultat" onchange="change()">
+                    <div>
+                        <p class="card-text" th:utext="${poeme.poeme}"></p>
+                        <form id="poemeForm" th:object="${poeme}">
+                            <input type="hidden" name="poemeId" th:value="${poeme.idPoeme}" />
+                            <input type="text" name="vers1" placeholder="Entrez la solution" />
+                            <input type="text" name="vers2" placeholder="Entrez la solution" />
+                            <input type="text" name="vers3" placeholder="Entrez la solution" />
+                            <input type="text" name="vers4" placeholder="Entrez la solution" />
+                            <input type="text" name="vers5" placeholder="Entrez la solution" />
+                            <input type="text" name="vers6" placeholder="Entrez la solution" />
+                            <input type="text" name="vers7" placeholder="Entrez la solution" />
+                            <input type="text" name="vers8" placeholder="Entrez la solution" />
+                            <input type="text" name="vers9" placeholder="Entrez la solution" />
+                            <input type="text" name="vers10" placeholder="Entrez la solution" />
+                            <button type="submit">Vérifier</button>
+                        </form>
+                        <div id="message"></div>
                     </div>
                 </div>
             </div>
@@ -159,4 +47,33 @@
             </div>
         </main>
     </body>
+    <script>
+        $(document).ready(function() {
+            $('#poemeForm').submit(function (event) {
+                event.preventDefault();
+                var poemeId = $('input[name="poemeId"]').val();
+                var inputSolution = '';
+                for (var i = 1; i <= 10; i++) {
+                    var vers = $('input[name="vers' + i + '"]').val().toUpperCase();
+                    if (vers != '') {
+                        vers = removeSpecialChars(vers.trim());
+                        inputSolution += vers;
+                    }
+                }
+                inputSolution=inputSolution.trim();
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/checkSolutionPoeme',
+                    data: {inputSolution: inputSolution, poemeId: poemeId},
+                    success: function (response) {
+                        $('#message').text(response.message);
+                    }
+                });
+            });
+        });
+        function removeSpecialChars(text) {
+            return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/-/g, '');
+        }
+    </script>
 </html>

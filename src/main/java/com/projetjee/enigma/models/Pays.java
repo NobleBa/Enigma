@@ -13,6 +13,8 @@ import jakarta.persistence.*;
 @NoArgsConstructor
 public class Pays {
     @Id
+    @Column(length = 50, name = "IdPays")
+    private String IdPays;
     @Column(length = 50, name = "Nompays")
     private String Nompays;
     @ManyToOne
