@@ -21,4 +21,18 @@ public class Charade {
     @Column(length = 250, name = "solution")
     private String solution;
 
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        Charade charade = (Charade) obj;
+
+        if (!IdCharade.equals(charade.IdCharade)) return false;
+        if (!charade.equals(charade.charade)) return false;
+        if (!solution.equals(charade.solution)) return false;
+
+        return true;
+    }
+
 }
