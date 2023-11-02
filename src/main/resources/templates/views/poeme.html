@@ -70,7 +70,8 @@
                 var inputSolution = '';
                 for (var i = 1; i <= 25; i++) {
                     var vers = $('input[name="vers' + i + '"]').val().toUpperCase();
-                    if (vers != null) {
+                    if (vers != '') {
+                        vers = removeSpecialChars(vers.trim());
                         inputSolution += vers;
                     }
                 }
@@ -86,5 +87,8 @@
                 });
             });
         });
+        function removeSpecialChars(text) {
+            return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/-/g, '');
+        }
     </script>
 </html>
