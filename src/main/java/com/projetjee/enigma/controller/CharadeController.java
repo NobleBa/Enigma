@@ -5,9 +5,12 @@ import org.springframework.ui.Model;
 import com.projetjee.enigma.repository.CharadeDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Random;
 
 @Controller
 public class CharadeController {
@@ -17,19 +20,45 @@ public class CharadeController {
 
     @GetMapping("/charade")
     public String charade(Model model) {
-        Charade charade = charadeDAO.findById("1").orElse(null);
-        model.addAttribute("charade", charade);
+        Charade charade1 = getRandomCharadeFromDatabase();
+        Charade charade2 = getRandomCharadeFromDatabase();
+        Charade charade3 = getRandomCharadeFromDatabase();
+        while (charade2.equals(charade1)){
+            charade2 = getRandomCharadeFromDatabase();
+        }
+        while (charade3.equals(charade2) || charade3.equals(charade1)){
+            charade3 = getRandomCharadeFromDatabase();
+        }
+        model.addAttribute("charade1", charade1);
+        model.addAttribute("charade2", charade2);
+        model.addAttribute("charade3", charade3);
         return "views/charade";
     }
 
-    @PostMapping("/verifyAnswer")
-    public String verifyAnswer(@RequestParam String answer, Model model) {
-        /*Charade charade = charadeDAO.findById("1").orElse(null);
-        if (charade != null && charade.getSolution().equalsIgnoreCase(answer)) {
-            model.addAttribute("result", "Bonne réponse !");
+    @PostMapping("/checkSolution")
+    @ResponseBody
+    public Map<String, String> checkSolution(@RequestParam String inputSolution, @RequestParam String charadeId) {
+        Map<String, String> response = new HashMap<>();
+        System.out.println("Valeur de inputSolution reçue : " + inputSolution);
+        System.out.println("Id charade : " + charadeId);
+
+        // Utilisez l'ID de la charade pour récupérer la charade depuis la base de données
+        Charade charade = charadeDAO.findById(charadeId).orElse(null);
+
+        if (charade != null && inputSolution.equalsIgnoreCase(charade.getSolution())) {
+            response.put("message", "Bonne réponse !");
         } else {
-            model.addAttribute("result", "Mauvaise réponse. Réessayez !");
-        }*/
-        return "views/charade";
+            response.put("message", "Mauvaise réponse. Essayez à nouveau.");
+        }
+
+        return response;
+    }
+
+    private Charade getRandomCharadeFromDatabase() {
+        List<Charade> allCharades = charadeDAO.findAll();
+
+        int randomIndex = new Random().nextInt(allCharades.size());
+
+        return allCharades.get(randomIndex);
     }
 }
