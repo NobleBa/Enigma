@@ -1,47 +1,26 @@
 <!DOCTYPE html>
 <html class="forme">
     <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="app.css" />
         <!-- <link rel= "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
         <link rel="icon" type="image/png" href="img/noun-enigma-1875558.png"/>
         <title>Enigma</title>
     </head>
-    <script>
-        function change() {
-            var r1 = document.getElementById("r1").value
-            var btn = document.getElementById("btn")
-
-            if (r1 == 9) {
-                btn.style.visibility = 'visible'
-            } 
-        }
-
-        function change1() {
-            var changer = document.getElementById("rules")
-
-            if (changer.style.visibility == 'visible') {
-                changer.style.visibility = 'hidden'
-            } else {
-                changer.style.visibility = 'visible'
-            }
-        }
-    </script>
     <body>
         <main>
             <div class="card" style="align-items: center;">
                 <h1 id="0">Le jeu des symboles</h1>
                 <h3 id="1">Pour la dernières épreuves des formes de couleurs différentes sont cachés a travers tous le site.</h3>
                 <p id="2">Recherche sur le site le nombre d'apparition de la forme ci dessous et inscrivez la bonne réponse.</p>
-                <img src="/img/stars.png" style="width: 75px; height: 50px;">
-                <input type="text" id="r1" name="r1" placeholder="Entrez votre réponse" onchange="change()"/>
-            </div>
-            <div class="card1 box" id="rules" style="max-width: 510px; visibility: visible;">
-                <div>
-                    <button class="menu__icon" style="min-width: 0%;" onclick="change1()"></button>
-                    <h2 style="margin-top: 6%;" >Epreuve surprise</h2>
-                </div>
-                <p>Etes vous sur de vouloir voir la dernière épreuve qui est une surprise ?</p>
+                <img th:src="${forme.image}" style="width: 75px; height: 50px;">
+                <form id="formeForm" th:object="${forme}">
+                    <input type="hidden" name="formeId" th:value="${forme.idForme}" />
+                    <input type="text" name="inputSolution" placeholder="Entrez la solution" />
+                    <button type="submit">Vérifier</button>
+                </form>
+                <div id="message"></div>
             </div>
             <div class="row" style="margin-top:5%;">
                 <a th:href="@{/geoguesser}"><button>Enigme précedente</button></a>
@@ -49,4 +28,22 @@
             </div> 
         </main>
     </body>
+    <script>
+        $(document).ready(function() {
+            $('#formeForm').submit(function (event) {
+                event.preventDefault();
+                var inputSolution = $('input[name="inputSolution"]').val();
+                var formeId = $('input[name="formeId"]').val();
+                inputSolution = inputSolution.trim();
+                $.ajax({
+                    type: 'POST',
+                    url: '/checkSolutionForme',
+                    data: {inputSolution: inputSolution, formeId: formeId},
+                    success: function (response) {
+                        $('#message').text(response.message);
+                    }
+                });
+            });
+        });
+    </script>
 </html>

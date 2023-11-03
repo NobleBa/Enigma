@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="charade" xmlns:th="http://www.thymeleaf.org">
 <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="/app.css" />
     <!-- <link rel= "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
@@ -23,7 +24,6 @@
                         <button type="submit">Vérifier</button>
                     </form>
                     <div id="message1"></div>
-
                 </div>
             </div>
         </div>
@@ -67,7 +67,6 @@
     </div>
 </main>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(document).ready(function() {
         $('#charadeForm1').submit(function(event) {
