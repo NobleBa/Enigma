@@ -16,9 +16,9 @@ public class Charade {
     @Id
     @Column(length = 50, name = "IdCharade")
     private String IdCharade;
-    @Column(length = 250, name = "charade")
+    @Column(length = 500, name = "charade")
     private String charade;
-    @Column(length = 250, name = "solution")
+    @Column(length = 500, name = "solution")
     private String solution;
 
     @Override

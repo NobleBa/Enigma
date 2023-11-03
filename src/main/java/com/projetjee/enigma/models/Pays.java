@@ -13,11 +13,10 @@ import jakarta.persistence.*;
 @NoArgsConstructor
 public class Pays {
     @Id
+    @Column(length = 50, name = "IdPays")
+    private String IdPays;
     @Column(length = 50, name = "Nompays")
     private String Nompays;
-    @ManyToOne
-    @JoinColumn(name = "IdPoeme")
-    private Poeme IdPoeme;
     @ManyToOne
     @JoinColumn(name = "IdGeo")
     private Geoguesser IdGeo;
@@ -33,6 +32,4 @@ public class Pays {
     private boolean Q5;
     @Column(length = 10, name = "Q6")
     private boolean Q6;
-    @Column(length = 10, name = "NumVers")
-    private int NumVers;
 }

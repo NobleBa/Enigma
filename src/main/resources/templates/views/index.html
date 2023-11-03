@@ -37,15 +37,13 @@
         r1 = Math.floor(Math.random() * 5)
         r2 = Math.floor(Math.random() * T[r1].length)
         r3 = Math.floor(Math.random()* TA.length)
-
-        c = T[r1][r2]
-        T[r1][r2] = TA[r3]
-        document.getElementById(r1.toString()).innerHTML=T[r1].join('')
-        delay(1500)
-        T[r1][r2] = c
-        documennt.getElementById(r1.toString()).innerHTML=T[r1].join('')
-    }
-
+            c = T[r1][r2]
+            T[r1][r2] = TA[r3]
+            document.getElementById(r1.toString()).innerHTML=T[r1].join('')
+            delay(1500)
+            T[r1][r2] = c
+            document.getElementById(r1.toString()).innerHTML=T[r1].join('')
+        }
     function change() {
         var changer = document.getElementById("rules")
 

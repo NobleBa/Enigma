@@ -14,9 +14,11 @@ import jakarta.persistence.*;
 @NoArgsConstructor
 public class Simon {
     @Id
-    @Column(length = 50, name = "IdCase")
-    private String IdCase;
-    @Column(length = 250, name = "Active")
-    private boolean Active;
+    @Column(length = 50, name = "Idpatern")
+    private String Idpatern;
+    @Column(length = 50, name = "Solution")
+    private String Solution;
+    @Column(length = 250, name = "Patern")
+    private String Patern;
 
 }
