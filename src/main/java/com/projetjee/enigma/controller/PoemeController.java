@@ -1,6 +1,5 @@
 package com.projetjee.enigma.controller;
 
-import com.projetjee.enigma.models.Charade;
 import com.projetjee.enigma.models.Poeme;
 import com.projetjee.enigma.repository.PoemeDAO;
 import org.springframework.beans.factory.annotation.Autowired;

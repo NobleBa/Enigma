@@ -7,98 +7,12 @@
     <link rel="icon" type="image/png" href="img/noun-enigma-1875558.png"/>
     <title>Enigma</title>
 </head>
-<script>
-    function change1() {
-
-        var r1 = document.getElementById("r1", this).value
-        var q2 = document.getElementById("q2")
-        var btn = document.getElementById("botn")
-
-        if (r1.toUpperCase()=="IRLANDE") {
-            btn.style.display = 'block'
-        } else {
-            q2.style.visibility = 'visible'
-            document.getElementById("r1").disabled = true
-            btn.style.display = 'none'
-        }
-    }
-
-    function change2() {
-
-        var r2 = document.getElementById("r2", this).value
-        var btn = document.getElementById("botn")
-
-        if (r2.toUpperCase()=="IRLANDE") {
-            btn.style.display = 'block'
-        } else {
-            document.getElementById("q3").style.visibility = 'visible'
-            document.getElementById("r2").disabled = true
-            btn.style.display = 'none'
-        }
-    }
-
-    function change3() {
-
-        var r3 = document.getElementById("r3", this).value
-        var btn = document.getElementById("botn")
-
-            if (r3.toUpperCase()=="IRLANDE") {
-                btn.style.display = 'block'
-            } else {
-                document.getElementById("q4").style.visibility = 'visible'
-                document.getElementById("r3").disabled = true
-                btn.style.display = 'none'
-            }
-        }
-    }
-
-    function change4() {
-
-        var r4 = document.getElementById("r4", this).value
-        var btn = document.getElementById("botn")
-
-            if (r4.toUpperCase()=="IRLANDE") {
-                btn.style.display = 'block'
-            } else {
-                document.getElementById("q5").style.visibility = 'visible'
-                document.getElementById("r4").disabled = true
-                btn.style.display = 'none'
-            }
-        }
-    }
-
-    function change5() {
-
-        var r5 = document.getElementById("r5", this).value
-        var btn = document.getElementById("botn")
-
-            if (r5.toUpperCase()=="IRLANDE") {
-                btn.style.display = 'block'
-            } else {
-                document.getElementById("q6").style.visibility = 'visible'
-                document.getElementById("r5").disabled = true
-                btn.style.display = 'none'
-            }
-        }
-    }
-
-    function change6() {
-
-        var r6 = document.getElementById("r6", this).value
-        var btn = document.getElementById("botn")
-
-            if (r6.toUpperCase()=="IRLANDE") {
-                btn.style.display = 'block'
-            }
-        }
-    }
-</script>
 <body>
 <main>
     <div class="row" style="margin-top: -5%;">
         <div class="table1">
             <div class="table-cell" style="width: 100%;">
-                <p>Vous avez 6 questions pour trouver un pays allant de la plus dur a la plus facile<p>
+                <p>Vous avez 6 questions pour trouver un pays allant de la plus dure à la plus facile<p>
             </div>
             <div class="table-cell col1">
                 <h3>Questions</h3>
@@ -107,41 +21,53 @@
                 <h3>Réponses</h3>
             </div>
             <div class="table-cell col1" style="max-height: 80px;">
-                <p>Dans quelle nation insulaire de l'Europe de l'Ouest se trouve la Chaussée des Géants, une formation géologique spectaculaire composée de colonnes de basalte ?</p>
+                <p th:if="${pays.getContinent() == 'Europe'}">Le pays est en Europe</p>
+                <p th:if="${pays.getContinent() == 'Asie'}">Le pays est en Asie</p>
+                <p th:if="${pays.getContinent() == 'Amérique'}">Le pays est en Amérique</p>
+                <p th:if="${pays.getContinent() == 'Afrique'}">Le pays est en Afrique</p>
+                <p th:if="${pays.getContinent() == 'Océanie'}">Le pays est en Océanie</p>
             </div>
             <div class="table-cell col2" style="max-height: 80px;">
-                <input id="r1" type="text" placeholder="Entrez la réponse" onchange="change1()">
+                <input type="hidden" name="paysContinent" th:value="${pays.getContinent()}" />
+                <input id="r1" type="text" placeholder="Entrez la réponse">
             </div>
             <div id="q2" style="width: 100%; display: flex; visibility: hidden;">
                 <div class="table-cell col1" style="max-height: 80px;">
-                    <p>Quelle nation a été le lieu de naissance du célèbre explorateur Ernest Shackleton, qui a mené une expédition périlleuse en Antarctique au début du XXe siècle ?</p>
+                    <p th:if="${pays.isFine() == true}">Le pays se termine par un E</p>
+                    <p th:if="${pays.isFine() == false}">Le pays ne se termine pas par un E</p>
                 </div>
                 <div class="table-cell col2" style="max-height: 80px;">
-                    <input id="r2" type="text" placeholder="Entrez la réponse" onchange="change2()">
+                    <input type="hidden" name="paysFinE" th:value="${pays.isFine()}" />
+                    <input id="r2" type="text" placeholder="Entrez la réponse">
                 </div>
             </div>
             <div id="q4" style="width: 100%; display: flex; visibility: hidden">
                 <div class="table-cell col1">
-                    <p>Dans quelle nation européenne se trouve le parc national de Killarney, célèbre pour ses paysages de montagnes, ses lacs et ses forêts ?</p>
+                    <p th:if="${pays.isPopulationHuitMillions() == true}">Le pays est habité par au moins 8 millions d'habitants</p>
+                    <p th:if="${pays.isPopulationHuitMillions() == false}">Le pays est habité par moins de 8 millions d'habitants</p>
                 </div>
                 <div class="table-cell col2">
-                    <input id="r4" type="text" placeholder="Entrez la reponse" onchange="change4()">
+                    <input type="hidden" name="paysPopulationHuitMillions" th:value="${pays.isPopulationHuitMillions()}" />
+                    <input id="r4" type="text" placeholder="Entrez la réponse">
                 </div>
             </div>
             <div id="q5" style="width: 100%; display: flex; visibility: hidden">
                 <div class="table-cell col1">
-                    <p>Quelle nation a un drapeau tricolore vertical avec des bandes de couleur verte, blanche et orange, symbolisant l'unité entre les communautés ?</p>
+                    <p th:if="${pays.isSurfaceMillion() == true}">Le pays a une surface supérieure ou égale à 1 million de km²</p>
+                    <p th:if="${pays.isSurfaceMillion() == false}">Le pays a une surface inférieure à 1 million de km²</p>
                 </div>
                 <div class="table-cell col2">
-                    <input id="r5" type="text" placeholder="Entrez la reponse" onchange="change5()">
+                    <input type="hidden" name="paysSurfaceMillion" th:value="${pays.isSurfaceMillion()}" />
+                    <input id="r5" type="text" placeholder="Entrez la réponse">
                 </div>
             </div>
             <div id="q6" style="width: 100%; display: flex; visibility: hidden">
                 <div class="table-cell col1">
-                    <p>De quel pays est originaire la musique traditionnelle celtique, notamment les violons et les flûtes, ainsi que les danses comme la gigue irlandaise ?</p>
+                    <p th:utext="${pays.getQuestionUnique()}"></p>
                 </div>
                 <div class="table-cell col2">
-                    <input id="r6" type="text" placeholder="Entrez la réponse" onchange="change6()">
+                    <input type="hidden" name="paysQuestionUnique" th:value="${pays.getQuestionUnique()}" />
+                    <input id="r6" type="text" placeholder="Entrez la réponse">
                 </div>
             </div>
         </div>
@@ -152,4 +78,196 @@
     </div>
 </main>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#r1').on('change', function() {
+            var pays = $('#r1').val();
+            var continent = $('input[name="paysContinent"]').val();
+            console.log("On vérifie...");
+            $.ajax({
+                type: 'POST',
+                url: '/verifyContinent',
+                data: { pays: pays ,continent: continent},
+                success: function(response) {
+                    if (response === true) {
+                        console.log("Bonne réponse");
+                        $('#r1').addClass('correct');
+                        $('#q2').css('visibility', 'visible');
+                    } else {
+                        console.log("Mauvaise réponse");
+                        $('#r1').removeClass('correct');
+                        $('#r2').removeClass('correct');
+                        $('#r3').removeClass('correct');
+                        $('#r4').removeClass('correct');
+                        $('#r5').removeClass('correct');
+                        $('#r6').removeClass('correct');
+                        $('#q2').css('visibility', 'hidden');
+                        $('#q3').css('visibility', 'hidden');
+                        $('#q4').css('visibility', 'hidden');
+                        $('#q5').css('visibility', 'hidden');
+                        $('#q6').css('visibility', 'hidden');
+                        $('#botn').css('visibility', 'hidden');
+                        $('#r2').val(null);
+                        $('#r3').val(null);
+                        $('#r4').val(null);
+                        $('#r5').val(null);
+                        $('#r6').val(null);
+                    }
+                }
+            });
+        });
+        $('#r2').on('change', function() {
+            var pays = $('#r2').val();
+            var fine = $('input[name="paysFinE"]').val();
+            var continent = $('input[name="paysContinent"]').val();
+            console.log("On vérifie...");
+            $.ajax({
+                type: 'POST',
+                url: '/verifyFinE',
+                data: { pays: pays ,fine: fine ,continent: continent},
+                success: function(response) {
+                    if (response === true) {
+                        console.log("Bonne réponse");
+                        $('#r2').addClass('correct');
+                        $('#q3').css('visibility', 'visible');
+                    } else {
+                        console.log("Mauvaise réponse");
+                        $('#r2').removeClass('correct');
+                        $('#r3').removeClass('correct');
+                        $('#r4').removeClass('correct');
+                        $('#r5').removeClass('correct');
+                        $('#r6').removeClass('correct');
+                        $('#q3').css('visibility', 'hidden');
+                        $('#q4').css('visibility', 'hidden');
+                        $('#q5').css('visibility', 'hidden');
+                        $('#q6').css('visibility', 'hidden');
+                        $('#botn').css('visibility', 'hidden');
+                        $('#r3').val(null);
+                        $('#r4').val(null);
+                        $('#r5').val(null);
+                        $('#r6').val(null);
+                    }
+                }
+            });
+        });
+        $('#r3').on('change', function() {
+            var pays = $('#r3').val();
+            var fine = $('input[name="paysFinE"]').val();
+            var continent = $('input[name="paysContinent"]').val();
+            var littoral = $('input[name="paysLittoral"]').val();
+            console.log("On vérifie...");
+            $.ajax({
+                type: 'POST',
+                url: '/verifyLittoral',
+                data: { pays: pays ,fine: fine ,continent: continent, littoral: littoral},
+                success: function(response) {
+                    if (response === true) {
+                        console.log("Bonne réponse");
+                        $('#r3').addClass('correct');
+                        $('#q4').css('visibility', 'visible');
+                    } else {
+                        console.log("Mauvaise réponse");
+                        $('#r3').removeClass('correct');
+                        $('#r4').removeClass('correct');
+                        $('#r5').removeClass('correct');
+                        $('#r6').removeClass('correct');
+                        $('#q4').css('visibility', 'hidden');
+                        $('#q5').css('visibility', 'hidden');
+                        $('#q6').css('visibility', 'hidden');
+                        $('#botn').css('visibility', 'hidden');
+                        $('#r4').val(null);
+                        $('#r5').val(null);
+                        $('#r6').val(null);
+                    }
+                }
+            });
+        });
+        $('#r4').on('change', function() {
+            var pays = $('#r4').val();
+            var fine = $('input[name="paysFinE"]').val();
+            var continent = $('input[name="paysContinent"]').val();
+            var littoral = $('input[name="paysLittoral"]').val();
+            var population = $('input[name="paysPopulationHuitMillions"]').val();
+            console.log("On vérifie...");
+            $.ajax({
+                type: 'POST',
+                url: '/verifyPopulation',
+                data: { pays: pays ,fine: fine ,continent: continent, littoral: littoral, population: population},
+                success: function(response) {
+                    if (response === true) {
+                        console.log("Bonne réponse");
+                        $('#r4').addClass('correct');
+                        $('#q5').css('visibility', 'visible');
+                    } else {
+                        console.log("Mauvaise réponse");
+                        $('#r4').removeClass('correct');
+                        $('#r5').removeClass('correct');
+                        $('#r6').removeClass('correct');
+                        $('#q5').css('visibility', 'hidden');
+                        $('#q6').css('visibility', 'hidden');
+                        $('#botn').css('visibility', 'hidden');
+                        $('#r5').val(null);
+                        $('#r6').val(null);
+                    }
+                }
+            });
+        });
+        $('#r5').on('change', function() {
+            var pays = $('#r5').val();
+            var fine = $('input[name="paysFinE"]').val();
+            var continent = $('input[name="paysContinent"]').val();
+            var littoral = $('input[name="paysLittoral"]').val();
+            var population = $('input[name="paysPopulationHuitMillions"]').val();
+            var surface = $('input[name="paysSurfaceMillion"]').val();
+            console.log("On vérifie...");
+            $.ajax({
+                type: 'POST',
+                url: '/verifySurface',
+                data: { pays: pays ,fine: fine ,continent: continent, littoral: littoral, population: population, surface: surface},
+                success: function(response) {
+                    if (response === true) {
+                        console.log("Bonne réponse");
+                        $('#r5').addClass('correct');
+                        $('#q6').css('visibility', 'visible');
+                    } else {
+                        console.log("Mauvaise réponse");
+                        $('#r5').removeClass('correct');
+                        $('#r6').removeClass('correct');
+                        $('#q6').css('visibility', 'hidden');
+                        $('#botn').css('visibility', 'hidden');
+                        $('#r6').val(null);
+                    }
+                }
+            });
+        });
+        $('#r6').on('change', function() {
+            var pays = $('#r6').val();
+            var fine = $('input[name="paysFinE"]').val();
+            var continent = $('input[name="paysContinent"]').val();
+            var littoral = $('input[name="paysLittoral"]').val();
+            var population = $('input[name="paysPopulationHuitMillions"]').val();
+            var surface = $('input[name="paysSurfaceMillion"]').val();
+            var unique = $('input[name="paysQuestionUnique"]').val();
+            console.log("On vérifie...");
+            $.ajax({
+                type: 'POST',
+                url: '/verifyUnique',
+                data: { pays: pays ,fine: fine ,continent: continent, littoral: littoral, population: population, surface: surface, unique: unique},
+                success: function(response) {
+                    if (response === true) {
+                        console.log("Bonne réponse");
+                        $('#r6').addClass('correct');
+                        $('#botn').css('visibility', 'visible');
+                    } else {
+                        console.log("Mauvaise réponse");
+                        $('#r6').removeClass('correct');
+                        $('#botn').css('visibility', 'hidden');
+                    }
+                }
+            });
+        });
+    });
+</script>
+
 </html>

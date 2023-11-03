@@ -55,7 +55,7 @@
                 var inputSolution = '';
                 for (var i = 1; i <= 10; i++) {
                     var vers = $('input[name="vers' + i + '"]').val().toUpperCase();
-                    if (vers != '') {
+                    if (vers) {
                         vers = removeSpecialChars(vers.trim());
                         inputSolution += vers;
                     }

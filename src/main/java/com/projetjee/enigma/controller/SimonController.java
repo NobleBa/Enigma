@@ -1,6 +1,5 @@
 package com.projetjee.enigma.controller;
 
-import com.projetjee.enigma.models.Charade;
 import com.projetjee.enigma.models.Simon;
 import com.projetjee.enigma.repository.SimonDAO;
 import org.springframework.beans.factory.annotation.Autowired;
