@@ -50,6 +50,4 @@ public class PoemeController {
         int randomIndex = new Random().nextInt(allPoeme.size());
         return allPoeme.get(randomIndex);
     }
-
-
 }

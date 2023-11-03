@@ -1,159 +1,159 @@
 <!DOCTYPE html>
 <html class="calcul">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="app.css" />
-        <!-- <link rel= "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-        <link rel="icon" type="image/png" href="img/noun-enigma-1875558.png"/>
-        <title>Enigma</title>
-    </head>
-    <script>
-        function change1() {
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="app.css" />
+    <!-- <link rel= "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link rel="icon" type="image/png" href="img/noun-enigma-1875558.png"/>
+    <title>Enigma</title>
+</head>
+<script>
+    function change1() {
 
-            var r1 = document.getElementById("r1", this).value
-            var q2 = document.getElementById("q2")
-            var btn = document.getElementById("botn")
+        var r1 = document.getElementById("r1", this).value
+        var q2 = document.getElementById("q2")
+        var btn = document.getElementById("botn")
 
-            if (r1.toUpperCase()=="IRLANDE") {
-                btn.style.visibility = 'visible'
-            } else {
-                q2.style.visibility = 'visible'
-                document.getElementById("r1").disabled = true
-                btn.style.visibility = 'hidden'
-            }
+        if (r1.toUpperCase()=="IRLANDE") {
+            btn.style.visibility = 'visible'
+        } else {
+            q2.style.visibility = 'visible'
+            document.getElementById("r1").disabled = true
+            btn.style.visibility = 'hidden'
         }
+    }
 
-        function change2() {
+    function change2() {
 
-            var r2 = document.getElementById("r2", this).value
-            var btn = document.getElementById("botn")
+        var r2 = document.getElementById("r2", this).value
+        var btn = document.getElementById("botn")
 
-            if (r2.toUpperCase()=="IRLANDE") {
-                btn.style.visibility = 'visible'
-            } else {
-                document.getElementById("q3").style.visibility = 'visible'
-                document.getElementById("r2").disabled = true
-                btn.style.visibility = 'hidden'
-            }
+        if (r2.toUpperCase()=="IRLANDE") {
+            btn.style.visibility = 'visible'
+        } else {
+            document.getElementById("q3").style.visibility = 'visible'
+            document.getElementById("r2").disabled = true
+            btn.style.visibility = 'hidden'
         }
+    }
 
-        function change3() {
+    function change3() {
 
-            var r3 = document.getElementById("r3", this).value
-            var btn = document.getElementById("botn")
+        var r3 = document.getElementById("r3", this).value
+        var btn = document.getElementById("botn")
 
-            if (r3.toUpperCase()=="IRLANDE") {
-                btn.style.visibility = 'visible'
-            } else {
-                document.getElementById("q4").style.visibility = 'visible'
-                document.getElementById("r3").disabled = true
-                btn.style.visibility = 'hidden'
-            }
+        if (r3.toUpperCase()=="IRLANDE") {
+            btn.style.visibility = 'visible'
+        } else {
+            document.getElementById("q4").style.visibility = 'visible'
+            document.getElementById("r3").disabled = true
+            btn.style.visibility = 'hidden'
         }
+    }
 
-        function change4() {
+    function change4() {
 
-            var r4 = document.getElementById("r4", this).value
-            var btn = document.getElementById("botn")
+        var r4 = document.getElementById("r4", this).value
+        var btn = document.getElementById("botn")
 
-            if (r4.toUpperCase()=="IRLANDE") {
-                btn.style.visibility = 'visible'
-            } else {
-                document.getElementById("q5").style.visibility = 'visible'
-                document.getElementById("r4").disabled = true
-                btn.style.visibility = 'hidden'
-            }
+        if (r4.toUpperCase()=="IRLANDE") {
+            btn.style.visibility = 'visible'
+        } else {
+            document.getElementById("q5").style.visibility = 'visible'
+            document.getElementById("r4").disabled = true
+            btn.style.visibility = 'hidden'
         }
+    }
 
-        function change5() {
+    function change5() {
 
-            var r5 = document.getElementById("r5", this).value
-            var btn = document.getElementById("botn")
+        var r5 = document.getElementById("r5", this).value
+        var btn = document.getElementById("botn")
 
-            if (r5.toUpperCase()=="IRLANDE") {
-                btn.style.visibility = 'visible'
-            } else {
-                document.getElementById("q6").style.visibility = 'visible'
-                document.getElementById("r5").disabled = true
-                btn.style.visibility = 'hidden'
-            }
+        if (r5.toUpperCase()=="IRLANDE") {
+            btn.style.visibility = 'visible'
+        } else {
+            document.getElementById("q6").style.visibility = 'visible'
+            document.getElementById("r5").disabled = true
+            btn.style.visibility = 'hidden'
         }
+    }
 
-        function change6() {
+    function change6() {
 
-            var r6 = document.getElementById("r6", this).value
-            var btn = document.getElementById("botn")
+        var r6 = document.getElementById("r6", this).value
+        var btn = document.getElementById("botn")
 
-            if (r6.toUpperCase()=="IRLANDE") {
-                btn.style.visibility = 'visible'
-            }
+        if (r6.toUpperCase()=="IRLANDE") {
+            btn.style.visibility = 'visible'
         }
-    </script>
-    <body>
-        <main>
-            <div class="row" style="margin-top: -5%;">
-                <div class="table1">
-                    <div class="table-cell" style="width: 100%;">
-                        <p>Vous avez 6 questions pour trouver un pays allant de la plus dur a la plus facile<p>
-                    </div>
-                    <div class="table-cell col1">
-                        <h3>Questions</h3>
-                    </div>
-                    <div class="table-cell col2">
-                        <h3>Réponses</h3>
-                    </div>
-                    <div class="table-cell col1" style="max-height: 80px;">
-                        <p>Dans quelle nation insulaire de l'Europe de l'Ouest se trouve la Chaussée des Géants, une formation géologique spectaculaire composée de colonnes de basalte ?</p>
-                    </div>
-                    <div class="table-cell col2" style="max-height: 80px;">
-                        <input id="r1" type="text" placeholder="Entrez la réponse" onchange="change1()">
-                    </div>
-                    <div id="q2" style="width: 100%; display: flex; visibility: hidden;">
-                        <div class="table-cell col1" style="max-height: 80px;">
-                            <p>Quelle nation a été le lieu de naissance du célèbre explorateur Ernest Shackleton, qui a mené une expédition périlleuse en Antarctique au début du XXe siècle ?</p>
-                        </div>
-                        <div class="table-cell col2" style="max-height: 80px;">
-                            <input id="r2" type="text" placeholder="Entrez la réponse" onchange="change2()">
-                        </div>
-                    </div>
-                    <div id="q3" style="width: 100%; display: flex; visibility: hidden">
-                        <div class="table-cell col1">
-                            <p>Où peut-on visiter le trésor médiéval du Livre de Kells, renfermant des manuscrits richement enluminés, notamment les Évangiles ?</p>
-                        </div>
-                        <div class="table-cell col2">
-                            <input id="r3" type="text" placeholder="Entrez la réponse" onchange="change3()">
-                        </div>
-                    </div>
-                    <div id="q4" style="width: 100%; display: flex; visibility: hidden">
-                        <div class="table-cell col1">
-                            <p>Dans quelle nation européenne se trouve le parc national de Killarney, célèbre pour ses paysages de montagnes, ses lacs et ses forêts ?</p>
-                        </div>
-                        <div class="table-cell col2">
-                            <input id="r4" type="text" placeholder="Entrez la reponse" onchange="change4()">
-                        </div>
-                    </div>
-                    <div id="q5" style="width: 100%; display: flex; visibility: hidden">
-                        <div class="table-cell col1">
-                            <p>Quelle nation a un drapeau tricolore vertical avec des bandes de couleur verte, blanche et orange, symbolisant l'unité entre les communautés ?</p>
-                        </div>
-                        <div class="table-cell col2">
-                            <input id="r5" type="text" placeholder="Entrez la reponse" onchange="change5()">
-                        </div>
-                    </div>
-                    <div id="q6" style="width: 100%; display: flex; visibility: hidden">
-                        <div class="table-cell col1">
-                            <p>De quel pays est originaire la musique traditionnelle celtique, notamment les violons et les flûtes, ainsi que les danses comme la gigue irlandaise ?</p>
-                        </div>
-                        <div class="table-cell col2">
-                            <input id="r6" type="text" placeholder="Entrez la réponse" onchange="change6()">
-                        </div>
-                    </div>
+    }
+</script>
+<body>
+<main>
+    <div class="row" style="margin-top: -5%;">
+        <div class="table1">
+            <div class="table-cell" style="width: 100%;">
+                <p>Vous avez 6 questions pour trouver un pays allant de la plus dur a la plus facile<p>
+            </div>
+            <div class="table-cell col1">
+                <h3>Questions</h3>
+            </div>
+            <div class="table-cell col2">
+                <h3>Réponses</h3>
+            </div>
+            <div class="table-cell col1" style="max-height: 80px;">
+                <p>Dans quelle nation insulaire de l'Europe de l'Ouest se trouve la Chaussée des Géants, une formation géologique spectaculaire composée de colonnes de basalte ?</p>
+            </div>
+            <div class="table-cell col2" style="max-height: 80px;">
+                <input id="r1" type="text" placeholder="Entrez la réponse" onchange="change1()">
+            </div>
+            <div id="q2" style="width: 100%; display: flex; visibility: hidden;">
+                <div class="table-cell col1" style="max-height: 80px;">
+                    <p>Quelle nation a été le lieu de naissance du célèbre explorateur Ernest Shackleton, qui a mené une expédition périlleuse en Antarctique au début du XXe siècle ?</p>
+                </div>
+                <div class="table-cell col2" style="max-height: 80px;">
+                    <input id="r2" type="text" placeholder="Entrez la réponse" onchange="change2()">
                 </div>
             </div>
-            <div class="row" id="btn" style="margin-top:5%;">
-                <a th:href="@{/poeme}"><button>Enigme précedente</button></a>
-                <a th:href="@{/simon}"><button id="botn" style="visibility: hidden;">Enigme suivante</button></a>
+            <div id="q3" style="width: 100%; display: flex; visibility: hidden">
+                <div class="table-cell col1">
+                    <p>Où peut-on visiter le trésor médiéval du Livre de Kells, renfermant des manuscrits richement enluminés, notamment les Évangiles ?</p>
+                </div>
+                <div class="table-cell col2">
+                    <input id="r3" type="text" placeholder="Entrez la réponse" onchange="change3()">
+                </div>
             </div>
-        </main>
-    </body>
+            <div id="q4" style="width: 100%; display: flex; visibility: hidden">
+                <div class="table-cell col1">
+                    <p>Dans quelle nation européenne se trouve le parc national de Killarney, célèbre pour ses paysages de montagnes, ses lacs et ses forêts ?</p>
+                </div>
+                <div class="table-cell col2">
+                    <input id="r4" type="text" placeholder="Entrez la reponse" onchange="change4()">
+                </div>
+            </div>
+            <div id="q5" style="width: 100%; display: flex; visibility: hidden">
+                <div class="table-cell col1">
+                    <p>Quelle nation a un drapeau tricolore vertical avec des bandes de couleur verte, blanche et orange, symbolisant l'unité entre les communautés ?</p>
+                </div>
+                <div class="table-cell col2">
+                    <input id="r5" type="text" placeholder="Entrez la reponse" onchange="change5()">
+                </div>
+            </div>
+            <div id="q6" style="width: 100%; display: flex; visibility: hidden">
+                <div class="table-cell col1">
+                    <p>De quel pays est originaire la musique traditionnelle celtique, notamment les violons et les flûtes, ainsi que les danses comme la gigue irlandaise ?</p>
+                </div>
+                <div class="table-cell col2">
+                    <input id="r6" type="text" placeholder="Entrez la réponse" onchange="change6()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="btn" style="margin-top:5%;">
+        <a th:href="@{/poeme}"><button>Enigme précedente</button></a>
+        <a th:href="@{/simon}"><button id="botn" style="visibility: hidden;">Enigme suivante</button></a>
+    </div>
+</main>
+</body>
 </html>
