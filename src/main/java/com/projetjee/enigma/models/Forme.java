@@ -16,13 +16,13 @@ public class Forme {
     @Id
     @Column(length = 50, name = "IdForme")
     private String IdForme;
-    @Column(length = 250, name = "Nom")
-    private int Nom;
-    @Column(length = 10, name = "NbOrange")
-    private String NbTriangle;
-    @Column(length = 10, name = "NbBleu")
-    private int NbCroix;
-    @Column(length = 10, name = "NbGris")
-    private String NbCarre;
+    @Column(length = 50, name = "Nom")
+    private String Nom;
+    @Column(length = 50, name = "Couleur")
+    private String Couleur;
+    @Column(length = 250, name = "Image")
+    private String Image;
+    @Column(length = 10, name = "Nombre")
+    private int Nombre;
 
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="charade" xmlns:th="http://www.thymeleaf.org">
 <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="/app.css" />
     <!-- <link rel= "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
@@ -23,7 +24,6 @@
                         <button type="submit">Vérifier</button>
                     </form>
                     <div id="message1"></div>
-
                 </div>
             </div>
         </div>
@@ -67,14 +67,13 @@
     </div>
 </main>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(document).ready(function() {
         $('#charadeForm1').submit(function(event) {
             event.preventDefault();
             var inputSolution1 = $('input[name="inputSolution1"]').val();
             var charadeId1 = $('input[name="charadeId1"]').val();
-
+            inputSolution1 = removeSpecialChars(inputSolution1.trim().toUpperCase());
             $.ajax({
                 type: 'POST',
                 url: '/checkSolution',
@@ -88,7 +87,7 @@
             event.preventDefault();
             var inputSolution2 = $('input[name="inputSolution2"]').val();
             var charadeId2 = $('input[name="charadeId2"]').val();
-
+            inputSolution2 = removeSpecialChars(inputSolution2.trim().toUpperCase());
             $.ajax({
                 type: 'POST',
                 url: '/checkSolution',
@@ -102,7 +101,7 @@
             event.preventDefault();
             var inputSolution3 = $('input[name="inputSolution3"]').val();
             var charadeId3 = $('input[name="charadeId3"]').val();
-
+            inputSolution3 = removeSpecialChars(inputSolution3.trim().toUpperCase());
             $.ajax({
                 type: 'POST',
                 url: '/checkSolution',
@@ -113,5 +112,9 @@
             });
         });
     });
+
+    function removeSpecialChars(text) {
+        return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/-/g, '');
+    }
 </script>
 </html>
