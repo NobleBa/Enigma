@@ -1,34 +1,82 @@
 <!DOCTYPE html>
 <html class="simon">
     <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="app.css" />
         <!-- <link rel= "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
         <link rel="icon" type="image/png" href="img/noun-enigma-1875558.png"/>
         <title>Enigma</title>
     </head>
-    <script>
-        function change1() {
-            var changer = document.getElementById("rules")
-
-            if (changer.style.visibility == 'visible') {
-                changer.style.visibility = 'hidden'
-            } else {
-                changer.style.visibility = 'visible'
-            }
-        }
-    </script>
     <body>
         <main>
             <div class="card" style="align-items: center;">
                 <h1 id="0">Le jeu de Simon</h1>
-                <h3> En cnstruction </h3>
-                <img src="/img/5a60ad40eace967f8e0269fb.png" style="margin-top: -10%;">
+                <img id="patern" th:src="${simon.patern}" style="display: none;" />
+                <form id="simonForm" th:object="${simon}">
+                    <input type="hidden" name="paternId" th:value="${simon.idpatern}"/>
+                    <input type="checkbox" id="cases1" value="1">
+                    <input type="checkbox" id="cases2" value="2">
+                    <input type="checkbox" id="cases3" value="3">
+                    <input type="checkbox" id="cases4" value="4">
+                    <input type="checkbox" id="cases5" value="5">
+                    <input type="checkbox" id="cases6" value="6">
+                    <input type="checkbox" id="cases7" value="7">
+                    <input type="checkbox" id="cases8" value="8">
+                    <input type="checkbox" id="cases9" value="9">
+                    <input type="checkbox" id="cases10" value="10">
+                    <input type="checkbox" id="cases11" value="11">
+                    <input type="checkbox" id="cases12" value="12">
+                    <input type="checkbox" id="cases13" value="13">
+                    <input type="checkbox" id="cases14" value="14">
+                    <input type="checkbox" id="cases15" value="15">
+                    <input type="checkbox" id="cases16" value="16">
+                    <input type="checkbox" id="cases17" value="17">
+                    <input type="checkbox" id="cases18" value="18">
+                    <input type="checkbox" id="cases19" value="19">
+                    <input type="checkbox" id="cases20" value="20">
+                    <input type="checkbox" id="cases21" value="21">
+                    <input type="checkbox" id="cases22" value="22">
+                    <input type="checkbox" id="cases23" value="23">
+                    <input type="checkbox" id="cases24" value="24">
+                    <input type="checkbox" id="cases25" value="25">
+                    <button type="submit">Vérifier</button>
+                </form>
             </div>
             <div class="row" style="margin-top:5%;">
                 <a th:href="@{/pays}"><button>Enigme précedente</button></a>
-                <a th:href="@{/geoguesser}"><button id="btn" style="visibility: visble;">Epreuve suivante</button></a>
+                <a th:href="@{/geoguesser}"><button id="btn" style="visibility: visible;">Epreuve suivante</button></a>
             </div> 
         </main>
     </body>
+    <script>
+        var image = document.getElementById("patern");
+
+        image.style.display = "block";
+
+        setTimeout(function() {
+            image.style.display = "none";
+        }, 2000);
+
+        $(document).ready(function() {
+            $('#simonForm').submit(function (event) {
+                event.preventDefault();
+                var paternId = $('input[name="paternId"]').val();
+                var inputSolution = '';
+
+                $('input[type="checkbox"]:checked').each(function() {
+                    inputSolution += $(this).val();
+                });
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/checkSolutionPatern',
+                    data: {inputSolution: inputSolution, paternId: paternId},
+                    success: function (response) {
+                        $('#message').text(response.message);
+                    }
+                });
+            });
+        });
+    </script>
 </html>
