@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html class="calcul">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="app.css" />
-        <!-- <link rel= "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-        <link rel="icon" type="image/png" href="img/noun-enigma-1875558.png"/>
-        <title>Enigma</title>
-    </head>
-    <script>
-        function change() {
-            
-            var changer = document.getElementById("reponse").value
-            var btn = document.getElementById("btn")
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="app.css" />
+    <!-- <link rel= "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link rel="icon" type="image/png" href="img/noun-enigma-1875558.png"/>
+    <title>Enigma</title>
+</head>
+<script>
+    function change() {
 
-            if (changer.toUpperCase()=="TEST") {
-                btn.style.display = 'block'
-            } else {
-                btn.style.display = 'none'
-            }
+        var changer = document.getElementById("reponse").value
+        var btn = document.getElementById("btn")
+
+        if (changer.toUpperCase()=="TEST") {
+            btn.style.visibility = 'visible'
+        } else {
+            btn.style.visibility = 'hidden'
         }
+    }
     </script>
     <body>
         <main>
@@ -34,10 +34,10 @@
                         <h3>Solution</h3>
                     </div>
                     <div class="table-cell">
-                        <p>3 + 3</p>
+                        <p class="card-text" th:utext="${calcul.formule}"></p>
                     </div>
                     <div class="table-cell">
-                        <input id="r1" type="text" placeholder="Entrez le résultat">
+                        <input id="" type="text" placeholder="Entrez le résultat">
                     </div>
                     <div class="table-cell">
                         <p>(12x4)/6</p>
@@ -46,12 +46,18 @@
                     <input id="r1" type="text" placeholder="Entrez le résultat" onchange="change()">
                     </div>
                 </div>
+
             </div>
-            <input id="reponse" type="text" style="margin-left: 40%; margin-top:5%; width: 20%" placeholder="Entrez la réponse" onchange="change()">
-            <div class="row" style="margin-top: 5%;">
-                <a th:href="@{/charade}"><button>Enigme précedente</button></a>
-                <a th:href="@{/departement}"><button id="btn" style="display: none;">Enigme suivante</button></a>
+            <div class="table-cell">
+                <input id="r1" type="text" placeholder="Entrez le résultat" onchange="change()">
             </div>
-        </main>
-    </body>
+        </div>
+    </div>
+    <input id="reponse" type="text" style="margin-left: 40%; margin-top:5%; width: 20%" placeholder="Entrez la réponse" onchange="change()">
+    <div class="row" style="margin-top: 5%;">
+        <a th:href="@{/charade}"><button>Enigme précedente</button></a>
+        <a th:href="@{/departement}"><button id="btn" style="visibility: hidden;">Enigme suivante</button></a>
+    </div>
+</main>
+</body>
 </html>

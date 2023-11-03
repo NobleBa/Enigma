@@ -1,8 +1,8 @@
 body {
-  display: flex;
-  justify-content: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  cursor: default;
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: default;
 }
 
 .charade {
@@ -35,13 +35,13 @@ background-size: cover;
   background-size: cover;
 }
 
-.geoguessr {
-  background-image: url(img/wallpaper/geoguessr.png);
+.geoguesser {
+  background-image: url(img/wallpaper/geoguesser.png);
   background-size: cover;
 }
 
-.symbol {
-  background-image: url(img/wallpaper/symbol.png);
+.forme {
+  background-image: url(img/wallpaper/forme.png);
   background-size: cover;
 }
 
@@ -117,7 +117,7 @@ button {
 }
 
 button:active {
-  transform: scale(0.95);
+    transform: scale(0.95);
 }
 
 a {

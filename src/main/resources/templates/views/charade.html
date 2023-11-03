@@ -1,100 +1,121 @@
 <!DOCTYPE html>
-<html class="charade">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="/app.css" />
-        <!-- <link rel= "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-        <link rel="icon" type="image/png" href="/img/noun-enigma-1875558.png"/>
-        <title>Enigma</title>
-    </head>
-    <script>
-        function change() {
-            var r1 = document.getElementById("r1").value
-            var r2 = document.getElementById("r2").value
-            var r3 = document.getElementById("r3").value
-            var btn = document.getElementById("btn")
-            var i = 0
-            var j = 0
-            var k = 0
+<html class="charade" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/app.css" />
+    <!-- <link rel= "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link rel="icon" type="image/png" href="/img/noun-enigma-1875558.png"/>
+    <title>Enigma</title>
+</head>
+<body>
+<main>
+    <div class="row" style="margin: 0%;">
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem; height: 600px;">
+                <img src="https://www.fan-fortboyard.fr/medias/images/fort-boyard-personnages-passe-partout-2015-01.jpg?fx=c_450_314" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Charade n°1</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Cool trip a Las Vegas</h6>
+                    <p class="card-text" th:utext="${charade1.charade}"></p>
+                    <form id="charadeForm1" th:object="${charade1}">
+                        <input type="hidden" name="charadeId1" th:value="${charade1.idCharade}" />
+                        <input type="text" name="inputSolution1" placeholder="Entrez la solution" />
+                        <button type="submit">Vérifier</button>
+                    </form>
+                    <div id="message1"></div>
 
-            if (r1.toUpperCase()=="JOHNNY DEPP") {
-                i = 1
-                document.getElementById("r1").disabled = true
-            }
-
-            if (r2.toUpperCase()=="ELEGANCE") {
-                j = 1
-                document.getElementById("r2").disabled = true
-            }
-
-            if (r3.toUpperCase()=="CAOUTCHOUC") {
-                k = 1
-                document.getElementById("r3").disabled = true
-            }
-
-            if ((i + j + k) == 3) {
-                btn.style.display= 'block'
-            } else {
-                btn.style.display = 'none'
-            }
-        }
-
-    </script>
-    <body>
-        <main>
-            <div class="row" style="margin: 0%;">
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem; height: 600px;">
-                        <img src="https://www.fan-fortboyard.fr/medias/images/fort-boyard-personnages-passe-partout-2015-01.jpg?fx=c_450_314" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Charade n°1</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Cool trip a Las Vegas</h6>
-                                <p class="card-text">Mon premier est une couleur.<p>
-                                <p class="card-text">Mon deuxième est la 9ième lettre de l'alphabet.</p>
-                                <p class="card-text">Mon troisième comporte six faces numérotées de 1 à  6.</p>
-                                <p class="card-text">Mon quatrième est le verbe pouvoir, au présent, à  la première personne.</p>
-                                <p class="card-text">Mon tout est un acteur américain.</p>
-                                <input type="text" id="r1" name="r1" placeholder="Entrez votre réponse" onchange="change()"/>
-                                <button>Soumettre</button>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem; height: 600px;">
-                        <img src="https://static.choualbox.com/Img/1598719528342.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Charade n°2</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Tropicale</h6>
-                            <p class="card-text">Mon premier peut entourer une propriété comme une barrière végétale.</p>
-                            <p class="card-text">Les bébés boivent mon deuxième.</p>
-                            <p class="card-text">On porte mon troisième l'hiver, pour ne pas avoir froid aux mains.</p>
-                            <p class="card-text">Mon quatrième est le masculin pluriel de celui.</p>
-                            <p class="card-text">Mon tout est nécessaire si l'on veut avoir la classe.</p>
-                            <input type="text" id="r2" name="r2" placeholder="Entrez votre réponse" onchange="change()"/>
-                            <button>Soumettre</button>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem; height: 600px;">
-                        <img src="https://s1.dmcdn.net/v/Tc0gg1YI_ZcJOBlEK/x1080" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Charade n°3</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Elastique</h6>
-                            <p class="card-text">Mon premier est la huitième consonne de l'alphabet.</p>
-                            <p class="card-text">Mon deuxième se dit au tennis lorsqu'une balle sort de la surface de jeu.</p>
-                            <p class="card-text">Mon troisième est un légume.</p>
-                            <p class="card-text">Mon tout est une matière qui est assez élastique.</p>
-                            <input type="text" id="r3" name="r3" placeholder="Entrez votre réponse" onchange="change()"/>
-                            <button>Soumettre</button>
-                        </div>
-                    </div>
                 </div>
             </div>
-            <div class="row" style="margin-top:5%;">
-                <a th:href="@{/}"><button>Accueil</button></a>
-                <a th:href="@{/calcul}"><button id="btn" style="display: none;">Enigme suivante</button></a>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem; height: 600px;">
+                <img src="https://static.choualbox.com/Img/1598719528342.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Charade n°2</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Cool trip a Las Vegas</h6>
+                    <p class="card-text" th:utext="${charade2.charade}"></p>
+                    <form id="charadeForm2" th:object="${charade2}">
+                        <input type="hidden" name="charadeId2" th:value="${charade2.idCharade}" />
+                        <input type="text" name="inputSolution2" placeholder="Entrez la solution" />
+                        <button type="submit">Vérifier</button>
+                    </form>
+                    <div id="message2"></div>
+
+                </div>
             </div>
-        </main>
-    </body>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem; height: 600px;">
+                <img src="https://s1.dmcdn.net/v/Tc0gg1YI_ZcJOBlEK/x1080" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Charade n°3</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Cool trip a Las Vegas</h6>
+                    <p class="card-text" th:utext="${charade3.charade}"></p>
+                    <form id="charadeForm3" th:object="${charade3}">
+                        <input type="hidden" name="charadeId3" th:value="${charade3.idCharade}" />
+                        <input type="text" name="inputSolution3" placeholder="Entrez la solution" />
+                        <button type="submit">Vérifier</button>
+                    </form>
+                    <div id="message3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top:5%;">
+        <a th:href="@{/}"><button>Accueil</button></a>
+        <a th:href="@{/calcul}"><button id="btn" style="visibility: hidden;">Enigme suivante</button></a>
+    </div>
+</main>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#charadeForm1').submit(function(event) {
+            event.preventDefault();
+            var inputSolution1 = $('input[name="inputSolution1"]').val();
+            var charadeId1 = $('input[name="charadeId1"]').val();
+            inputSolution1 = removeSpecialChars(inputSolution1.trim().toUpperCase());
+            $.ajax({
+                type: 'POST',
+                url: '/checkSolution',
+                data: { inputSolution: inputSolution1, charadeId: charadeId1 },
+                success: function(response) {
+                    $('#message1').text(response.message);
+                }
+            });
+        });
+        $('#charadeForm2').submit(function(event) {
+            event.preventDefault();
+            var inputSolution2 = $('input[name="inputSolution2"]').val();
+            var charadeId2 = $('input[name="charadeId2"]').val();
+            inputSolution2 = removeSpecialChars(inputSolution2.trim().toUpperCase());
+            $.ajax({
+                type: 'POST',
+                url: '/checkSolution',
+                data: { inputSolution: inputSolution2, charadeId: charadeId2 },
+                success: function(response) {
+                    $('#message2').text(response.message);
+                }
+            });
+        });
+        $('#charadeForm3').submit(function(event) {
+            event.preventDefault();
+            var inputSolution3 = $('input[name="inputSolution3"]').val();
+            var charadeId3 = $('input[name="charadeId3"]').val();
+            inputSolution3 = removeSpecialChars(inputSolution3.trim().toUpperCase());
+            $.ajax({
+                type: 'POST',
+                url: '/checkSolution',
+                data: { inputSolution: inputSolution3, charadeId: charadeId3 },
+                success: function(response) {
+                    $('#message3').text(response.message);
+                }
+            });
+        });
+    });
+
+    function removeSpecialChars(text) {
+        return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/-/g, '');
+    }
+</script>
 </html>
