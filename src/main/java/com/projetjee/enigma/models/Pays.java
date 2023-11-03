@@ -29,7 +29,6 @@ public class Pays {
     private boolean populationHuitMillions;
     @Column(name = "questionUnique")
     private String questionUnique;
-    @OneToOne
-    @JoinColumn(name = "IdGeo")
-    private Geoguesser IdGeo;
+    @Column(name = "geoguesser")
+    private String geoguesser;
 }
