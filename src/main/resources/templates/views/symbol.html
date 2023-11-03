@@ -13,7 +13,7 @@
             var btn = document.getElementById("btn")
 
             if (r1 == 9) {
-                btn.style.visibility = 'visible'
+                btn.style.display = 'block'
             } 
         }
 
@@ -45,7 +45,7 @@
             </div>
             <div class="row" style="margin-top:5%;">
                 <a th:href="@{/geoguessr}"><button>Enigme précedente</button></a>
-                <a th:href="@{/remerciement}"><button id="btn" style="visibility: hidden;">Remerciement</button></a>
+                <a th:href="@{/remerciement}"><button id="btn" style="display: none;">Remerciement</button></a>
             </div> 
         </main>
     </body>

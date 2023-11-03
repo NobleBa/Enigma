@@ -33,9 +33,9 @@
             }
 
             if ((i + j + k) == 3) {
-                btn.style.visibility = 'visible'
+                btn.style.display= 'block'
             } else {
-                btn.style.visibility = 'hidden'
+                btn.style.display = 'none'
             }
         }
 
@@ -93,7 +93,7 @@
             </div>
             <div class="row" style="margin-top:5%;">
                 <a th:href="@{/}"><button>Accueil</button></a>
-                <a th:href="@{/calcul}"><button id="btn" style="visibility: hidden;">Enigme suivante</button></a>
+                <a th:href="@{/calcul}"><button id="btn" style="display: none;">Enigme suivante</button></a>
             </div>
         </main>
     </body>

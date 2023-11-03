@@ -15,11 +15,11 @@
             var btn = document.getElementById("botn")
 
             if (r1.toUpperCase()=="IRLANDE") {
-                btn.style.visibility = 'visible'
+                btn.style.display = 'block'
             } else {
                 q2.style.visibility = 'visible'
                 document.getElementById("r1").disabled = true
-                btn.style.visibility = 'hidden'
+                btn.style.display = 'none'
             }
         }
 
@@ -29,11 +29,11 @@
             var btn = document.getElementById("botn")
 
             if (r2.toUpperCase()=="IRLANDE") {
-                btn.style.visibility = 'visible'
+                btn.style.display = 'block'
             } else {
                 document.getElementById("q3").style.visibility = 'visible'
                 document.getElementById("r2").disabled = true
-                btn.style.visibility = 'hidden'
+                btn.style.display = 'none'
             }
         }
 
@@ -43,11 +43,11 @@
             var btn = document.getElementById("botn")
 
             if (r3.toUpperCase()=="IRLANDE") {
-                btn.style.visibility = 'visible'
+                btn.style.display = 'block'
             } else {
                 document.getElementById("q4").style.visibility = 'visible'
                 document.getElementById("r3").disabled = true
-                btn.style.visibility = 'hidden'
+                btn.style.display = 'none'
             }
         }
 
@@ -57,11 +57,11 @@
             var btn = document.getElementById("botn")
 
             if (r4.toUpperCase()=="IRLANDE") {
-                btn.style.visibility = 'visible'
+                btn.style.display = 'block'
             } else {
                 document.getElementById("q5").style.visibility = 'visible'
                 document.getElementById("r4").disabled = true
-                btn.style.visibility = 'hidden'
+                btn.style.display = 'none'
             }
         }
 
@@ -71,11 +71,11 @@
             var btn = document.getElementById("botn")
 
             if (r5.toUpperCase()=="IRLANDE") {
-                btn.style.visibility = 'visible'
+                btn.style.display = 'block'
             } else {
                 document.getElementById("q6").style.visibility = 'visible'
                 document.getElementById("r5").disabled = true
-                btn.style.visibility = 'hidden'
+                btn.style.display = 'none'
             }
         }
 
@@ -85,7 +85,7 @@
             var btn = document.getElementById("botn")
 
             if (r6.toUpperCase()=="IRLANDE") {
-                btn.style.visibility = 'visible'
+                btn.style.display = 'block'
             }
         }
     </script>
@@ -152,7 +152,7 @@
             </div>
             <div class="row" id="btn" style="margin-top:5%;">
                 <a th:href="@{/poeme}"><button>Enigme précedente</button></a>
-                <a th:href="@{/simon}"><button id="botn" style="visibility: hidden;">Enigme suivante</button></a>
+                <a th:href="@{/simon}"><button id="botn" style="display: none;">Enigme suivante</button></a>
             </div>
         </main>
     </body>
