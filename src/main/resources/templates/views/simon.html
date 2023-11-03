@@ -16,37 +16,49 @@
                 <img id="patern" th:src="${simon.patern}" style="display: none;" />
                 <form id="simonForm" th:object="${simon}">
                     <input type="hidden" name="paternId" th:value="${simon.idpatern}"/>
-                    <input type="checkbox" id="cases1" value="1">
-                    <input type="checkbox" id="cases2" value="2">
-                    <input type="checkbox" id="cases3" value="3">
-                    <input type="checkbox" id="cases4" value="4">
-                    <input type="checkbox" id="cases5" value="5">
-                    <input type="checkbox" id="cases6" value="6">
-                    <input type="checkbox" id="cases7" value="7">
-                    <input type="checkbox" id="cases8" value="8">
-                    <input type="checkbox" id="cases9" value="9">
-                    <input type="checkbox" id="cases10" value="10">
-                    <input type="checkbox" id="cases11" value="11">
-                    <input type="checkbox" id="cases12" value="12">
-                    <input type="checkbox" id="cases13" value="13">
-                    <input type="checkbox" id="cases14" value="14">
-                    <input type="checkbox" id="cases15" value="15">
-                    <input type="checkbox" id="cases16" value="16">
-                    <input type="checkbox" id="cases17" value="17">
-                    <input type="checkbox" id="cases18" value="18">
-                    <input type="checkbox" id="cases19" value="19">
-                    <input type="checkbox" id="cases20" value="20">
-                    <input type="checkbox" id="cases21" value="21">
-                    <input type="checkbox" id="cases22" value="22">
-                    <input type="checkbox" id="cases23" value="23">
-                    <input type="checkbox" id="cases24" value="24">
-                    <input type="checkbox" id="cases25" value="25">
+                    <div class="row" style="margin-bottom: 2%;">
+                        <div style="margin-right: -30%;">
+                            <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases1" value="1">
+                            <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases2" value="2">
+                            <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases3" value="3">
+                            <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases4" value="4">
+                            <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases5" value="5">
+                        </div>
+                        <div style="margin-right: -30%;">
+                            <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases6" value="6">
+                            <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases7" value="7">
+                            <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases8" value="8">
+                            <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases9" value="9">
+                            <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases10" value="10">
+                        </div>
+                        <div style="margin-right: -30%;">
+                            <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases11" value="11">
+                            <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases12" value="12">
+                            <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases13" value="13">
+                            <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases14" value="14">
+                            <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases15" value="15">
+                        </div>
+                        <div style="margin-right: -30%;">
+                            <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases16" value="16">
+                            <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases17" value="17">
+                            <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases18" value="18">
+                            <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases19" value="19">
+                            <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases20" value="20">
+                        </div>
+                        <div>
+                            <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases21" value="21">
+                            <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases22" value="22">
+                            <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases23" value="23">
+                            <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases24" value="24">
+                            <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases25" value="25">
+                        </div>
+                    </div>
                     <button type="submit">Vérifier</button>
                 </form>
             </div>
             <div class="row" style="margin-top:5%;">
                 <a th:href="@{/pays}"><button>Enigme précedente</button></a>
-                <a th:href="@{/geoguesser}"><button id="btn" style="visibility: visible;">Epreuve suivante</button></a>
+                <a th:href="@{/geoguesser}"><button id="btn">Epreuve suivante</button></a>
             </div> 
         </main>
     </body>
