@@ -41,16 +41,6 @@
                     <input id="r2" type="text" placeholder="Entrez la réponse">
                 </div>
             </div>
-            <div id="q3" style="width: 100%; display: flex; visibility: hidden">
-                <div class="table-cell col1">
-                    <p th:if="${pays.isLittoral() == true}">Le pays possède un accès à la mer</p>
-                    <p th:if="${pays.isLittoral() == false}">Le pays ne possède pas de littoral</p>
-                </div>
-                <div class="table-cell col2">
-                    <input type="hidden" name="paysLittoral" th:value="${pays.isLittoral()}" />
-                    <input id="r3" type="text" placeholder="Entrez la réponse">
-                </div>
-            </div>
             <div id="q4" style="width: 100%; display: flex; visibility: hidden">
                 <div class="table-cell col1">
                     <p th:if="${pays.isPopulationHuitMillions() == true}">Le pays est habité par au moins 8 millions d'habitants</p>
@@ -84,7 +74,7 @@
     </div>
     <div class="row" id="btn" style="margin-top:5%;">
         <a th:href="@{/poeme}"><button>Enigme précedente</button></a>
-        <a th:href="@{/simon}"><button id="botn" style="visibility: hidden;">Enigme suivante</button></a>
+        <a th:href="@{/simon}"><button id="botn" style="display: none;">Enigme suivante</button></a>
     </div>
 </main>
 </body>
