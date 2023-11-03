@@ -1,77 +1,55 @@
 <!DOCTYPE html>
 <html class="geoguesser">
     <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="app.css" />
         <!-- <link rel= "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
         <link rel="icon" type="image/png" href="img/noun-enigma-1875558.png"/>
         <title>Enigma</title>
     </head>
-    <script>
-        function change() {
-            var r1 = document.getElementById("r1").value
-            var r2 = document.getElementById("r2").value
-            var r3 = document.getElementById("r3").value
-            var btn = document.getElementById("btn")
-            var i = 0
-            var j = 0
-            var k = 0
-
-            if (r1.toUpperCase()=="FRANCE") {
-                i = 1
-                document.getElementById("r1").disabled = true
-            }
-
-            if (r2.toUpperCase()=="INDE") {
-                j = 1
-                document.getElementById("r2").disabled = true
-            }
-
-            if (r3.toUpperCase()=="ETATS UNIS") {
-                k = 1
-                document.getElementById("r3").disabled = true
-            } else if (r3.toUpperCase()=="USA") {
-                k = 1
-                document.getElementById("r3").disabled = true
-            }
-
-            if ((i + j + k) == 3) {
-                btn.style.visibility = 'visible'
-            } else {
-                btn.style.visibility = 'hidden'
-            }
-        }
-    </script>
     <body>
         <main>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card" style="width: 18rem; height: 80%;">
-                        <img src="https://www.1jour1actu.com/wp-content/uploads/2021/10/VIDEO_histoire_tour_Eiffel.jpeg" class="card-img-top" alt="...">
+                        <img th:src="${pays1.getGeoguesser()}" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Facile</h5>
-                                <input type="text" id="r1" name="r1" placeholder="Entrez votre réponse" onchange="change()"/>
+                            <h5 class="card-title">Pays n°1</h5>
+                            <form id="geoguesserForm1" th:object="${pays1}">
+                                <input type="hidden" name="paysId1" th:value="${pays1.getIdPays()}" />
+                                <input type="text" id="inputSolution1" name="inputSolution1" placeholder="Entrez votre réponse"/>
+                                <button type="submit">Soumettre</button>
+                            </form>
+                            <div id="message1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem; height: 80%;">
+                        <img th:src="${pays2.getGeoguesser()}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pays n°2</h5>
+                            <form id="geoguesserForm2" th:object="${pays2}">
+                                <input type="hidden" name="paysId2" th:value="${pays2.getIdPays()}" />
+                                <input type="text" id="inputSolution2" name="inputSolution2" placeholder="Entrez votre réponse"/>
                                 <button>Soumettre</button>
+                            </form>
+                            <div id="message2"></div>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="col-md-4">
                     <div class="card" style="width: 18rem; height: 80%;">
-                        <img src="https://kultt.fr/wp-content/uploads/2018/11/WorldTalesteStatue.jpg" class="card-img-top" alt="...">
+                        <img th:src="${pays3.getGeoguesser()}" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Normal</h5>
-                            <input type="text" id="r2" name="r2" placeholder="Entrez votre réponse" onchange="change()"/>
-                            <button>Soumettre</button>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem; height: 80%;">
-                        <img src="https://f.hellowork.com/blogdumoderateur/2013/08/windows-xp.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Difficile</h5>
-                            <input type="text" id="r3" name="r3" placeholder="Entrez votre réponse" onchange="change()"/>
-                            <button>Soumettre</button>
+                            <h5 class="card-title">Pays n°3</h5>
+                            <form id="geoguesserForm3" th:object="${pays3}">
+                                <input type="hidden" name="paysId3" th:value="${pays3.getIdPays()}" />
+                                <input type="text" id="inputSolution3" name="inputSolution3" placeholder="Entrez votre réponse"/>
+                                <button>Soumettre</button>
+                            </form>
+                            <div id="message3"></div>
                         </div>
                     </div>
                 </div>
@@ -82,4 +60,87 @@
             </div>
         </main>
     </body>
+    <script>
+        $(document).ready(function() {
+            var solution1 = false;
+            var solution2 = false;
+            var solution3 = false;
+            $('#geoguesserForm1').submit(function(event) {
+                event.preventDefault();
+                var inputSolution1 = $('input[name="inputSolution1"]').val();
+                var paysId1 = $('input[name="paysId1"]').val();
+                inputSolution1 = removeSpecialChars(inputSolution1.trim().toUpperCase());
+                $.ajax({
+                    type: 'POST',
+                    url: '/checkPays',
+                    data: { inputSolution: inputSolution1, paysId: paysId1 },
+                    success: function(response) {
+                        if (response === true) {
+                            solution1 = true;
+                            $('#message1').text("Bonne réponse !");
+                            if (solution3 && solution2) {
+                                $('#btn').css('visibility', 'visible');
+                            }
+                        } else {
+                            solution1 = false;
+                            $('#message1').text("Mauvaise réponse. Essayez à nouveau.");
+                            $('#btn').css('visibility', 'hidden');
+                        }
+                    }
+                });
+            });
+            $('#geoguesserForm2').submit(function(event) {
+                event.preventDefault();
+                var inputSolution2 = $('input[name="inputSolution2"]').val();
+                var paysId2 = $('input[name="paysId2"]').val();
+                inputSolution2 = removeSpecialChars(inputSolution2.trim().toUpperCase());
+                $.ajax({
+                    type: 'POST',
+                    url: '/checkPays',
+                    data: { inputSolution: inputSolution2, paysId: paysId2 },
+                    success: function(response) {
+                        if (response === true) {
+                            solution2 = true;
+                            $('#message2').text("Bonne réponse !");
+                            if (solution1 && solution3) {
+                                $('#btn').css('visibility', 'visible');
+                            }
+                        } else {
+                            solution2 = false;
+                            $('#message2').text("Mauvaise réponse. Essayez à nouveau.");
+                            $('#btn').css('visibility', 'hidden');
+                        }
+                    }
+                });
+            });
+            $('#geoguesserForm3').submit(function(event) {
+                event.preventDefault();
+                var inputSolution3 = $('input[name="inputSolution3"]').val();
+                var paysId3 = $('input[name="paysId3"]').val();
+                inputSolution3 = removeSpecialChars(inputSolution3.trim().toUpperCase());
+                $.ajax({
+                    type: 'POST',
+                    url: '/checkPays',
+                    data: { inputSolution: inputSolution3, paysId: paysId3 },
+                    success: function(response) {
+                        if (response === true) {
+                            solution3 = true;
+                            $('#message3').text("Bonne réponse !");
+                            if (solution1 && solution2) {
+                                $('#btn').css('visibility', 'visible');
+                            }
+                        } else {
+                            solution3 = false;
+                            $('#message3').text("Mauvaise réponse. Essayez à nouveau.");
+                            $('#btn').css('visibility', 'hidden');
+                        }
+                    }
+                });
+            });
+        });
+
+        function removeSpecialChars(text) {
+            return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/-/g, '');
+        }
+    </script>
 </html>
