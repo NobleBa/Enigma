@@ -1,6 +1,5 @@
 package com.projetjee.enigma.controller;
 
-import com.projetjee.enigma.models.Charade;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
