@@ -45,6 +45,10 @@ background-size: cover;
   background-size: cover;
 }
 
+.correct {
+  background-color: lightgreen;
+}
+
 
 .html {
   --s: 100px; /* control the size */
