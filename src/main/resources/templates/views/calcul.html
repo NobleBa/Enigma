@@ -22,7 +22,7 @@
                         <li th:each="calcul : ${allCalcul}" th:text="${calcul.formule}"></li>
                     </div>
                 </div>
-                <form class="table-cell" id="calculForm" style="display: flex; flex-direction: column; align-items: center; margin-left: 20%; margin-top: 10%; width: 40%; background: none;" th:object="${bloc}">
+                <form id="calculForm" style="display: flex; flex-direction: column; align-items: center; margin-left: 20%; margin-top: 10%; width: 40%;" th:object="${bloc}">
                     <div style="display: none;">
                         <input type="text" name="blocId" th:value="${bloc.idBloc}" />
                     </div>
