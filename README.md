@@ -29,14 +29,11 @@ Une fois l'application exécuter, ouvrez votre navigateur internet et entrez l'a
 http://localhost:8081/
 ```
 
-## Solutions aux énigmes
+## Solutions
 
-### Charades
 
-### Calcul
 
-### Département
+## Construit avec
 
-Isère
-
-### 
+* [Spring](https://spring.io/) - The web framework used
+* [Maven](https://maven.apache.org/) - Dependency Management
