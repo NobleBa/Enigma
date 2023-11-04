@@ -18,16 +18,18 @@
                     <div class="table-cell">
                         <h3>Calcul</h3>
                     </div>
-                    <div>
+                    <div class="table-cell">
                         <li th:each="calcul : ${allCalcul}" th:text="${calcul.formule}"></li>
                     </div>
-                    <form id="calculForm" th:object="${bloc}">
-                        <input type="text" name="blocId" th:value="${bloc.idBloc}" />
-                        <input type="text" name="inputSolution" placeholder="Entrez la solution" />
-                        <button type="submit">Soumettre</button>
-                    </form>
-                    <div id="message"></div>
                 </div>
+                <form class="table-cell" id="calculForm" style="display: flex; flex-direction: column; align-items: center; margin-left: 20%; margin-top: 10%; width: 40%; background: none;" th:object="${bloc}">
+                    <div style="display: none;">
+                        <input type="text" name="blocId" th:value="${bloc.idBloc}" />
+                    </div>
+                        <input style="color: none;" type="text" name="inputSolution" placeholder="Entrez la solution" />
+                    <button style="margin-left: 0%;" type="submit">Soumettre</button>
+                    <div id="message"></div>
+                </form>
             </div>
         <div class="row" style="margin-top: 5%;">
             <a th:href="@{/charade}"><button>Enigme précedente</button></a>
