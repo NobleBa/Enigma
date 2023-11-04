@@ -31,7 +31,7 @@ http://localhost:8081/
 
 ## Solutions
 
-Pour les solutions aux énigmes, allez lire [SOLUTIONS.md]()
+Pour les solutions aux énigmes, allez lire [SOLUTIONS.md](https://github.com/NobleBa/Enigma/blob/master/SOLUTIONS.md)
 
 ## Construit avec
 
