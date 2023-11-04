@@ -24,7 +24,6 @@ function delay(milliseconds){
 }
 
 function magic() {
-    console.log("magic")
     r1 = Math.floor(Math.random() * 5)
     r2 = Math.floor(Math.random() * T[r1].length)
     r3 = Math.floor(Math.random()* TA.length)
@@ -34,7 +33,6 @@ function magic() {
     document.getElementById(r1.toString()).innerHTML=T[r1].join('')
     delay(1500)
     T[r1][r2] = c
-    documennt.getElementById(r1.toString()).innerHTML=T[r1].join('')
 }
 
 function change() {
