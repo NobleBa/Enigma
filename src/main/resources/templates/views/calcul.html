@@ -1,63 +1,60 @@
 <!DOCTYPE html>
 <html class="calcul">
 <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="app.css" />
     <!-- <link rel= "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
     <link rel="icon" type="image/png" href="img/noun-enigma-1875558.png"/>
     <title>Enigma</title>
 </head>
-<script>
-    function change() {
-
-        var changer = document.getElementById("reponse").value
-        var btn = document.getElementById("btn")
-
-        if (changer.toUpperCase() == "TEST") {
-            btn.style.display = 'block'
-        } else {
-            btn.style.display = 'none'
-        }
-    }
-    </script>
     <body>
         <main>
             <div class="row">
-                <div class="table">
+                <div class="card-body">
                     <div class="table-cell" style="width: 100%;">
                         <p>Résolver les calculs pour trouver le premier indice du code. La réponse suivra dans la foulée.<p>
                     </div>
                     <div class="table-cell">
                         <h3>Calcul</h3>
                     </div>
-                    <div class="table-cell">
-                        <h3>Solution</h3>
+                    <div>
+                        <li th:each="calcul : ${allCalcul}" th:text="${calcul.formule}"></li>
                     </div>
-                    <div class="table-cell">
-                        <p class="card-text" th:utext="${calcul.formule}"></p>
-                    </div>
-                    <div class="table-cell">
-                        <input id="" type="text" placeholder="Entrez le résultat">
-                    </div>
-                    <div class="table-cell">
-                        <p>(12x4)/6</p>
-                    </div>
-                    <div class="table-cell">
-                    <input id="r1" type="text" placeholder="Entrez le résultat" onchange="change()">
-                    </div>
+                    <form id="calculForm" th:object="${bloc}">
+                        <input type="text" name="blocId" th:value="${bloc.idBloc}" />
+                        <input type="text" name="inputSolution" placeholder="Entrez la solution" />
+                        <button type="submit">Soumettre</button>
+                    </form>
+                    <div id="message"></div>
                 </div>
-
             </div>
-            <div class="table-cell">
-                <input id="r1" type="text" placeholder="Entrez le résultat" onchange="change()">
-            </div>
+        <div class="row" style="margin-top: 5%;">
+            <a th:href="@{/charade}"><button>Enigme précedente</button></a>
+            <a th:href="@{/departement}"><button id="btn" style="display: none;">Enigme suivante</button></a>
         </div>
-    </div>
-    <input id="reponse" type="text" style="margin-left: 40%; margin-top:5%; width: 20%" placeholder="Entrez la réponse" onchange="change()">
-    <div class="row" style="margin-top: 5%;">
-        <a th:href="@{/charade}"><button>Enigme précedente</button></a>
-        <a th:href="@{/departement}"><button id="btn" style="display: none;">Enigme suivante</button></a>
-    </div>
-</main>
+    </main>
 </body>
+<script>
+    $(document).ready(function() {
+        $('#calculForm').submit(function (event) {
+            event.preventDefault();
+            var blocId = $('input[name="blocId"]').val();
+            var inputSolution =$('input[name="inputSolution"]').val();
+            inputSolution = removeSpecialChars(inputSolution.trim());
+            $.ajax({
+                type: 'POST',
+                url: '/checkSolutionCalcul',
+                data: {inputSolution: inputSolution, blocId: blocId},
+                success: function (response) {
+                    $('#message').text(response.message);
+                    $('#btn').css('display', 'block');
+                }
+            });
+        });
+    });
+    function removeSpecialChars(text) {
+        return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/-/g, '');
+    }
+</script>
 </html>
