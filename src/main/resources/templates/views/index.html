@@ -17,7 +17,7 @@
                 <h3 id="1">Bienvenue sur le site aux 1001 énigmes</h3>
                 <p id="2">Après avoir clique sur le bouton "Commencer", cela vous lancera un énigme.</p>
                 <p id="3">L'objectif est de résoudre les 7 énigmes.</p>
-                <a th:href="@{/charade}"><button id="4">Commencer</button></a>
+                <a style="margin-bottom: 3%;" th:href="@{/charade}"><button id="4">Commencer</button></a>
                 <div th:if="${connecte}">
                     <a th:href="@{/logout}"><button>Déconnexion</button></a>
                 </div>
