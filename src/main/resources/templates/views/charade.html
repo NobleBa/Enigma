@@ -63,7 +63,7 @@
     </div>
     <div class="row" style="margin-top:5%;">
         <a th:href="@{/}"><button>Accueil</button></a>
-        <a th:href="@{/calcul}"><button id="btn" style="visibility: hidden;">Enigme suivante</button></a>
+        <a th:href="@{/calcul}"><button id="btn" style="disply: none;">Enigme suivante</button></a>
     </div>
 </main>
 </body>
@@ -86,12 +86,12 @@
                         solution1 = true;
                         $('#message1').text("Bonne réponse !");
                         if (solution3 && solution2) {
-                            $('#btn').css('visibility', 'visible');
+                            $('#btn').css('display', 'block');
                         }
                     } else {
                         solution1 = false;
                         $('#message1').text("Mauvaise réponse. Essayez à nouveau.");
-                        $('#btn').css('visibility', 'hidden');
+                        $('#btn').css('display', 'none');
                     }
                 }
             });
@@ -110,12 +110,12 @@
                         solution2 = true;
                         $('#message2').text("Bonne réponse !");
                         if (solution1 && solution3) {
-                            $('#btn').css('visibility', 'visible');
+                            $('#btn').css('display', 'block');
                         }
                     } else {
                         solution2 = false;
                         $('#message2').text("Mauvaise réponse. Essayez à nouveau.");
-                        $('#btn').css('visibility', 'hidden');
+                        $('#btn').css('display', 'none');
                     }
                 }
             });
@@ -134,12 +134,12 @@
                         solution3 = true;
                         $('#message3').text("Bonne réponse !");
                         if (solution1 && solution2) {
-                            $('#btn').css('visibility', 'visible');
+                            $('#btn').css('display', 'block');
                         }
                     } else {
                         solution3 = false;
                         $('#message3').text("Mauvaise réponse. Essayez à nouveau.");
-                        $('#btn').css('visibility', 'hidden');
+                        $('#btn').css('display', 'none');
                     }
                 }
             });
