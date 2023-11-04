@@ -117,7 +117,7 @@ button {
   font-size: 120%;
   min-width: 40%;
   min-height: 30px;
-  margin-left: 35%;
+  margin-left: 30%;
 }
 
 button:active {
@@ -295,4 +295,9 @@ width: calc(50% - 1px);
     width: 100%;
     text-align: center;
   }
+}
+
+img {
+    width: 290px;
+    height: 175px;
 }
