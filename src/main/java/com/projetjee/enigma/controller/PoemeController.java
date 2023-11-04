@@ -29,19 +29,14 @@ public class PoemeController {
 
     @PostMapping("/checkSolutionPoeme")
     @ResponseBody
-    public Map<String, String> checkSolutionPoeme(@RequestParam String inputSolution, @RequestParam String poemeId) {
-        Map<String, String> response = new HashMap<>();
-        System.out.println("Valeur de inputSolution reçue : " + inputSolution);
-        System.out.println("Id poeme : " + poemeId);
+    public boolean checkSolutionPoeme(@RequestParam String inputSolution, @RequestParam String poemeId) {
+        boolean response = false;
 
         Poeme poeme = poemeDAO.findById(poemeId).orElse(null);
 
         if (poeme != null && inputSolution.equalsIgnoreCase(poeme.getSolution())) {
-            response.put("message", "Bonne réponse !");
-        } else {
-            response.put("message", "Mauvaise réponse. Essayez à nouveau.");
+            response = true;
         }
-
         return response;
     }
     private Poeme getRandomPoemeFromDatabase(){
