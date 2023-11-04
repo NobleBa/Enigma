@@ -33,7 +33,6 @@ public class SimonController {
         System.out.println("Valeur de inputSolution reçue : " + inputSolution);
         System.out.println("Id patern : " + paternId);
 
-        // Utilisez l'ID de la charade pour récupérer la charade depuis la base de données
         Simon simon = simonDAO.findById(paternId).orElse(null);
 
         if (simon != null && inputSolution.equalsIgnoreCase(simon.getSolution())) {
