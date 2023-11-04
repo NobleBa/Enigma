@@ -9,7 +9,7 @@ Ce projet a été crée par Rémi Deprêter, Ugo Latry et Raphaël Jeanningros e
 
 Nanana jsp c est le travail de Rémi
 
-Ensuite une fois la BDD installée, a partir de la racine du dossier Enigma, excutez la commande 
-'''
+Ensuite une fois la BDD installée, a partir de la racine du dossier Enigma, excutez la commande :
+```
 vi src/main/resorces/application.properties
-'''
+```
