@@ -18,9 +18,9 @@ public class Calcul {
     private String IdCalcul;
     @ManyToOne
     @JoinColumn (name="IdBloc")
-    private BlocCalcul IdBloc;
-    @Column(length = 250, name = "NumBloc")
-    private int NumBloc;
+    private BlocCalcul idBloc;
+    @Column(length = 10, name = "Place")
+    private int Place;
     @Column(length = 250, name = "Formule")
     private String Formule;
 
