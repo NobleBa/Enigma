@@ -46,3 +46,27 @@ function change() {
         changer.style.visibility = 'hidden'
     }
 }
+
+function changeC() {
+    var changer = document.getElementById("account")
+    
+
+    if (changer.style.display == 'none') {
+        changer.style.display = 'block'
+    } else {
+        changer.style.display = 'none'
+    }
+}
+
+function changeA() {
+    var account = document.getElementById("account")
+    var creation = document.getElementById("creation")
+
+    if (creation.style.display == 'none') {
+        creation.style.display = 'block'
+        account.style.display = 'none'
+    } else {
+        creation.style.display = 'none'
+    }
+}
+
