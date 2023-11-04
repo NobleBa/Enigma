@@ -40,19 +40,15 @@ public class CalculController {
 
     @PostMapping("/checkSolutionCalcul")
     @ResponseBody
-    public Map<String, String> checkSolutionCalcul(@RequestParam String inputSolution, @RequestParam String blocId) {
-        Map<String, String> response = new HashMap<>();
-        System.out.println("c bon");
-        System.out.println("Valeur de inputSolution reçue : " + inputSolution);
-        System.out.println("Id bloc : " + blocId);
+    public boolean checkSolutionCalcul(@RequestParam String inputSolution, @RequestParam String blocId) {
+        boolean response = false;
 
         BlocCalcul blocCalcul = blocCalculDAO.findById(blocId).orElse(null);
 
         if (blocCalcul != null && inputSolution.equalsIgnoreCase(blocCalcul.getSolution())) {
-            response.put("message", "Bonne réponse !");
-        } else {
-            response.put("message", "Mauvaise réponse. Essayez à nouveau.");
+            response =true;
         }
+
         return response;
     }
     private BlocCalcul getRandomBlocFromDatabase() {

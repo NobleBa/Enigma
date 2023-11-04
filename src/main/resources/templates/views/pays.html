@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="calcul">
+<html class="pays">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="app.css" />
@@ -33,18 +33,28 @@
             </div>
             <div id="q2" style="width: 100%; display: flex; visibility: hidden;">
                 <div class="table-cell col1" style="max-height: 80px;">
-                    <p th:if="${pays.isFine() == true}">Le pays se termine par un E</p>
-                    <p th:if="${pays.isFine() == false}">Le pays ne se termine pas par un E</p>
+                    <p th:if="${pays.isFine()}">Le pays se termine par un E</p>
+                    <p th:if="${!pays.isFine()}">Le pays ne se termine pas par un E</p>
                 </div>
                 <div class="table-cell col2" style="max-height: 80px;">
                     <input type="hidden" name="paysFinE" th:value="${pays.isFine()}" />
                     <input id="r2" type="text" placeholder="Entrez la réponse">
                 </div>
             </div>
+            <div id="q3" style="width: 100%; display: flex; visibility: hidden;">
+                <div class="table-cell col1" style="max-height: 80px;">
+                    <p th:if="${pays.isLittoral()}">Le pays a un accès à la mer</p>
+                    <p th:if="${!pays.isLittoral()}">Le pays ne possède pas de littoral</p>
+                </div>
+                <div class="table-cell col2" style="max-height: 80px;">
+                    <input type="hidden" name="paysLittoral" th:value="${pays.isLittoral()}" />
+                    <input id="r3" type="text" placeholder="Entrez la réponse">
+                </div>
+            </div>
             <div id="q4" style="width: 100%; display: flex; visibility: hidden">
                 <div class="table-cell col1">
-                    <p th:if="${pays.isPopulationHuitMillions() == true}">Le pays est habité par au moins 8 millions d'habitants</p>
-                    <p th:if="${pays.isPopulationHuitMillions() == false}">Le pays est habité par moins de 8 millions d'habitants</p>
+                    <p th:if="${pays.isPopulationHuitMillions()}">Le pays est habité par au moins 8 millions d'habitants</p>
+                    <p th:if="${!pays.isPopulationHuitMillions()}">Le pays est habité par moins de 8 millions d'habitants</p>
                 </div>
                 <div class="table-cell col2">
                     <input type="hidden" name="paysPopulationHuitMillions" th:value="${pays.isPopulationHuitMillions()}" />
@@ -53,8 +63,8 @@
             </div>
             <div id="q5" style="width: 100%; display: flex; visibility: hidden">
                 <div class="table-cell col1">
-                    <p th:if="${pays.isSurfaceMillion() == true}">Le pays a une surface supérieure ou égale à 1 million de km²</p>
-                    <p th:if="${pays.isSurfaceMillion() == false}">Le pays a une surface inférieure à 1 million de km²</p>
+                    <p th:if="${pays.isSurfaceMillion()}">Le pays a une surface supérieure ou égale à 1 million de km²</p>
+                    <p th:if="${!pays.isSurfaceMillion()}">Le pays a une surface inférieure à 1 million de km²</p>
                 </div>
                 <div class="table-cell col2">
                     <input type="hidden" name="paysSurfaceMillion" th:value="${pays.isSurfaceMillion()}" />
@@ -90,7 +100,7 @@
                 url: '/verifyContinent',
                 data: { pays: pays ,continent: continent},
                 success: function(response) {
-                    if (response === true) {
+                    if (response) {
                         console.log("Bonne réponse");
                         $('#r1').addClass('correct');
                         $('#q2').css('visibility', 'visible');
@@ -127,7 +137,7 @@
                 url: '/verifyFinE',
                 data: { pays: pays ,fine: fine ,continent: continent},
                 success: function(response) {
-                    if (response === true) {
+                    if (response) {
                         console.log("Bonne réponse");
                         $('#r2').addClass('correct');
                         $('#q3').css('visibility', 'visible');
@@ -162,7 +172,7 @@
                 url: '/verifyLittoral',
                 data: { pays: pays ,fine: fine ,continent: continent, littoral: littoral},
                 success: function(response) {
-                    if (response === true) {
+                    if (response) {
                         console.log("Bonne réponse");
                         $('#r3').addClass('correct');
                         $('#q4').css('visibility', 'visible');
@@ -195,7 +205,7 @@
                 url: '/verifyPopulation',
                 data: { pays: pays ,fine: fine ,continent: continent, littoral: littoral, population: population},
                 success: function(response) {
-                    if (response === true) {
+                    if (response) {
                         console.log("Bonne réponse");
                         $('#r4').addClass('correct');
                         $('#q5').css('visibility', 'visible');
@@ -226,7 +236,7 @@
                 url: '/verifySurface',
                 data: { pays: pays ,fine: fine ,continent: continent, littoral: littoral, population: population, surface: surface},
                 success: function(response) {
-                    if (response === true) {
+                    if (response) {
                         console.log("Bonne réponse");
                         $('#r5').addClass('correct');
                         $('#q6').css('visibility', 'visible');
@@ -255,7 +265,7 @@
                 url: '/verifyUnique',
                 data: { pays: pays ,fine: fine ,continent: continent, littoral: littoral, population: population, surface: surface, unique: unique},
                 success: function(response) {
-                    if (response === true) {
+                    if (response) {
                         console.log("Bonne réponse");
                         $('#r6').addClass('correct');
                         $('#botn').css('display', 'block');

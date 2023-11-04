@@ -90,8 +90,13 @@
                 url: '/checkSolutionPatern',
                 data: {inputSolution: inputSolution, paternId: paternId},
                 success: function (response) {
-                    $('#message').text(response.message);
-                    $('#btn').css('display', 'block');
+                    if (response){
+                        $('#message').text("Bonne réponse !");
+                        $('#btn').css('display', 'block');
+                    }else{
+                        $('#message').text("Mauvaise réponse. Essayez à nouveau.");
+                        $('#btn').css('display', 'none');
+                    }
                 }
             });
         });
