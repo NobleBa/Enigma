@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Enigma</title>
+</head>
+<body>
+<h2>Créer un compte</h2>
+<form th:object="${utilisateur}" method="post" id="registrationForm">
+    <div class="form-group">
+        <label for="email">Adresse email:</label>
+        <input type="email" class="form-control" id="email" th:field="*{email}" required="required"/>
+    </div>
+    <div class="form-group">
+        <label for="nom">Nom:</label>
+        <input type="text" class="form-control" id="nom" th:field="*{nom}" required="required"/>
+    </div>
+    <div class="form-group">
+        <label for="prenom">Prénom:</label>
+        <input type="text" class="form-control" id="prenom" th:field="*{prenom}" required="required"/>
+    </div>
+    <div class="form-group">
+        <label for="mdp">Mot de passe:</label>
+        <input type="password" class="form-control" id="mdp" th:field="*{mdp}" required="required"/>
+    </div>
+    <button type="submit" class="btn btn-primary">Créer un compte</button>
+</form>
+<div id="message"></div>
+<a th:href="@{/login}" id="btn"><button>Se connecter</button></a>
+</body>
+<script>
+    $(document).ready(function() {
+        $('#registrationForm').submit(function(event) {
+            var email = $('#email').val();
+            var nom = $('#nom').val();
+            var prenom = $('#prenom').val();
+            var mdp = $('#mdp').val();
+            event.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: '/registrationSubmit',
+                data: { email: email, nom: nom, prenom: prenom, mdp: mdp },
+                success: function(response) {
+                    if (response) {
+                        $('#message').text("Votre compte a été créé !");
+                    } else {
+                        $('#message').text("Cet adresse mail est déjà utilisé");
+                    }
+                }
+            });
+        });
+    });
+</script>
+
+</html>

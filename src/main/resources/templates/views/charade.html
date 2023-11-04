@@ -21,7 +21,7 @@
                     <form id="charadeForm1" th:object="${charade1}">
                         <input type="hidden" name="charadeId1" th:value="${charade1.idCharade}" />
                         <input type="text" name="inputSolution1" placeholder="Entrez la solution" />
-                        <button type="submit">Vérifier</button>
+                        <button type="submit">Soumettre</button>
                     </form>
                     <div id="message1"></div>
                 </div>
@@ -37,7 +37,7 @@
                     <form id="charadeForm2" th:object="${charade2}">
                         <input type="hidden" name="charadeId2" th:value="${charade2.idCharade}" />
                         <input type="text" name="inputSolution2" placeholder="Entrez la solution" />
-                        <button type="submit">Vérifier</button>
+                        <button type="submit">Soumettre</button>
                     </form>
                     <div id="message2"></div>
 
@@ -54,7 +54,7 @@
                     <form id="charadeForm3" th:object="${charade3}">
                         <input type="hidden" name="charadeId3" th:value="${charade3.idCharade}" />
                         <input type="text" name="inputSolution3" placeholder="Entrez la solution" />
-                        <button type="submit">Vérifier</button>
+                        <button type="submit">Soumettre</button>
                     </form>
                     <div id="message3"></div>
                 </div>
@@ -63,12 +63,15 @@
     </div>
     <div class="row" style="margin-top:5%;">
         <a th:href="@{/}"><button>Accueil</button></a>
-        <a th:href="@{/calcul}"><button id="btn" style="visibility: hidden;">Enigme suivante</button></a>
+        <a th:href="@{/calcul}"><button id="btn" style="disply: none;">Enigme suivante</button></a>
     </div>
 </main>
 </body>
 <script>
     $(document).ready(function() {
+        var solution1 = false;
+        var solution2 = false;
+        var solution3 = false;
         $('#charadeForm1').submit(function(event) {
             event.preventDefault();
             var inputSolution1 = $('input[name="inputSolution1"]').val();
@@ -79,7 +82,17 @@
                 url: '/checkSolution',
                 data: { inputSolution: inputSolution1, charadeId: charadeId1 },
                 success: function(response) {
-                    $('#message1').text(response.message);
+                    if (response === true) {
+                        solution1 = true;
+                        $('#message1').text("Bonne réponse !");
+                        if (solution3 && solution2) {
+                            $('#btn').css('display', 'block');
+                        }
+                    } else {
+                        solution1 = false;
+                        $('#message1').text("Mauvaise réponse. Essayez à nouveau.");
+                        $('#btn').css('display', 'none');
+                    }
                 }
             });
         });
@@ -93,7 +106,17 @@
                 url: '/checkSolution',
                 data: { inputSolution: inputSolution2, charadeId: charadeId2 },
                 success: function(response) {
-                    $('#message2').text(response.message);
+                    if (response === true) {
+                        solution2 = true;
+                        $('#message2').text("Bonne réponse !");
+                        if (solution1 && solution3) {
+                            $('#btn').css('display', 'block');
+                        }
+                    } else {
+                        solution2 = false;
+                        $('#message2').text("Mauvaise réponse. Essayez à nouveau.");
+                        $('#btn').css('display', 'none');
+                    }
                 }
             });
         });
@@ -107,7 +130,17 @@
                 url: '/checkSolution',
                 data: { inputSolution: inputSolution3, charadeId: charadeId3 },
                 success: function(response) {
-                    $('#message3').text(response.message);
+                    if (response === true) {
+                        solution3 = true;
+                        $('#message3').text("Bonne réponse !");
+                        if (solution1 && solution2) {
+                            $('#btn').css('display', 'block');
+                        }
+                    } else {
+                        solution3 = false;
+                        $('#message3').text("Mauvaise réponse. Essayez à nouveau.");
+                        $('#btn').css('display', 'none');
+                    }
                 }
             });
         });

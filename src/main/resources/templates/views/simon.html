@@ -59,7 +59,7 @@
             </div>
             <div class="row" style="margin-top:5%;">
                 <a th:href="@{/pays}"><button>Enigme précedente</button></a>
-                <a th:href="@{/geoguesser}"><button id="btn">Epreuve suivante</button></a>
+                <a th:href="@{/geoguesser}"><button id="btn" style="display: none;">Epreuve suivante</button></a>
             </div> 
         </main>
     </body>
@@ -89,6 +89,7 @@
                     data: {inputSolution: inputSolution, paternId: paternId},
                     success: function (response) {
                         $('#message').text(response.message);
+                        $('#btn').css('display', 'block');
                     }
                 });
             });

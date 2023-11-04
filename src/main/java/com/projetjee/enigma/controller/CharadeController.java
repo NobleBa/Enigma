@@ -7,9 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Random;
 
 @Controller
@@ -37,18 +35,15 @@ public class CharadeController {
 
     @PostMapping("/checkSolution")
     @ResponseBody
-    public Map<String, String> checkSolution(@RequestParam String inputSolution, @RequestParam String charadeId) {
-        Map<String, String> response = new HashMap<>();
+    public boolean checkSolution(@RequestParam String inputSolution, @RequestParam String charadeId) {
+        boolean response = false;
         System.out.println("Valeur de inputSolution reçue : " + inputSolution);
         System.out.println("Id charade : " + charadeId);
 
-        // Utilisez l'ID de la charade pour récupérer la charade depuis la base de données
         Charade charade = charadeDAO.findById(charadeId).orElse(null);
 
         if (charade != null && inputSolution.equalsIgnoreCase(charade.getSolution())) {
-            response.put("message", "Bonne réponse !");
-        } else {
-            response.put("message", "Mauvaise réponse. Essayez à nouveau.");
+            response = true;
         }
 
         return response;
