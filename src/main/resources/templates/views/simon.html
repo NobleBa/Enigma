@@ -79,8 +79,9 @@
                 var inputSolution = '';
 
                 $('input[type="checkbox"]:checked').each(function() {
-                    inputSolution += $(this).val();
+                    inputSolution += $(this).val() + ' ';
                 });
+                inputSolution = inputSolution.trim();
 
                 $.ajax({
                     type: 'POST',
