@@ -82,7 +82,7 @@
                 url: '/checkSolution',
                 data: { inputSolution: inputSolution1, charadeId: charadeId1 },
                 success: function(response) {
-                    if (response === true) {
+                    if (response) {
                         solution1 = true;
                         $('#message1').text("Bonne réponse !");
                         if (solution3 && solution2) {
@@ -106,7 +106,7 @@
                 url: '/checkSolution',
                 data: { inputSolution: inputSolution2, charadeId: charadeId2 },
                 success: function(response) {
-                    if (response === true) {
+                    if (response) {
                         solution2 = true;
                         $('#message2').text("Bonne réponse !");
                         if (solution1 && solution3) {
@@ -130,7 +130,7 @@
                 url: '/checkSolution',
                 data: { inputSolution: inputSolution3, charadeId: charadeId3 },
                 success: function(response) {
-                    if (response === true) {
+                    if (response) {
                         solution3 = true;
                         $('#message3').text("Bonne réponse !");
                         if (solution1 && solution2) {

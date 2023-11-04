@@ -32,13 +32,6 @@ public class PaysController {
     @ResponseBody
     public boolean verifyContinent(@RequestParam String pays, @RequestParam String continent) {
         boolean response = paysDAO.existsByNompaysAndContinent(pays, continent);
-        System.out.println("On vérifie...");
-
-        if (response) {
-            System.out.println("Le pays est dans le bon continent.");
-        } else {
-            System.out.println("Le pays n'est pas dans le bon continent.");
-        }
         return response;
     }
 
@@ -46,13 +39,6 @@ public class PaysController {
     @ResponseBody
     public boolean verifyFinE(@RequestParam String pays, @RequestParam boolean fine, @RequestParam String continent) {
         boolean response = paysDAO.existsByNompaysAndContinentAndFine(pays, continent, fine);
-        System.out.println("On vérifie...");
-
-        if (response) {
-            System.out.println("Le pays fini par un E.");
-        } else {
-            System.out.println("Le pays ne fini pas par un E.");
-        }
         return response;
     }
 
@@ -60,13 +46,6 @@ public class PaysController {
     @ResponseBody
     public boolean verifyLittoral(@RequestParam String pays, @RequestParam boolean fine, @RequestParam String continent, @RequestParam boolean littoral) {
         boolean response = paysDAO.existsByNompaysAndContinentAndFineAndLittoral(pays, continent, fine, littoral);
-        System.out.println("On vérifie...");
-
-        if (response) {
-            System.out.println("Le pays a un accès à la mer.");
-        } else {
-            System.out.println("Le pays ne possède pas de littoral.");
-        }
         return response;
     }
 
@@ -74,13 +53,6 @@ public class PaysController {
     @ResponseBody
     public boolean verifyPopulation(@RequestParam String pays, @RequestParam boolean fine, @RequestParam String continent, @RequestParam boolean littoral, @RequestParam boolean population) {
         boolean response = paysDAO.existsByNompaysAndContinentAndFineAndLittoralAndPopulationHuitMillions(pays, continent, fine, littoral, population);
-        System.out.println("On vérifie...");
-
-        if (response) {
-            System.out.println("Le pays est habité par au moins 8 millions d'habitants");
-        } else {
-            System.out.println("Le pays est habité par moins de 8 millions d'habitants");
-        }
         return response;
     }
 
@@ -88,13 +60,6 @@ public class PaysController {
     @ResponseBody
     public boolean verifySurface(@RequestParam String pays, @RequestParam boolean fine, @RequestParam String continent, @RequestParam boolean littoral, @RequestParam boolean population, @RequestParam boolean surface) {
         boolean response = paysDAO.existsByNompaysAndContinentAndFineAndLittoralAndPopulationHuitMillionsAndAndSurfaceMillion(pays, continent, fine, littoral, population, surface);
-        System.out.println("On vérifie...");
-
-        if (response) {
-            System.out.println("Le pays a une surface supérieure ou égale à 1 million de km²");
-        } else {
-            System.out.println("Le pays a une surface inférieure à 1 million de km²");
-        }
         return response;
     }
 
@@ -102,13 +67,6 @@ public class PaysController {
     @ResponseBody
     public boolean verifyUnique(@RequestParam String pays, @RequestParam boolean fine, @RequestParam String continent, @RequestParam boolean littoral, @RequestParam boolean population, @RequestParam boolean surface, @RequestParam String unique) {
         boolean response = paysDAO.existsByNompaysAndContinentAndFineAndLittoralAndPopulationHuitMillionsAndAndSurfaceMillionAndQuestionUnique(pays, continent, fine, littoral, population, surface, unique);
-        System.out.println("On vérifie...");
-
-        if (response) {
-            System.out.println("C'est le bon pays !");
-        } else {
-            System.out.println("Ce n'est pas le bon pays.");
-        }
         return response;
     }
 
