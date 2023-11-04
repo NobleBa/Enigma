@@ -11,5 +11,5 @@ Nanana jsp c est le travail de Rémi
 
 Ensuite une fois la BDD installée, a partir de la racine du dossier Enigma, excutez la commande :
 ```
-vi src/main/resorces/application.properties
+vi src/main/resources/application.properties
 ```
