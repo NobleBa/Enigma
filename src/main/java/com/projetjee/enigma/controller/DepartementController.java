@@ -22,7 +22,7 @@ public class DepartementController {
         Map<String, String> response = new HashMap<>();
         System.out.println("Valeur de inputSolution reçue : " + inputSolution);
 
-        if (inputSolution == "ISERE") {
+        if (inputSolution.equals("ISERE")) {
             response.put("message", "Bonne réponse !");
         } else {
             response.put("message", "Mauvaise réponse. Essayez à nouveau.");

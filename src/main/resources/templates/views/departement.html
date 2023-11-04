@@ -41,6 +41,7 @@
                     data: {inputSolution: inputSolutionDep},
                     success: function (response) {
                         $('#message').text(response.message);
+                        $('#btn').css('display', 'block');
                     }
                 });
             });

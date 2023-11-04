@@ -23,7 +23,7 @@
                 <div id="message"></div>
             </div>
             <div class="row" style="margin-top:5%;">
-                <a th:href="@{/geoguessr}"><button>Enigme précedente</button></a>
+                <a th:href="@{/geoguesser}"><button>Enigme précedente</button></a>
                 <a th:href="@{/remerciement}"><button id="btn" style="display: none;">Remerciement</button></a>
             </div> 
         </main>
@@ -41,6 +41,7 @@
                     data: {inputSolution: inputSolution, formeId: formeId},
                     success: function (response) {
                         $('#message').text(response.message);
+                        $('#btn').css('display', 'block');
                     }
                 });
             });
