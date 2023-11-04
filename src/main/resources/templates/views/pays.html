@@ -107,7 +107,7 @@
                         $('#q4').css('visibility', 'hidden');
                         $('#q5').css('visibility', 'hidden');
                         $('#q6').css('visibility', 'hidden');
-                        $('#botn').css('visibility', 'hidden');
+                        $('#botn').css('display', 'none');
                         $('#r2').val(null);
                         $('#r3').val(null);
                         $('#r4').val(null);
@@ -142,7 +142,7 @@
                         $('#q4').css('visibility', 'hidden');
                         $('#q5').css('visibility', 'hidden');
                         $('#q6').css('visibility', 'hidden');
-                        $('#botn').css('visibility', 'hidden');
+                        $('#botn').css('display', 'none');
                         $('#r3').val(null);
                         $('#r4').val(null);
                         $('#r5').val(null);
@@ -175,7 +175,7 @@
                         $('#q4').css('visibility', 'hidden');
                         $('#q5').css('visibility', 'hidden');
                         $('#q6').css('visibility', 'hidden');
-                        $('#botn').css('visibility', 'hidden');
+                        $('#botn').css('display', 'none');
                         $('#r4').val(null);
                         $('#r5').val(null);
                         $('#r6').val(null);
@@ -206,7 +206,7 @@
                         $('#r6').removeClass('correct');
                         $('#q5').css('visibility', 'hidden');
                         $('#q6').css('visibility', 'hidden');
-                        $('#botn').css('visibility', 'hidden');
+                        $('#botn').css('display', 'none');
                         $('#r5').val(null);
                         $('#r6').val(null);
                     }
@@ -235,7 +235,7 @@
                         $('#r5').removeClass('correct');
                         $('#r6').removeClass('correct');
                         $('#q6').css('visibility', 'hidden');
-                        $('#botn').css('visibility', 'hidden');
+                        $('#botn').css('display', 'none');
                         $('#r6').val(null);
                     }
                 }
@@ -258,11 +258,11 @@
                     if (response === true) {
                         console.log("Bonne réponse");
                         $('#r6').addClass('correct');
-                        $('#botn').css('visibility', 'visible');
+                        $('#botn').css('display', 'block');
                     } else {
                         console.log("Mauvaise réponse");
                         $('#r6').removeClass('correct');
-                        $('#botn').css('visibility', 'hidden');
+                        $('#botn').css('display', 'none');
                     }
                 }
             });
