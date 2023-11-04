@@ -21,20 +21,22 @@
                     <div class="table-cell col2">
                         <h3>Pays</h3>
                     </div>
-                    <div>
+                    <div class="table-cell col1" style="max-height: none;">
                         <p class="card-text" th:utext="${poeme.poeme}"></p>
+                    </div>
+                    <div class="table-cell col2" style="max-height: none;">
                         <form id="poemeForm" th:object="${poeme}">
-                            <input type="hidden" name="poemeId" th:value="${poeme.idPoeme}" />
-                            <input type="text" name="vers1" placeholder="Entrez la solution" />
-                            <input type="text" name="vers2" placeholder="Entrez la solution" />
-                            <input type="text" name="vers3" placeholder="Entrez la solution" />
-                            <input type="text" name="vers4" placeholder="Entrez la solution" />
-                            <input type="text" name="vers5" placeholder="Entrez la solution" />
-                            <input type="text" name="vers6" placeholder="Entrez la solution" />
-                            <input type="text" name="vers7" placeholder="Entrez la solution" />
-                            <input type="text" name="vers8" placeholder="Entrez la solution" />
-                            <input type="text" name="vers9" placeholder="Entrez la solution" />
-                            <input type="text" name="vers10" placeholder="Entrez la solution" />
+                            <input style="height: 20px;" type="hidden" name="poemeId" th:value="${poeme.idPoeme}" />
+                            <input style="height: 20px;" type="text" name="vers1" placeholder="Entrez la solution" />
+                            <input style="height: 20px;" type="text" name="vers2" placeholder="Entrez la solution" />
+                            <input style="height: 20px;" type="text" name="vers3" placeholder="Entrez la solution" />
+                            <input style="height: 20px;" type="text" name="vers4" placeholder="Entrez la solution" />
+                            <input style="height: 20px;" type="text" name="vers5" placeholder="Entrez la solution" />
+                            <input style="height: 20px;" type="text" name="vers6" placeholder="Entrez la solution" />
+                            <input style="height: 20px;" type="text" name="vers7" placeholder="Entrez la solution" />
+                            <input style="height: 20px;" type="text" name="vers8" placeholder="Entrez la solution" />
+                            <input style="height: 20px;" type="text" name="vers9" placeholder="Entrez la solution" />
+                            <input style="height: 20px;" type="text" name="vers10" placeholder="Entrez la solution" />
                             <button type="submit">Vérifier</button>
                         </form>
                         <div id="message"></div>

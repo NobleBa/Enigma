@@ -11,12 +11,12 @@
     </head>
     <body>
         <main>
-            <div class="card" style="align-items: center;">
+            <div class="card" style="align-items: center; width: 500px;">
                 <h1 id="0">Le jeu de Simon</h1>
-                <img id="patern" th:src="${simon.patern}" style="display: none;" />
+                <img id="patern" th:src="${simon.patern}" style="display: none; width: 350px; height: 350px;" />
                 <form id="simonForm" th:object="${simon}">
                     <input type="hidden" name="paternId" th:value="${simon.idpatern}"/>
-                    <div class="row" style="margin-bottom: 2%;">
+                    <div id="simon" class="row" style="margin-bottom: 2%;">
                         <div style="margin-right: -30%;">
                             <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases1" value="1">
                             <input style="box-shadow: none; height: 40px;" type="checkbox" id="cases2" value="2">
@@ -65,11 +65,14 @@
     </body>
     <script>
         var image = document.getElementById("patern");
+        var grid = document.getElementById("simon");
 
         image.style.display = "block";
+        grid.style.display = "none";
 
         setTimeout(function() {
             image.style.display = "none";
+            grid.style.display = "flex";
         }, 2000);
 
         $(document).ready(function() {
