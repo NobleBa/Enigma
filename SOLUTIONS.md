@@ -71,25 +71,44 @@ Mon tout est une fleur.
 ### Solution n°1
 
 Cher Ruel Stroud, malicieux énutrof,
-\n**Mali**
+
+**Mali**
+
 "Il s'en ira, kamas ou pas.", qu'ils me disaient. Je refusais de les croire. "Il
-\n**Irak**
+
+**Irak**
+
 te hait indiciblement, à cause de tout ce que tu lui coûtes." J'étais dévastée.
-\n**Haïti**
+
+**Haïti**
+
 Pourtant, nous nous aimions à l'envi, et n'amenions que bonheur partout
-\n**Vietnam**
+
+**Vietnam**
+
 où nous passions. Ni gérants ni rois n'étaient plus riches que nous, car
-\n**Niger**
+
+**Niger**
+
 notre amour valait tout l'or du Krosmoz. Malgré cette attitude infâme,
-\n**Grèce**
+
+**Grèce**
+
 j'osais, et j'ose encore, espérer... Tu seras vaincu. Battre en retraite ne
-\n**Cuba**
+
+**Cuba**
+
 te sauvera plus. Tu as l'air d'un pouilleux, radin que tu es. Pagne, haut,
-\n**Espagne**
+
+**Espagne**
+
 sandales: voilà vingt-cinq ans qu'il te faut en changer. Ton gain prime sur
-\n**Tonga**
+
+**Tonga**
+
 ta vieille Arpagone... Pallier mon déficit sentimental ne t'intéresse pas.
-\n**Népal**
+
+**Népal**
 
 ### Solution n°2
 
