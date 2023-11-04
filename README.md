@@ -1,7 +1,6 @@
 # Enigma
 
 Enigma est un site web interactif vous permettant de résoudre une série d'énigmes plus ou moins farfelues.
-Ce projet a été crée par Rémi Deprêter, Ugo Latry et Raphaël Jeanningros et est déployé via Java Spring
 
 ## Déploiement
 
@@ -29,3 +28,12 @@ Une fois l'application exécuter, ouvrez votre navigateur internet et entrez l'a
 ```
 http://localhost:8081/
 ```
+
+## Solutions
+
+
+
+## Construit avec
+
+* [Spring](https://spring.io/) - The web framework used
+* [Maven](https://maven.apache.org/) - Dependency Management
