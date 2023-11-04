@@ -1,33 +1,37 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" class="html">
 <head>
     <meta charset="UTF-8"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Enigma</title>
+    <link rel="icon" type="image/png" href="/img/noun-enigma-1875558.png"/>
+    <link rel="stylesheet" type="text/css" href="/app.css" />
 </head>
 <body>
-<h2>Créer un compte</h2>
-<form th:object="${utilisateur}" method="post" id="registrationForm">
-    <div class="form-group">
-        <label for="email">Adresse email:</label>
-        <input type="email" class="form-control" id="email" th:field="*{email}" required="required"/>
+    <div class="card" style="margin-top: 10%;">
+        <h2>Créer un compte</h2>
+        <form th:object="${utilisateur}" method="post" id="registrationForm">
+            <div style="margin-bottom: 1%;" class="form-group">
+                <label for="email">Adresse email:</label>
+                <input type="email" class="form-control" id="email" th:field="*{email}" required="required"/>
+            </div>
+            <div class="form-group" style="display: flex; flex-direction: column; align-items: center; margin-bottom: 1%;">
+                <label for="nom">Nom:</label>
+                <input type="text" class="form-control" id="nom" th:field="*{nom}" required="required"/>
+            </div>
+            <div style="margin-bottom: 1%;" class="form-group">
+                <label for="prenom">Prénom:</label>
+                <input type="text" class="form-control" id="prenom" th:field="*{prenom}" required="required"/>
+            </div>
+            <div style="margin-bottom: 1%;" class="form-group">
+                <label for="mdp">Mot de passe:</label>
+                <input type="password" class="form-control" id="mdp" th:field="*{mdp}" required="required"/>
+            </div>
+            <button style="margin-left: 25%;" type="submit" class="btn btn-primary">Créer un compte</button>
+        </form>
+        <div id="message"></div>
+        <a th:href="@{/login}" id="btn"><button>Se connecter</button></a>
     </div>
-    <div class="form-group">
-        <label for="nom">Nom:</label>
-        <input type="text" class="form-control" id="nom" th:field="*{nom}" required="required"/>
-    </div>
-    <div class="form-group">
-        <label for="prenom">Prénom:</label>
-        <input type="text" class="form-control" id="prenom" th:field="*{prenom}" required="required"/>
-    </div>
-    <div class="form-group">
-        <label for="mdp">Mot de passe:</label>
-        <input type="password" class="form-control" id="mdp" th:field="*{mdp}" required="required"/>
-    </div>
-    <button type="submit" class="btn btn-primary">Créer un compte</button>
-</form>
-<div id="message"></div>
-<a th:href="@{/login}" id="btn"><button>Se connecter</button></a>
 </body>
 <script>
     $(document).ready(function() {
