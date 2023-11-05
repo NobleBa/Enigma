@@ -4,7 +4,6 @@ import com.projetjee.enigma.models.Utilisateur;
 import com.projetjee.enigma.repository.UtilisateurDAO;
 import com.projetjee.enigma.service.UtilisateurService;
 import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,8 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class LoginController {
-    @Autowired
-    private UtilisateurService utilisateurService;
+
     @Autowired
     private UtilisateurDAO utilisateurDAO;
 

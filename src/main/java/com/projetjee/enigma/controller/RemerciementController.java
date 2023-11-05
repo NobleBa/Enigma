@@ -1,6 +1,5 @@
 package com.projetjee.enigma.controller;
 
-import com.projetjee.enigma.models.Forme;
 import com.projetjee.enigma.models.Utilisateur;
 import com.projetjee.enigma.repository.UtilisateurDAO;
 import jakarta.servlet.http.HttpServletRequest;

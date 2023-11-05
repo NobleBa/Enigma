@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="geoguesser">
+<html class="geoguesser" lang="">
     <head>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     </head>
     <body>
         <main>
-            <div id="viesContainer"></div>
+            <div class="vie" style="margin-left: 45%; margin-bottom: 3%; margin-top: 0%;" id="viesContainer"></div>
             <input type="hidden" name="idUser" th:value="${utilisateur.getEmail()}" />
             <div class="row">
                 <div class="col-md-4">

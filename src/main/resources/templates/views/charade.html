@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="charade" xmlns:th="http://www.thymeleaf.org">
+<html class="charade" xmlns:th="http://www.thymeleaf.org" lang="">
 <head>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <meta charset="UTF-8">
@@ -10,8 +10,8 @@
 </head>
 <body>
 <main>
-    <div id="viesContainer"></div>
-    <div class="row" style="margin: 0%;">
+    <div class="vie" style="margin-left: 35%; margin-bottom: 4%; margin-top: -7%;" id="viesContainer"></div>
+    <div class="row" style="margin-top: 0%;">
         <div class="col-md-4">
             <div class="card" style="width: 18rem; height: 600px;">
                 <img src="https://www.fan-fortboyard.fr/medias/images/fort-boyard-personnages-passe-partout-2015-01.jpg?fx=c_450_314" class="card-img-top" alt="...">
@@ -19,6 +19,8 @@
                     <h5 class="card-title">Charade n°1</h5>
                     <p class="card-text" th:utext="${charade1.charade}"></p>
                     <input type="hidden" name="idUser" th:value="${utilisateur.getEmail()}" />
+                </div>
+                <div>
                     <form id="charadeForm1" th:object="${charade1}">
                         <input type="hidden" name="charadeId1" th:value="${charade1.idCharade}" />
                         <input type="text" name="inputSolution1" placeholder="Entrez la solution" />
@@ -85,8 +87,8 @@
                 viesContainer.append(img);
             }
             for (var j = totalVies + 1; j <= 5; j++) {
-                var imgSrc = '/img/VieBrise.png';
-                var img = $('<img/>', { id: 'vie_' + j, src: imgSrc });
+                imgSrc = '/img/VieBrise.png';
+                img = $('<img/>', { id: 'vie_' + j, src: imgSrc });
                 viesContainer.append(img);
             }
         }

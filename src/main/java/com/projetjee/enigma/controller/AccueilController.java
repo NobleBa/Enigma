@@ -41,8 +41,7 @@ public class AccueilController {
 
     @PostMapping("/vieDebut")
     @ResponseBody
-    public boolean vieDebut(@RequestParam String idUser) {
-        boolean response = false;
+    public void vieDebut(@RequestParam String idUser) {
         Utilisateur user = utilisateurDAO.getById(idUser);
         user.setVie(5);
         System.out.println(user.getEmail());
@@ -51,7 +50,6 @@ public class AccueilController {
             user.setNiveau(1);
         }
         utilisateurDAO.save(user);
-        return response=true;
     }
     @PostMapping("/perdreVie")
     @ResponseBody

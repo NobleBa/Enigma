@@ -18,10 +18,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 
 
 @Controller
@@ -36,7 +33,7 @@ public class CalculController {
     private UtilisateurDAO utilisateurDAO;
 
     @GetMapping("/calcul")
-    public String calcul(HttpServletRequest request,Model model) {
+    public String calcul(HttpServletRequest request, Model model) {
         boolean connecte = false;
         HttpSession session = request.getSession();
         String utilisateurConnecte = (String) session.getAttribute("email");
@@ -48,20 +45,21 @@ public class CalculController {
             if (utilisateur.getNiveau() >= 2) {
                 BlocCalcul bloc = getRandomBlocFromDatabase();
                 List<Calcul> allCalcul = calculDAO.findAllByIdBloc(bloc);
+                Collections.sort(allCalcul, Comparator.comparingInt(Calcul::getPlace));
                 model.addAttribute("bloc", bloc);
                 model.addAttribute("allCalcul", allCalcul);
                 return "views/calcul";
             } else {
                 return "redirect:/";
             }
-        }else {
+        } else {
             return "redirect:/login";
         }
     }
 
     @PostMapping("/checkSolutionCalcul")
     @ResponseBody
-    public String checkSolutionCalcul(@RequestParam String inputSolution, @RequestParam String blocId,@RequestParam String idUser) {
+    public String checkSolutionCalcul(@RequestParam String inputSolution, @RequestParam String blocId, @RequestParam String idUser) {
         String response = "ko";
 
         BlocCalcul blocCalcul = blocCalculDAO.findById(blocId).orElse(null);
@@ -71,7 +69,7 @@ public class CalculController {
         } else {
             Utilisateur user = utilisateurDAO.getById(idUser);
             if (user.getVie() == 1) {
-                user.setVie(user.getVie() - 1);
+                user.setVie(0);
                 user.setNiveau(0);
                 utilisateurDAO.save(user);
                 response = "/";
@@ -79,6 +77,7 @@ public class CalculController {
         }
         return response;
     }
+
     private BlocCalcul getRandomBlocFromDatabase() {
         List<BlocCalcul> allBloc = blocCalculDAO.findAll();
 

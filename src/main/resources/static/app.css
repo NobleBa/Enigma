@@ -135,7 +135,7 @@ text-decoration: none;
   flex-direction: column;
   justify-content: space-between;
   max-width: 500px;
-  height: 450px;
+  height: 500px;
   padding: 35px;
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 20px;
@@ -201,6 +201,7 @@ display: flex;
 flex-direction: row;
 justify-content: space-around;
 margin-top: 10%;
+margin-left: 10%;
 }
 
 .col-md-4 {
@@ -273,6 +274,16 @@ text-align: left;
 font-size: 18px;
 }
 
+.place {
+  float: left;
+  width: 50px; /* La largeur souhaitée pour la colonne des places */
+}
+
+.formule {
+  margin-left: 60px; /* La marge pour laisser de l'espace entre la colonne des places et des formules */
+  display: block; /* Affichage en tant que bloc */
+}
+
 /* Table columns
 ================================== */
 .table .table-cell {
@@ -284,11 +295,11 @@ width: calc(50% - 1px);
 }
 
 .col1{
-  width: calc(60% - 1px);
+  width: calc(65% - 1px);
 }
 
 .col2{
-  width: calc(40% - 1px);
+  width: calc(35% - 1px);
 }
 
 @media only screen and (max-width: 768px) {
@@ -307,4 +318,15 @@ img {
   display: flex;
   justify-content: end;
   margin-top: -5%;
+}
+
+.vie {
+  margin-left: 35%;
+  margin-bottom: 5%;
+  margin-top: -10%;
+}
+
+.vie > img {
+  width: 40px;
+  height: 25px;
 }
