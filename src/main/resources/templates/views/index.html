@@ -10,7 +10,7 @@
     </head>
     <body>
         <main>
-            <div class="card" style="max-height: 500px; margin-left: 5%;">
+            <div class="card" style="max-height: 500px;">
                 <div th:if="${connecte}">
                     <h2>Bonjour <span th:text="${utilisateur.prenom}"></span> <span th:text="${utilisateur.nom}"></span> !</h2>
                 </div>
@@ -31,14 +31,7 @@
                     <p style="cursor:help;" onclick="change()">Règles</p>
                 </div>        
             </div>
-            <div class="card1 box" id="rules" style="visibility: hidden;">
-                <div>
-                    <button class="menu__icon" style="min-width: 0%;" onclick="change()"></button>
-                    <h2 style="margin-top: 6%;">Règles</h2>
-                </div>
-                <p>Lorem ipsum dolor sit amet. Sit architecto dolores vel magni numquam est ullam soluta est nesciunt repudiandae sed natus tempore est architecto quisquam sit quas nesciunt. Ea officiis quia sed temporibus sapiente At dicta officiis a repellendus nemo. Id expedita provident non quos rerum At tenetur tenetur et obcaecati repellendus eum exercitationem magnam non iusto quidem ut Quis porro.</p>
-            </div>
-            <div class="row" style="margin-top: 30%; margin-left: 0%;" id="boutons">
+            <div class="row" style="width: 100%; margin-left: 0%; margin-top: 3%;" id="boutons">
                 <div style="margin-right: 5%;" th:if="${utilisateur.niveau >= 1}">
 
                     <a th:href="@{'/charade'}"><button style="margin-left: 0%;"><img src="img/bouton/charade.png" alt="" class="icone">Charade</button></a>
@@ -67,6 +60,17 @@
                 <div style="margin-right: 5%;" th:if="${utilisateur.niveau >= 9}">
                     <a th:href="@{'/remerciement'}"><button style="margin-left: 0%;"><img src="img/bouton/remerciement.png" alt="" class="icone">Remerciements</button></a>
                 </div>
+            </div>
+            <div class="card1 box" id="rules" style="visibility: hidden;">
+                <div>
+                    <button class="menu__icon" style="min-width: 0%;" onclick="change()"></button>
+                    <h2 style="margin-top: 6%;">Règles</h2>
+                </div>
+                <p>Il y a 7 énigmes.</p>
+                <p>Vous avez 5 vies.</p>
+                <p>A chaque mauvaises réponses, vous perdez une vie.</p>
+                <p>Si vous perdez toutes vos vies, vous recommencez les énigmes de zéros.</p>
+                <p>Après avoir réussi une énigme, vous gagnez un niveau ce qui vous permet a partir de l'accueil de vous balader a travers le site.</p>
             </div>
 
         </main>
