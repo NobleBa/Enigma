@@ -16,8 +16,6 @@ public class BlocCalcul {
     @Id
     @Column(length = 50, name = "IdBloc")
     private String IdBloc;
-    @Column(length = 250, name = "NumBloc")
-    private int NumBloc;
     @Column(length = 250, name = "Solution")
     private String Solution;
 
