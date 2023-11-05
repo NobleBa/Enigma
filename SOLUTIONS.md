@@ -245,3 +245,23 @@ m'étеrnisеr. Вiеn quе vаinсu, lе rоi а tоujоurs dеs fidèlеs, еt
 ### Solution n°1
 
 ![Pattern1](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/patern/Patern1.png)
+
+### Solution n°2
+
+![Pattern1](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/patern/Patern2.png)
+
+### Solution n°3
+
+![Pattern1](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/patern/Patern3.png)
+
+### Solution n°4
+
+![Pattern1](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/patern/Patern4.png)
+
+### Solution n°5
+
+![Pattern1](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/patern/Patern5.png)
+
+### Solution n°6
+
+![Pattern1](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/patern/Patern6.png)
