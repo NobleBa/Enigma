@@ -24,6 +24,7 @@
                 </form>
                 <div th:if="${connecte}">
                     <a th:href="@{/logout}"><button>Déconnexion</button></a>
+                    <button id="deleteCompte">Supprimer mon compte</button>
                 </div>
                 <div class="card-footer" style="display: flex; justify-content: space-between;">
                     <p>Crée par Rémi Depreter, Ugo Latry et Raphaël Jeanningros</p>
@@ -86,6 +87,19 @@
                             window.location.href = '/charade'
                     }
                 });
+            });
+            $('#deleteCompte').click(function (){
+                var idUser = $('input[name="idUser"]').val();
+                if (confirm('Êtes-vous sûr de vouloir supprimer votre compte ?')) {
+                    $.ajax({
+                        type: 'POST',
+                        url: '/deleteCompte',
+                        data: { idUser:idUser },
+                        success: function(response){
+                            window.location.href = response;
+                        }
+                    });
+                }
             });
         });
     </script>

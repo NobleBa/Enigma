@@ -2,6 +2,7 @@ package com.projetjee.enigma.controller;
 
 import com.projetjee.enigma.models.Utilisateur;
 import com.projetjee.enigma.repository.UtilisateurDAO;
+import com.projetjee.enigma.service.UtilisateurService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,8 @@ public class AccueilController {
 
     @Autowired
     UtilisateurDAO utilisateurDAO;
+    @Autowired
+    UtilisateurService utilisateurService;
 
     @GetMapping("/")
     public String accueil(HttpServletRequest request, Model model) {
@@ -75,5 +78,14 @@ public class AccueilController {
             user.setNiveau(user.getNiveau()+1);
             utilisateurDAO.save(user);
         }
+    }
+
+    @PostMapping("/deleteCompte")
+    @ResponseBody
+    public String deleteCompte(@RequestParam String idUser) {
+        Utilisateur user = utilisateurDAO.getById(idUser);
+        utilisateurDAO.delete(user);
+        System.out.println("supprimer");
+        return "/logout";
     }
 }
