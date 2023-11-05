@@ -36,9 +36,13 @@ public class PoemeController {
             connecte = true;
             model.addAttribute("utilisateur", utilisateur);
             model.addAttribute("connecte", connecte);
-            Poeme poeme = getRandomPoemeFromDatabase();
-            model.addAttribute("poeme", poeme);
-            return "views/poeme";
+            if (utilisateur.getNiveau() >= 4) {
+                Poeme poeme = getRandomPoemeFromDatabase();
+                model.addAttribute("poeme", poeme);
+                return "views/poeme";
+            } else {
+                return "redirect:/";
+            }
         }else {
             return "redirect:/login";
         }

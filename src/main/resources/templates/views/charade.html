@@ -114,6 +114,11 @@
                         $('#message1').text("Bonne réponse !");
                         if (solution3 && solution2) {
                             $('#btn').css('display', 'block');
+                            $.ajax({
+                                type: 'POST',
+                                url: '/gainNiveau',
+                                data: { idUser: idUser }
+                            });
                         }
                     } else if(response === "ko"){
                         solution1 = false;
@@ -141,6 +146,11 @@
                         $('#message2').text("Bonne réponse !");
                         if (solution1 && solution3) {
                             $('#btn').css('display', 'block');
+                            $.ajax({
+                                type: 'POST',
+                                url: '/gainNiveau',
+                                data: { idUser: idUser }
+                            });
                         }
                     } else if(response ==="ko") {
                         solution2 = false;
@@ -168,6 +178,11 @@
                         $('#message3').text("Bonne réponse !");
                         if (solution1 && solution2) {
                             $('#btn').css('display', 'block');
+                            $.ajax({
+                               type: 'POST',
+                               url: '/gainNiveau',
+                               data: { idUser: idUser }
+                            });
                         }
                     } else if(response === "ko"){
                         solution3 = false;

@@ -340,6 +340,11 @@
                         console.log("Bonne réponse");
                         $('#r6').addClass('correct');
                         $('#botn').css('display', 'block');
+                        $.ajax({
+                            type: 'POST',
+                            url: '/gainNiveau',
+                            data: { idUser: idUser }
+                        });
                     } else {
                         console.log("Mauvaise réponse");
                         $('#r6').removeClass('correct');
