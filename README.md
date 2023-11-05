@@ -64,7 +64,7 @@ Puis ouvrez le fichier EnigmaApplication.java avec une application de type VS Co
 
 Une fois l'application exécuter, ouvrez votre navigateur internet et entrez l'adresse :
 ```
-http://localhost:8081/
+http://localhost:8080/
 ```
 
 ## Solutions
