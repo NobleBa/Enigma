@@ -265,3 +265,89 @@ m'étеrnisеr. Вiеn quе vаinсu, lе rоi а tоujоurs dеs fidèlеs, еt
 ### Solution n°6
 
 ![Pattern1](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/patern/Patern6.png)
+
+## GéoGuessr
+
+
+
+## Forme
+
+### Croix Grise
+
+**25**
+
+### Croix Bleue
+
+**12**
+
+### Croix Verte
+
+**20**
+
+### Croix Orange
+
+**14**
+
+### Triangle Gris
+
+**21**
+
+### Triangle Bleu
+
+**18**
+
+### Triangle Vert
+
+**21**
+
+### Triangle Orange
+
+**19**
+
+### Carré Gris
+
+**15**
+
+### Carré Bleu
+
+**16**
+
+### Carré Vert
+
+**20**
+
+### Carré Orange
+
+**17**
+
+### Etoile Grise
+
+**20**
+
+### Etoile Bleue
+
+**20**
+
+### Etoile Verte
+
+**23**
+
+### Etoile Orange
+
+**14**
+
+### Cercle Gris
+
+**15**
+
+### Cercle Bleu
+
+**17**
+
+### Cercle Vert
+
+**23**
+
+### Cercle Orange
+
+**16**
