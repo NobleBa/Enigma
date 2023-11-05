@@ -64,6 +64,11 @@ Mon tout est une fleur.
 
 ## Département
 
+Dans l'énigme qui suit un département de France se cache bien.
+Pour le découvrir, suivez le chemin de l'art et des écrivains sereins.
+Prenez les noms et prénoms de créateurs.
+Ajoutez-les avec soin, et le mystère se dévoilera dès que le total est clos.
+
 **Isère**
 
 ## Poème
