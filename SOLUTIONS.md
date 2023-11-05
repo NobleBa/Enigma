@@ -243,7 +243,475 @@ m'étеrnisеr. Вiеn quе vаinсu, lе rоi а tоujоurs dеs fidèlеs, еt
 
 ## Geoguesser 
 
-**[Réponse](https://www.google.com/)**
+### Solution n°1
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/a8424b7baae263918301406bdc884e28.jpg)
+
+**Afghanistan**
+
+### Solution n°2
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/9172c586d92458e517b2f28b5ab78094.jpg)
+
+**Albanie**
+
+### Solution n°3
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/0e12667adfbd5b39b61ecc723f68eae2.jpg)
+
+**Allemagne**
+
+### Solution n°4
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/a317adaa3ef44055107a9ba4bc9b7c38.jpg)
+
+**Andorre**
+
+### Solution n°5
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/a04db8684740878d533d702bd06c62e3.jpg)
+
+**Arabie Saoudite**
+
+### Solution n°6
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/656425402afa5678861ab1be24a02b0d.jpg)
+
+**Arménie**
+
+### Solution n°7
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/d082e8a5c4bfe61257d53141efefc5a4.jpg)
+
+**Autriche**
+
+### Solution n°8
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/842d768a7211b482e22919ffd68126c6.jpg)
+
+**Azerbaïdjan**
+
+### Solution n°9
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/8f3e95ef1316c85c396a6d43ea0d908b.jpg)
+
+**Bahreïn**
+
+### Solution n°10
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/b47bc9c3971a24ddbbfd211d7b692227.jpg)
+
+**Bangladesh**
+
+### Solution n°11
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/a619dc7f6a4804aace5aa28d5510077c.jpg)
+
+**Belgique**
+
+### Solution n°12
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/2a686997f73318acd21a0b0f53fad735.jpg)
+
+**Bhoutan**
+
+### Solution n°13
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/f12a843f98ca50c41339ee6607a689c4.jpg)
+
+**Biélorussie**
+
+### Solution n°14
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/96ea191fa1f5ec7db6cd06d4be8b346c.jpg)
+
+**Bosnie-Herzégovnie**
+
+### Solution n°15
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/0be0d89a7660a0f90bc223b97924a527.jpg)
+
+**Brunei**
+
+### Solution n°16
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/fc38ba258c4a88fce13f1f8a41ebd415.jpg)
+
+**Bulgarie**
+
+### Solution n°17
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/0311245cfe42eef50db71fe9495f503d.jpg)
+
+**Cambodge**
+
+### Solution n°18
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/4178b6fa162a2711fbeb38c18246b04e.jpg)
+
+**Chine**
+
+### Solution n°19
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/528fe57703736f840945f86d88d056a4.jpg)
+
+**Chypre**
+
+### Solution n°20
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/358aa252ef398db98cc39a111f95bd26.jpg)
+
+**Corée du Nord**
+
+### Solution n°21
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/4bebd680369598bf6579be4e9060b8ff.jpg)
+
+**Corée du Sud**
+
+### Solution n°22
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/a4235c50cd3ecd4904227a03219a9803.jpg)
+
+**Croatie**
+
+### Solution n°23
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/47efdff811993a5cadc78aa945a7f8bf.jpg)
+
+**Danemark**
+
+### Solution n°24
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/19d30877fcc9d44eef7107ececa526e0.jpg)
+
+**Émirats arabes unis**
+
+### Solution n°25
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/1b7a159bafb44549dacebec344b13011.jpeg)
+
+**Espagne**
+
+### Solution n°26
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/8b2b9cbb19550965583ad90460bd5849.jpg)
+
+**Estonie**
+
+### Solution n°27
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/0530ddfb7e56a6198bd6fb72e9f6820d.jpg)
+
+**Finlande**
+
+### Solution n°28
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/e165d4f2174b66a7d1a95cb204d296eb.jpg)
+
+**France**
+
+### Solution n°29
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/4dec553d60d2c60cc4d89a0cccab725e.jpg)
+
+**Géorgie**
+
+### Solution n°30
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/a65b9e5fde8b6bc14d941be03d323232.jpg)
+
+**Grèce**
+
+### Solution n°31
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/3a4604a5f7b6aedaaf36ad11f1f8580a.jpg)
+
+**Hongrie**
+
+### Solution n°32
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/faa32043ff129b28b322183f9177fafa.jpg)
+
+**Inde**
+
+### Solution n°33
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/f15124a7793b59e0090df8e604704ef1.jpg)
+
+**Indonésie**
+
+### Solution n°34
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/c370dbef29c10c123d89f0bb815970a6.jpg)
+
+**Irak**
+
+### Solution n°35
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/6f0a7d56c2cd7a0861b17eb27bfb562b.jpg)
+
+**Iran**
+
+### Solution n°36
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/d10ec283cf65f0a94c5f81f1f1d98526.jpg)
+
+**Irlande**
+
+### Solution n°37
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/a9740e3a7764b4518fb235f1aa64d722.jpg)
+
+**Islande**
+
+### Solution n°38
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/3f8454b7f2c12cebb1622b6b0dfd1021.jpg)
+
+**Israël**
+
+### Solution n°39
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/cf05e50a3d1277bcacdc3665c919af24.jpg)
+
+**Italie**
+
+### Solution n°40
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/7cb51895c351c3b0e2afbbda27e873a2.jpg)
+
+**Japon**
+
+### Solution n°41
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/0c1536ced5a3cd31c29257693ff342ce.jpg)
+
+**Jordanie**
+
+### Solution n°42
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/e22cc0a14faacf60ca06cebdc972caa5.jpg)
+
+**Kazakhstan**
+
+### Solution n°43
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/a9177d7e91bc945f3354f2ba980e715c.jpg)
+
+**Kirghizistan**
+
+### Solution n°44
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/9eb4c22bacc6d9e92741b95750710b4f.jpg)
+
+**Kosovo**
+
+### Solution n°45
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/28876375c9747b0dc64a896d0cc4cd60.jpg)
+
+**Koweït**
+
+### Solution n°46
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/5495a2f9ee0ac16f7ee35878f502eefb.jpg)
+
+**Laos**
+
+### Solution n°47
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/2f70a543b2ebcc4781f1d3b47d2d6985.jpg)
+
+**Lettonie**
+
+### Solution n°48
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/d5731ec6ca6364dbb3f154de1c5f8fff.jpg)
+
+**Liban**
+
+### Solution n°49
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/5abfef79f0201629ea491351dfe984b1.jpg)
+
+**Liechtenstein**
+
+### Solution n°50
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/795a28ea9ec7b5d4b989ac7de341bfb4.jpg)
+
+**Lituanie**
+
+### Solution n°51
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/068b83b0839d8cff627bd91fdc8059fb.jpg)
+
+**Luxembourg**
+
+### Solution n°52
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/50fcae303fe637636affcbc2aaa2c702.jpg)
+
+**Macédoine du Nord**
+
+### Solution n°53
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/4259cae7572437bcc8f98a497b5c42b2.jpg)
+
+**Malaisie**
+
+### Solution n°54
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/ebc234df81245f7bff973231d9393981.jpg)
+
+**Maldives**
+
+### Solution n°55
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/08fbcb35375e363cdf2edbbfc702080f.jpg)
+
+**Malte**
+
+### Solution n°56
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/c36ed0bdd7a9ff570fc16f1c648540ba.jpg)
+
+**Modlavie**
+
+### Solution n°57
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/77f09e1229462ba78b6a10825319ba12.jpg)
+
+**Monaco**
+
+### Solution n°58
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/f057495280d465d41a5356e2cb2b0894.jpg)
+
+**Mongolie**
+
+### Solution n°59
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/3f503b95abf55e326fdfc59c41612b97.jpg)
+
+**Monténégro**
+
+### Solution n°60
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/a7aae4f0bc2ea0ddfb8d68ce32c9261f.jpg)
+
+**Myanmar**
+
+### Solution n°61
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/45f1a4b4a2f6bdfa31838a823064389f.jpg)
+
+**Népal**
+
+### Solution n°62
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/55841597240abfff74b6fb7601de8ce2.jpg)
+
+**Norvège**
+
+### Solution n°63
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/ad437fd2f44c7b3f8208a162604d81d0.jpg)
+
+**Oman**
+
+### Solution n°64
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/f1054f8b7755791e6f24e9b69fa1b69c.jpg)
+
+**Ouzbékistan**
+
+### Solution n°65
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/4e075844d2e00e4c800c8c62716bed8c.jpg)
+
+**Pakistan**
+
+### Solution n°66
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/0fd041e6a0a829de56e2376408572b6d.jpg)
+
+**Pays-Bas**
+
+### Solution n°67
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/c894df42aa06fcb0e8e3ff55b71b33fd.jpg)
+
+**Philippines**
+
+### Solution n°68
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/d725f9bc74f06f3b564f6149bb44cee9.jpg)
+
+**Pologne**
+
+### Solution n°69
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/ae0eea6eb6d63f98da42de867c47a0f8.jpg)
+
+**Portugal**
+
+### Solution n°70
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/7d8ca47bbe17ba692ed007c859ba51b1.jpg)
+
+**Qatar**
+
+### Solution n°71
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/bbfb169cafd297de200bae6696fd21ed.jpg)
+
+**République tchèque**
+
+### Solution n°72
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/66bbd441c72609436960797ab2a55196.jpg)
+
+**Roumanie**
+
+### Solution n°73
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/3fae5630a818b04bc9585fa815707339.jpg)
+
+**Royaume-Uni**
+
+### Solution n°74
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/e7c83c5df7cc44681d872b63f96da820.jpg)
+
+**Russie**
+
+### Solution n°75
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/6e62e5e563162fec76289efc4c162510.jpg)
+
+**Russie**
+
+### Solution n°76
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/c9ebae3bf971bf27617b591dc8468d61.jpg)
+
+**Saint-Marin**
+
+  ### Solution n°77
+  ![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/d7f629877469f6ab20765e0b33cc4a46.jpg)
+  
+  **Serbie**
+
+  ### Solution n°78
+  ![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/4cac76ac3552396cc154d123fe2f58a0.jpg)
+  
+  **Singapour**
+
+  ### Solution n°79
+  ![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/9797a86f1433d28bd27ff1165379c31d.jpg)
+  
+  **Slovaquie**
+
+  ### Solution n°80
+  ![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/2da2d08bf7c0f3b2d6f2083a0578ca06.jpg)
+  
+  **Slovénie**
+
+  ### Solution n°81
+  ![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/8ba5bbdd9e0c11077dbf5a9cc83d1c45.jpg)
+  
+  **Sri Lanka**
+
+  ### Solution n°82
+  ![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/312e99eb5dc9f24b43cbded2ceb409e9.jpg)
+  
+  **Suède**
+
+   ### Solution n°83
+  ![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/b0aaf9d9535f9ba9080406c95aca85ab.jpg)
+  
+  **Suisse**
+
+  ### Solution n°84
+  ![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/4cecfbfb1b91bdac36c0ba20027275b2.jpg)
+  
+  **Syrie**
+
+  ### Solution n°85
+  ![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/a0074b450ed102eedd29b26bf123f811.jpg)
+  
+  **Tadjikistan**
+
+   ### Solution n°86
+  ![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/31779ba135934ed036644deb47eb1e54.jpg)
+  
+  **Taïwan**
+
+   ### Solution n°87
+  ![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/805c97b05cc89066594afbf7fa2d3f94.jpg)
+  
+  **Thaïlande**
+
+   ### Solution n°88
+  ![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/7e58137cb33c85ee1127185fac1083e73.jpg)
+  
+  **Timor oriental**
+
+   ### Solution n°89
+  ![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/963f79ea1a99aefb8a7318ee388dcdd9.jpg)
+  
+  **Turkménistan**
+
+  ### Solution n°90
+  ![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/9721c02ca7b4cb34cf0e96bd42d862f3.jpg)
+  
+  **Turquie**
+
+  ### Solution n°91
+  ![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/c8f759282d65d990e7197b257dc763a8.jpg)
+  
+  **Turquie**
+
+  ### Solution n°92
+  ![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/4b0f1559226dc5c26d97dd4ef788a85a.jpg)
+  
+  **Ukraine**
+
+  ### Solution n°93
+  ![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/28d654b9b14454ee012f69d372ad4754.jpg)
+  
+  **Vatican**
+
+  ### Solution n°94
+  ![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/5f8f9e33bb5e13848af2622b66b2308c.jpg)
+  
+  **Vietnam**
 
 ## Pays
 
