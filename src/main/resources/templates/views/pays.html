@@ -337,6 +337,7 @@
                 url: '/verifyUnique',
                 data: { pays: pays ,fine: fine ,continent: continent, littoral: littoral, population: population, surface: surface, unique: unique},
                 success: function(response) {
+                    var idUser = $('input[name="idUser"]').val();
                     if (response) {
                         console.log("Bonne réponse");
                         $('#r6').addClass('correct');
