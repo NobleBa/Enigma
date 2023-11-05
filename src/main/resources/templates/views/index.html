@@ -10,7 +10,7 @@
     </head>
     <body>
         <main>
-            <div class="card" style="max-height: 450px">
+            <div class="card" style="max-height: 450px; margin-left: 5%;">
                 <div th:if="${connecte}">
                     <h2>Bonjour <span th:text="${utilisateur.prenom}"></span> <span th:text="${utilisateur.nom}"></span> !</h2>
                 </div>
@@ -20,10 +20,11 @@
                 <p id="3">L'objectif est de résoudre les 7 énigmes.</p>
                 <form id="formDebut" th:object="${utilisateur}">
                     <input type="hidden" name="idUser" th:value="${utilisateur.getEmail()}" />
-                    <button type="submit" id="btn">Commencer</button>
+                    <button style="margin-bottom: 3%;" type="submit" id="btn">Commencer</button>
                 </form>
                 <div th:if="${connecte}">
                     <a th:href="@{/logout}"><button>Déconnexion</button></a>
+                    <button id="deleteCompte">Supprimer mon compte</button>
                 </div>
                 <div class="card-footer" style="display: flex; justify-content: space-between;">
                     <p>Crée par Rémi Depreter, Ugo Latry et Raphaël Jeanningros</p>
@@ -37,33 +38,33 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet. Sit architecto dolores vel magni numquam est ullam soluta est nesciunt repudiandae sed natus tempore est architecto quisquam sit quas nesciunt. Ea officiis quia sed temporibus sapiente At dicta officiis a repellendus nemo. Id expedita provident non quos rerum At tenetur tenetur et obcaecati repellendus eum exercitationem magnam non iusto quidem ut Quis porro.</p>
             </div>
-            <div id="boutons">
-                <div th:if="${utilisateur.niveau >= 1}">
-                    <a th:href="@{'/charade'}"><button>Charade</button></a>
+            <div class="row" style="margin-top: 30%; margin-left: 0%;" id="boutons">
+                <div style="margin-right: 5%;" th:if="${utilisateur.niveau >= 1}">
+                    <a th:href="@{'/charade'}"><button style="margin-left: 0%;">Charade</button></a>
                 </div>
-                <div th:if="${utilisateur.niveau >= 2}">
-                    <a th:href="@{'/calcul'}"><button>Calcul</button></a>
+                <div style="margin-right: 5%;" th:if="${utilisateur.niveau >= 2}">
+                    <a th:href="@{'/calcul'}"><button style="margin-left: 0%;">Calcul</button></a>
                 </div>
-                <div th:if="${utilisateur.niveau >= 3}">
-                    <a th:href="@{'/departement'}"><button>Departement</button></a>
+                <div style="margin-right: 5%;" th:if="${utilisateur.niveau >= 3}">
+                    <a th:href="@{'/departement'}"><button style="margin-left: 0%;">Departement</button></a>
                 </div>
-                <div th:if="${utilisateur.niveau >= 4}">
-                    <a th:href="@{'/poeme'}"><button>Poeme</button></a>
+                <div style="margin-right: 5%;" th:if="${utilisateur.niveau >= 4}">
+                    <a th:href="@{'/poeme'}"><button style="margin-left: 0%;">Poeme</button></a>
                 </div>
-                <div th:if="${utilisateur.niveau >= 5}">
-                    <a th:href="@{'/pays'}"><button>Pays</button></a>
+                <div style="margin-right: 5%;" th:if="${utilisateur.niveau >= 5}">
+                    <a th:href="@{'/pays'}"><button style="margin-left: 0%;">Pays</button></a>
                 </div>
-                <div th:if="${utilisateur.niveau >= 6}">
-                    <a th:href="@{'/simon'}"><button>Simon</button></a>
+                <div style="margin-right: 5%;" th:if="${utilisateur.niveau >= 6}">
+                    <a th:href="@{'/simon'}"><button style="margin-left: 0%;">Simon</button></a>
                 </div>
-                <div th:if="${utilisateur.niveau >= 7}">
-                    <a th:href="@{'/geoguesser'}"><button>Geoguesser</button></a>
+                <div style="margin-right: 5%;" th:if="${utilisateur.niveau >= 7}">
+                    <a th:href="@{'/geoguesser'}"><button style="margin-left: 0%;">Geoguesser</button></a>
                 </div>
-                <div th:if="${utilisateur.niveau >= 8}">
-                    <a th:href="@{'/forme'}"><button>Forme</button></a>
+                <div style="margin-right: 5%;" th:if="${utilisateur.niveau >= 8}">
+                    <a th:href="@{'/forme'}"><button style="margin-left: 0%;">Forme</button></a>
                 </div>
-                <div th:if="${utilisateur.niveau >= 9}">
-                    <a th:href="@{'/remerciement'}"><button>Remerciements</button></a>
+                <div style="margin-right: 5%;" th:if="${utilisateur.niveau >= 9}">
+                    <a th:href="@{'/remerciement'}"><button style="margin-left: 0%;">Remerciements</button></a>
                 </div>
             </div>
 
@@ -86,6 +87,19 @@
                             window.location.href = '/charade'
                     }
                 });
+            });
+            $('#deleteCompte').click(function (){
+                var idUser = $('input[name="idUser"]').val();
+                if (confirm('Êtes-vous sûr de vouloir supprimer votre compte ?')) {
+                    $.ajax({
+                        type: 'POST',
+                        url: '/deleteCompte',
+                        data: { idUser:idUser },
+                        success: function(response){
+                            window.location.href = response;
+                        }
+                    });
+                }
             });
         });
     </script>
