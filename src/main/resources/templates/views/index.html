@@ -40,31 +40,32 @@
             </div>
             <div class="row" style="margin-top: 30%; margin-left: 0%;" id="boutons">
                 <div style="margin-right: 5%;" th:if="${utilisateur.niveau >= 1}">
-                    <a th:href="@{'/charade'}"><button style="margin-left: 0%;">Charade</button></a>
+
+                    <a th:href="@{'/charade'}"><button style="margin-left: 0%;"><img src="img/bouton/charade.png" alt="" class="icone">Charade</button></a>
                 </div>
                 <div style="margin-right: 5%;" th:if="${utilisateur.niveau >= 2}">
-                    <a th:href="@{'/calcul'}"><button style="margin-left: 0%;">Calcul</button></a>
+                    <a th:href="@{'/calcul'}"><button style="margin-left: 0%;"><img src="img/bouton/calcul.png" alt="" class="icone">Calcul</button></a>
                 </div>
                 <div style="margin-right: 5%;" th:if="${utilisateur.niveau >= 3}">
-                    <a th:href="@{'/departement'}"><button style="margin-left: 0%;">Departement</button></a>
+                    <a th:href="@{'/departement'}"><button style="margin-left: 0%;"><img src="img/bouton/departement.png" alt="" class="icone">Departement</button></a>
                 </div>
                 <div style="margin-right: 5%;" th:if="${utilisateur.niveau >= 4}">
-                    <a th:href="@{'/poeme'}"><button style="margin-left: 0%;">Poeme</button></a>
+                    <a th:href="@{'/poeme'}"><button style="margin-left: 0%;"><img src="img/bouton/poeme.png" alt="" class="icone">Poeme</button></a>
                 </div>
                 <div style="margin-right: 5%;" th:if="${utilisateur.niveau >= 5}">
-                    <a th:href="@{'/pays'}"><button style="margin-left: 0%;">Pays</button></a>
+                    <a th:href="@{'/pays'}"><button style="margin-left: 0%;"><img src="img/bouton/pays.png" alt="" class="icone">Pays</button></a>
                 </div>
                 <div style="margin-right: 5%;" th:if="${utilisateur.niveau >= 6}">
-                    <a th:href="@{'/simon'}"><button style="margin-left: 0%;">Simon</button></a>
+                    <a th:href="@{'/simon'}"><button style="margin-left: 0%;"><img src="img/bouton/simon.png" alt="" class="icone">Simon</button></a>
                 </div>
                 <div style="margin-right: 5%;" th:if="${utilisateur.niveau >= 7}">
-                    <a th:href="@{'/geoguesser'}"><button style="margin-left: 0%;">Geoguesser</button></a>
+                    <a th:href="@{'/geoguesser'}"><button style="margin-left: 0%;"><img src="img/bouton/geoguesser.png" alt="" class="icone">Geoguesser</button></a>
                 </div>
                 <div style="margin-right: 5%;" th:if="${utilisateur.niveau >= 8}">
-                    <a th:href="@{'/forme'}"><button style="margin-left: 0%;">Forme</button></a>
+                    <a th:href="@{'/forme'}"><button style="margin-left: 0%;"><img src="img/bouton/forme.png" alt="" class="icone">Forme</button></a>
                 </div>
                 <div style="margin-right: 5%;" th:if="${utilisateur.niveau >= 9}">
-                    <a th:href="@{'/remerciement'}"><button style="margin-left: 0%;">Remerciements</button></a>
+                    <a th:href="@{'/remerciement'}"><button style="margin-left: 0%;"><img src="img/bouton/remerciement.png" alt="" class="icone">Remerciements</button></a>
                 </div>
             </div>
 
