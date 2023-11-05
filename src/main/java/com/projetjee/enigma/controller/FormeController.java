@@ -28,19 +28,14 @@ public class FormeController {
 
     @PostMapping("/checkSolutionForme")
     @ResponseBody
-    public Map<String, String> checkSolutionForme(@RequestParam String inputSolution, @RequestParam String formeId) {
-        Map<String, String> response = new HashMap<>();
-        System.out.println("Valeur de inputSolution reçue : " + inputSolution);
-        System.out.println("Id forme : " + formeId);
+    public boolean checkSolutionForme(@RequestParam String inputSolution, @RequestParam String formeId) {
+        boolean response = false;
 
         Forme forme = formeDAO.findById(formeId).orElse(null);
 
         if (forme != null && inputSolution.equals(String.valueOf(forme.getNombre()))) {
-            response.put("message", "Bonne réponse !");
-        } else {
-            response.put("message", "Mauvaise réponse. Essayez à nouveau.");
+            response = true;
         }
-
         return response;
     }
     private Forme getRandomFormeFromDatabase() {

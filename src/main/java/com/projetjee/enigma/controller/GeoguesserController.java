@@ -42,8 +42,6 @@ public class GeoguesserController {
     @ResponseBody
     public boolean checkPays(@RequestParam String inputSolution, @RequestParam String paysId) {
         boolean response = false;
-        System.out.println("Valeur de inputSolution reçue : " + inputSolution);
-        System.out.println("Id pays : " + paysId);
 
         Pays pays = paysDAO.findById(paysId).orElse(null);
 

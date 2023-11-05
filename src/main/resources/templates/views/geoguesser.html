@@ -56,7 +56,7 @@
             </div>
             <div class="row" style="margin-top:5%;">
                 <a th:href="@{/simon}"><button>Enigme précedente</button></a>
-                <a th:href="@{/symbol}"><button id="btn" style="display: none;">Enigme suivante</button></a>
+                <a th:href="@{/forme}"><button id="btn" style="display: none;">Enigme suivante</button></a>
             </div>
         </main>
     </body>
@@ -75,7 +75,7 @@
                     url: '/checkPays',
                     data: { inputSolution: inputSolution1, paysId: paysId1 },
                     success: function(response) {
-                        if (response === true) {
+                        if (response) {
                             solution1 = true;
                             $('#message1').text("Bonne réponse !");
                             if (solution3 && solution2) {
@@ -99,7 +99,7 @@
                     url: '/checkPays',
                     data: { inputSolution: inputSolution2, paysId: paysId2 },
                     success: function(response) {
-                        if (response === true) {
+                        if (response) {
                             solution2 = true;
                             $('#message2').text("Bonne réponse !");
                             if (solution1 && solution3) {
@@ -123,7 +123,7 @@
                     url: '/checkPays',
                     data: { inputSolution: inputSolution3, paysId: paysId3 },
                     success: function(response) {
-                        if (response === true) {
+                        if (response) {
                             solution3 = true;
                             $('#message3').text("Bonne réponse !");
                             if (solution1 && solution2) {

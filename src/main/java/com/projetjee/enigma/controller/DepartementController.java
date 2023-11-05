@@ -18,16 +18,11 @@ public class DepartementController {
 
     @PostMapping("/checkSolutionDep")
     @ResponseBody
-    public Map<String, String> checkSolution(@RequestParam String inputSolution) {
-        Map<String, String> response = new HashMap<>();
-        System.out.println("Valeur de inputSolution reçue : " + inputSolution);
-
+    public boolean checkSolutionDep(@RequestParam String inputSolution) {
+        boolean response = false;
         if (inputSolution.equals("ISERE")) {
-            response.put("message", "Bonne réponse !");
-        } else {
-            response.put("message", "Mauvaise réponse. Essayez à nouveau.");
+            response = true;
         }
-
         return response;
     }
 }

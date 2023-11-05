@@ -10,14 +10,15 @@
 </head>
 <body>
 <main>
+    <div id="viesContainer"></div>
     <div class="row" style="margin: 0%;">
         <div class="col-md-4">
             <div class="card" style="width: 18rem; height: 600px;">
                 <img src="https://www.fan-fortboyard.fr/medias/images/fort-boyard-personnages-passe-partout-2015-01.jpg?fx=c_450_314" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Charade n°1</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Cool trip a Las Vegas</h6>
                     <p class="card-text" th:utext="${charade1.charade}"></p>
+                    <input type="hidden" name="idUser" th:value="${utilisateur.getEmail()}" />
                     <form id="charadeForm1" th:object="${charade1}">
                         <input type="hidden" name="charadeId1" th:value="${charade1.idCharade}" />
                         <input type="text" name="inputSolution1" placeholder="Entrez la solution" />
@@ -32,15 +33,15 @@
                 <img src="https://static.choualbox.com/Img/1598719528342.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Charade n°2</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Cool trip a Las Vegas</h6>
                     <p class="card-text" th:utext="${charade2.charade}"></p>
+                </div>
+                <div>
                     <form id="charadeForm2" th:object="${charade2}">
                         <input type="hidden" name="charadeId2" th:value="${charade2.idCharade}" />
                         <input type="text" name="inputSolution2" placeholder="Entrez la solution" />
                         <button type="submit">Soumettre</button>
                     </form>
                     <div id="message2"></div>
-
                 </div>
             </div>
         </div>
@@ -49,8 +50,9 @@
                 <img src="https://s1.dmcdn.net/v/Tc0gg1YI_ZcJOBlEK/x1080" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Charade n°3</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Cool trip a Las Vegas</h6>
                     <p class="card-text" th:utext="${charade3.charade}"></p>
+                </div>
+                <div>
                     <form id="charadeForm3" th:object="${charade3}">
                         <input type="hidden" name="charadeId3" th:value="${charade3.idCharade}" />
                         <input type="text" name="inputSolution3" placeholder="Entrez la solution" />
@@ -69,9 +71,32 @@
 </body>
 <script>
     $(document).ready(function() {
+        var idUser = $('input[name="idUser"]').val();
+
+        $.get('/nombreDeVies', { idUser: idUser }, function(response) {
+            generateVies(response);
+        });
+
+        function generateVies(totalVies) {
+            var viesContainer = $('#viesContainer');
+            for (var i = 1; i <= totalVies; i++) {
+                var imgSrc = '/img/Vie.png';
+                var img = $('<img/>', { id: 'vie_' + i, src: imgSrc });
+                viesContainer.append(img);
+            }
+            for (var j = totalVies + 1; j <= 5; j++) {
+                var imgSrc = '/img/VieBrise.png';
+                var img = $('<img/>', { id: 'vie_' + j, src: imgSrc });
+                viesContainer.append(img);
+            }
+        }
+    });
+
+    $(document).ready(function() {
         var solution1 = false;
         var solution2 = false;
         var solution3 = false;
+        var idUser = $('input[name="idUser"]').val();
         $('#charadeForm1').submit(function(event) {
             event.preventDefault();
             var inputSolution1 = $('input[name="inputSolution1"]').val();
@@ -80,18 +105,21 @@
             $.ajax({
                 type: 'POST',
                 url: '/checkSolution',
-                data: { inputSolution: inputSolution1, charadeId: charadeId1 },
+                data: { inputSolution: inputSolution1, charadeId: charadeId1,idUser: idUser },
                 success: function(response) {
-                    if (response === true) {
+                    if (response === "ok") {
                         solution1 = true;
                         $('#message1').text("Bonne réponse !");
                         if (solution3 && solution2) {
                             $('#btn').css('display', 'block');
                         }
-                    } else {
+                    } else if(response === "ko"){
                         solution1 = false;
                         $('#message1').text("Mauvaise réponse. Essayez à nouveau.");
                         $('#btn').css('display', 'none');
+                        perdreUneVie();
+                    } else{
+                        window.location.href = response;
                     }
                 }
             });
@@ -104,18 +132,21 @@
             $.ajax({
                 type: 'POST',
                 url: '/checkSolution',
-                data: { inputSolution: inputSolution2, charadeId: charadeId2 },
+                data: { inputSolution: inputSolution2, charadeId: charadeId2,idUser: idUser },
                 success: function(response) {
-                    if (response === true) {
+                    if (response === "ok") {
                         solution2 = true;
                         $('#message2').text("Bonne réponse !");
                         if (solution1 && solution3) {
                             $('#btn').css('display', 'block');
                         }
-                    } else {
+                    } else if(response ==="ko") {
                         solution2 = false;
                         $('#message2').text("Mauvaise réponse. Essayez à nouveau.");
                         $('#btn').css('display', 'none');
+                        perdreUneVie();
+                    } else {
+                        window.location.href = response;
                     }
                 }
             });
@@ -128,24 +159,52 @@
             $.ajax({
                 type: 'POST',
                 url: '/checkSolution',
-                data: { inputSolution: inputSolution3, charadeId: charadeId3 },
+                data: { inputSolution: inputSolution3, charadeId: charadeId3, idUser:idUser},
                 success: function(response) {
-                    if (response === true) {
+                    if (response === "ok") {
                         solution3 = true;
                         $('#message3').text("Bonne réponse !");
                         if (solution1 && solution2) {
                             $('#btn').css('display', 'block');
                         }
-                    } else {
+                    } else if(response === "ko"){
                         solution3 = false;
                         $('#message3').text("Mauvaise réponse. Essayez à nouveau.");
                         $('#btn').css('display', 'none');
+                        perdreUneVie();
+                    }else{
+                        window.location.href = response;
                     }
                 }
             });
         });
     });
-
+    function perdreUneVie() {
+        var idUser = $('input[name="idUser"]').val();
+        $.ajax({
+            type: 'POST',
+            url: '/perdreVie',
+            data: { idUser: idUser },
+            success: function (response) {
+                if (response === "success") {
+                    actualiserVies();
+                }
+            }
+        });
+    }
+    function actualiserVies() {
+        var idUser = $('input[name="idUser"]').val();
+        $.get('/nombreDeVies', { idUser: idUser }, function (response) {
+            for (var i = 1; i <= response; i++) {
+                var img = document.getElementById('vie_' + i);
+                img.src = '/img/Vie.png';
+            }
+            for (var j = response +1; j <= 5; j++) {
+                var imgVide = document.getElementById('vie_' + j);
+                imgVide.src = '/img/VieBrise.png';
+            }
+        });
+    }
     function removeSpecialChars(text) {
         return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/-/g, '');
     }

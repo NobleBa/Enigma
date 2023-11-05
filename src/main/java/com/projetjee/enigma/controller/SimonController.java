@@ -28,17 +28,13 @@ public class SimonController {
     }
     @PostMapping("/checkSolutionPatern")
     @ResponseBody
-    public Map<String, String> checkSolution(@RequestParam String inputSolution, @RequestParam String paternId) {
-        Map<String, String> response = new HashMap<>();
-        System.out.println("Valeur de inputSolution reçue : " + inputSolution);
-        System.out.println("Id patern : " + paternId);
+    public boolean checkSolution(@RequestParam String inputSolution, @RequestParam String paternId) {
+        boolean response = false;
 
         Simon simon = simonDAO.findById(paternId).orElse(null);
 
         if (simon != null && inputSolution.equalsIgnoreCase(simon.getSolution())) {
-            response.put("message", "Bonne réponse !");
-        } else {
-            response.put("message", "Mauvaise réponse. Essayez à nouveau.");
+            response=true;
         }
 
         return response;
