@@ -37,6 +37,36 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet. Sit architecto dolores vel magni numquam est ullam soluta est nesciunt repudiandae sed natus tempore est architecto quisquam sit quas nesciunt. Ea officiis quia sed temporibus sapiente At dicta officiis a repellendus nemo. Id expedita provident non quos rerum At tenetur tenetur et obcaecati repellendus eum exercitationem magnam non iusto quidem ut Quis porro.</p>
             </div>
+            <div id="boutons">
+                <div th:if="${utilisateur.niveau >= 1}">
+                    <a th:href="@{'/charade'}"><button>Charade</button></a>
+                </div>
+                <div th:if="${utilisateur.niveau >= 2}">
+                    <a th:href="@{'/calcul'}"><button>Calcul</button></a>
+                </div>
+                <div th:if="${utilisateur.niveau >= 3}">
+                    <a th:href="@{'/departement'}"><button>Departement</button></a>
+                </div>
+                <div th:if="${utilisateur.niveau >= 4}">
+                    <a th:href="@{'/poeme'}"><button>Poeme</button></a>
+                </div>
+                <div th:if="${utilisateur.niveau >= 5}">
+                    <a th:href="@{'/pays'}"><button>Pays</button></a>
+                </div>
+                <div th:if="${utilisateur.niveau >= 6}">
+                    <a th:href="@{'/simon'}"><button>Simon</button></a>
+                </div>
+                <div th:if="${utilisateur.niveau >= 7}">
+                    <a th:href="@{'/geoguesser'}"><button>Geoguesser</button></a>
+                </div>
+                <div th:if="${utilisateur.niveau >= 8}">
+                    <a th:href="@{'/forme'}"><button>Forme</button></a>
+                </div>
+                <div th:if="${utilisateur.niveau >= 9}">
+                    <a th:href="@{'/remerciement'}"><button>Remerciements</button></a>
+                </div>
+            </div>
+
         </main>
     </body>
     <script>
@@ -52,10 +82,8 @@
                     type: 'POST',
                     url: '/vieDebut',
                     data: {idUser:idUser},
-                    success: function (response) {
-                        if(response){
+                    success: function () {
                             window.location.href = '/charade'
-                        }
                     }
                 });
             });
