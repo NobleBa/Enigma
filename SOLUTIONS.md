@@ -247,373 +247,557 @@ m'étеrnisеr. Вiеn quе vаinсu, lе rоi а tоujоurs dеs fidèlеs, еt
 
 ## Pays
 
-**Le pays où se trouve la vallée de Bâmiyân, qui était le site des statues de Bouddha de Bâmiyân, de grandes statues de Bouddha taillées dans la roche**
+### Solution n°1
 
-Afghanistan
+Le pays où se trouve la vallée de Bâmiyân, qui était le site des statues de Bouddha de Bâmiyân, de grandes statues de Bouddha taillées dans la roche
 
-**Le pays abrite le site archéologique de Butrint, un site classé au patrimoine mondial de l'UNESCO, qui comprend des ruines anciennes, des théâtres romains, des thermes, et des vestiges d'une cité antique**
+**Afghanistan**
 
-Albanie
+### Solution n°2
 
-**Le pays abrite la plus grande fête de la bière au monde**
+Le pays abrite le site archéologique de Butrint, un site classé au patrimoine mondial de l'UNESCO, qui comprend des ruines anciennes, des théâtres romains, des thermes, et des vestiges d'une cité antique
 
-Allemagne
+**Albanie**
 
-**Le pays est le seul à avoir pour langue officielle à la fois le catalan, le français et l'espagnol.**
+### Solution n°3
 
-Andorre
+Le pays abrite la plus grande fête de la bière au monde
 
-**C'est le pays qui abrite La Mecque, la ville sainte de l'islam**
+**Allemagne**
 
-Arabie Saoudite
+### Solution n°4
 
-**Le pays a été le premier à adopter le christianisme comme religion d'État en 301 après J.-C., marquant ainsi l'une des plus anciennes traditions chrétiennes au monde**
+Le pays est le seul à avoir pour langue officielle à la fois le catalan, le français et l'espagnol.
 
-Arménie
+**Andorre**
 
-**Le pays natal de nombreux compositeurs .tels que Wolfgang Amadeus Mozart, Ludwig van Beethoven, Franz Schubert ou encore Johann Strauss**
+### Solution n°5
 
-Autriche
+C'est le pays qui abrite La Mecque, la ville sainte de l'islam
 
-**Le pays abrite le lac Goygol, un lac d'origine volcanique entouré de montagnes**
+**Arabie Saoudite**
 
-Azerbaïdjan
+### Solution n°6
 
-**Le pays abrite le célèbre circuit international de Sakhir, qui accueille la Formule 1 chaque année**
+Le pays a été le premier à adopter le christianisme comme religion d'État en 301 après J.-C., marquant ainsi l'une des plus anciennes traditions chrétiennes au monde
 
-Bahreïn
+**Arménie**
 
-**Le pays abrite le plus grand delta intérieur au monde, le delta du Gange-Brahmapoutre, qui est formé par les fleuves Gange et Brahmapoutre**
+### Solution n°7
 
-Bangladesh
+Le pays natal de nombreux compositeurs tels que Wolfgang Amadeus Mozart, Ludwig van Beethoven, Franz Schubert ou encore Johann Strauss.
 
-**Le pays compte le plus grand nombre de bandes dessinées par habitant au monde**
+**Autriche**
 
-Belgique
+### Solution n°8
 
-**Le pays est le seul au monde à mesurer son succès sur la base du Bonheur National Brut (BNB) plutôt que du Produit Intérieur Brut (PIB)**
+Le pays abrite le lac Goygol, un lac d'origine volcanique entouré de montagnes.
 
-Bhoutan
+**Azerbaïdjan**
 
-**Le pays abrite le parc national de Belovezhskaya Pushcha, qui est l'une des dernières forêts vierges d'Europe et un site classé au patrimoine mondial de l'UNESCO**
+### Solution n°9
 
-Biélorussie
+Le pays abrite le célèbre circuit international de Sakhir, qui accueille la Formule 1 chaque année.
 
-**Le pays abrite les pyramides de Visoko, un ensemble de montagnes et de formations rocheuses**
+**Bahreïn**
 
-Bosnie-Herzégovnie
+### Solution n°10
 
-**Le pays abrite le plus grand palais résidentiel au monde, le palais d'Istana Nurul Iman**
+Le pays abrite le plus grand delta intérieur au monde, le delta du Gange-Brahmapoutre, qui est formé par les fleuves Gange et Brahmapoutre.
 
-Brunei
+**Bangladesh**
 
-**C'est le pays d'origine du yaourt**
+### Solution n°11
 
-Bulgarie
+Le pays compte le plus grand nombre de bandes dessinées par habitant au monde.
 
-**C'est le pays où se situent les temples d'Angkor, y compris le célèbre temple d'Angkor Wat. Ces temples sont le témoignage de l'ancienne civilisation khmère et sont un site classé au patrimoine mondial de l'UNESCO**
+**Belgique**
 
-Cambodge
+### Solution n°12
 
-**Le pays est le plus peuplé au monde, abritant plus d'un cinquième de la population mondiale**
+Le pays est le seul au monde à mesurer son succès sur la base du Bonheur National Brut (BNB) plutôt que du Produit Intérieur Brut (PIB).
 
-Chine
+**Bhoutan**
 
-**C'est le pays d'origine du fromage halloumi, un fromage de brebis et de chèvre**
+### Solution n°13
 
-Chypre
+Le pays abrite le parc national de Belovezhskaya Pushcha, qui est l'une des dernières forêts vierges d'Europe et un site classé au patrimoine mondial de l'UNESCO.
 
-**C'est le pays le plus isolé politiquement et économiquement au monde, avec un contrôle strict sur les médias, la communication et les mouvements de la population**
+**Biélorussie**
 
-Corée du Nord
+### Solution n°14
 
-**Le pays est le berceau de grandes entreprises technologiques comme Samsung, LG et Hyundai**
+Le pays abrite les pyramides de Visoko, un ensemble de montagnes et de formations rocheuses.
 
-Corée du Sud
+**Bosnie-Herzégovine**
 
-**C'est le pays d'origine de la cravate, qui tire son nom du mot "hrvatska"**
+### Solution n°15
 
-Croatie
+Le pays abrite le plus grand palais résidentiel au monde, le palais d'Istana Nurul Iman.
 
-**C'est le pays d'origine de Lego, l'une des marques de jouets les plus célèbres au monde**
+**Brunei**
 
-Danemark
+### Solution n°16
 
-**Le pays possède la ville de Dubaï, qui est le lieu de la plus haute structure artificielle au monde, la tour Burj Khalifa, avec 828 mètres de hauteur**
+C'est le pays d'origine du yaourt.
 
-Émirats arabes unis
+**Bulgarie**
 
-**La danse de flamenco est originaire de ce pays**
+### Solution n°17
 
-Espagne
+C'est le pays où se situent les temples d'Angkor, y compris le célèbre temple d'Angkor Wat. Ces temples sont le témoignage de l'ancienne civilisation khmère et sont un site classé au patrimoine mondial de l'UNESCO.
 
-**Le pays est le berceau de Skype, l'une des premières plateformes de communication en ligne au monde**
+**Cambodge**
 
-Estonie
+### Solution n°18
 
-**Le pays où se situe le village du Père Noël, appelé Rovaniemi, situé dans le cercle arctique**
+Le pays est le plus peuplé au monde, abritant plus d'un cinquième de la population mondiale.
 
-Finlande
+**Chine**
 
-**Le pays est le deuxième plus gros producteur de vin dans le monde**
+### Solution n°19
 
-France
+C'est le pays d'origine du fromage halloumi, un fromage de brebis et de chèvre.
 
-**Le pays est le berceau de la viticulture, avec une tradition viticole vieille de 8 000 ans**
+**Chypre**
 
-Géorgie
+### Solution n°20
 
-**Le pays possède 6 000 îles et îlots, seulement 200 environ sont habitées**
+C'est le pays le plus isolé politiquement et économiquement au monde, avec un contrôle strict sur les médias, la communication et les mouvements de la population.
 
-Grèce
+**Corée du Nord**
 
-**C'est le pays d'origine du rubik's cube, le célèbre casse-tête tridimensionnel inventé par Ernő Rubik en 1974**
+### Solution n°21
 
-Hongrie
+Le pays est le berceau de grandes entreprises technologiques comme Samsung, LG et Hyundai.
 
-**Le pays a le plus grand nombre de langues parlées au monde, avec plus de 1 600 langues reconnues**
+**Corée du Sud**
 
-Inde
+### Solution n°22
 
-**C'est le pays du monde qui abrite le plus grand nombre de volcans actifs**
+C'est le pays d'origine de la cravate, qui tire son nom du mot "hrvatska".
 
-Indonésie
+**Croatie**
 
-**C'est le pays qui abrite les ruines de Babylone, l'une des plus anciennes villes connues de l'histoire humaine**
+### Solution n°23
 
-Irak
+C'est le pays d'origine de Lego, l'une des marques de jouets les plus célèbres au monde.
 
-**Le pays abrite la ville de Yazd, qui est l'une des plus anciennes villes continuellement habitées au monde, avec une histoire remontant à plus de 3 000 ans**
+**Danemark**
 
-Iran
+### Solution n°24
 
-**Le pays est souvent appelée l'île d'Émeraude en raison de son paysage verdoyant.**
+Le pays possède la ville de Dubaï, qui est le lieu de la plus haute structure artificielle au monde, la tour Burj Khalifa, avec 828 mètres de hauteur.
 
-Irlande
+**Émirats arabes unis**
 
-**C'est le premier pays au monde qui consomme 100% d'énergie verte ou renouvelable**
+### Solution n°25
 
-Islande
+La danse de flamenco est originaire de ce pays.
 
-**C'est le seul pays au monde où l'hébreu est une langue officielle**
+**Espagne**
 
-Israël
+### Solution n°26
 
-**Le pays possède le plus grand nombre de sites du patrimoine mondial de l'UNESCO**
+Le pays est le berceau de Skype, l'une des premières plateformes de communication en ligne au monde.
 
-Italie
+**Estonie**
 
-**C'est le pays du monde avec le plus grand nombre de distributeurs automatiques par habitant**
+### Solution n°27
 
-Japon
+Le pays où se situe le village du Père Noël, appelé Rovaniemi, situé dans le cercle arctique.
 
-**C'est le pays où se situe la cité antique de Pétra, un site classé au patrimoine mondial de l'UNESCO. Pétra est célèbre pour ses bâtiments taillés dans la roche, elle est considérée comme l'une des merveilles du monde**
+**Finlande**
 
-Jordanie
+### Solution n°28
 
-**C'est le pays du monde avec le plus grand nombre de lacs de montagne**
+Le pays est le deuxième plus gros producteur de vin dans le monde.
 
-Kazakhstan
+**France**
 
-**Le pays abrite le lac Issyk-Koul, le deuxième plus grand lac de montagne au monde**
+### Solution n°29
 
-Kirghizistan
+Le pays est le berceau de la viticulture, avec une tradition viticole vieille de 8 000 ans.
 
-**C'est le pays le plus récent d'Europe, ayant déclaré son indépendance en 2008**
+**Géorgie**
 
-Kosovo
+### Solution n°30
 
-**C'est le pays du monde qui a le plus grand nombre de gratte-ciel par habitant**
+Le pays possède 6 000 îles et îlots, seulement 200 environ sont habitées.
 
-Koweït
+**Grèce**
 
-**Le pays abrite la ville de Luang Prabang, un site classé au patrimoine mondial de l'UNESCO. Luang Prabang est célèbre pour son architecture coloniale française bien préservée et ses temples bouddhistes**
+### Solution n°31
 
-Laos
+C'est le pays d'origine du rubik's cube, le célèbre casse-tête tridimensionnel inventé par Ernő Rubik en 1974.
 
-**Le pays célèbre le festival du chant et de la danse, qui est inscrit sur la liste représentative du patrimoine culturel immatériel de l'humanité de l'UNESCO**
+**Hongrie**
 
-Lettonie
+### Solution n°32
 
-**Le pays abrite la plus ancienne ville en activité continue, Byblos (ou Jbeil en arabe). Byblos a une histoire qui remonte à plus de 7 000 ans et est associée à l'invention de l'alphabet**
+Le pays a le plus grand nombre de langues parlées au monde, avec plus de 1 600 langues reconnues.
 
-Liban
+**Inde**
 
-**C'est le seul pays entièrement situé dans les Alpes**
+### Solution n°33
 
-Liechtenstein
+C'est le pays du monde qui abrite le plus grand nombre de volcans actifs.
 
-**Le pays possède la plus grande dune de sable mobile d'Europe, la dune de Parnidis**
+**Indonésie**
 
-Lituanie
+### Solution n°34
 
-**C'est le seul pays- dans le monde dirigé par un grand-duc**
+C'est le pays qui abrite les ruines de Babylone, l'une des plus anciennes villes connues de l'histoire humaine.
 
-Luxembourg
+**Irak**
 
-**C'est le pays natal de Mère Teresa, la célèbre religieuse catholique et missionnaire, lauréate du prix Nobel de la paix, qui a consacré sa vie à aider les pauvres et les malades à travers le monde**
+### Solution n°35
 
-Macédoine du Nord
+Le pays abrite la ville de Yazd, qui est l'une des plus anciennes villes continuellement habitées au monde, avec une histoire remontant à plus de 3 000 ans.
 
-**Le pays où se trouve l'une des plus anciennes forêts tropicales du monde, la forêt tropicale de Belum-Temengor**
+**Iran**
 
-Malaisie
+### Solution n°36
 
-**Le pays le plus plat du monde, avec une altitude maximale d'environ 2,4 mètres au-dessus du niveau de la mer**
+Le pays est souvent appelée l'île d'Émeraude en raison de son paysage verdoyant.
 
-Maldives
+**Irlande**
 
-**Le pays possède l'une des plus anciennes structures monumentales sur Terre, les temples mégalithiques de Ġgantija, qui datent d'environ 3 600 avant J.-C.**
+### Solution n°37
 
-Malte
+C'est le premier pays au monde qui consomme 100% d'énergie verte ou renouvelable.
 
-**Le pays où se situe la plus grande cave à vin du monde. Elle abrite des millions de bouteilles de vin, dont certaines ont plus de 100 ans**
+**Islande**
 
-Moldavie
+### Solution n°38
 
-**C'est le pays le plus densément peuplé au monde.**
+C'est le seul pays au monde où l'hébreu est une langue officielle.
 
-Monaco
+**Israël**
 
-**Le pays natal de Gengis Khan, le célèbre chef de guerre du XIIIe siècle, qui est devenu l'un des plus grands conquérants de l'histoire**
+### Solution n°39
 
-Mongolie
+Le pays possède le plus grand nombre de sites du patrimoine mondial de l'UNESCO.
 
-**Le pays possède la plage la plus longue de la mer Adriatique**
+**Italie**
 
-Monténégro
+### Solution n°40
 
-**Le pays abrite la pagode Shwedagon, l'un des sites religieux les plus sacrés au monde. Cette pagode dorée s'élève à plus de 99 mètres de hauteur et est ornée de milliers de diamants, de rubis, d'émeraudes et d'autres pierres précieuses**
+C'est le pays du monde avec le plus grand nombre de distributeurs automatiques par habitant.
 
-Myanmar
+**Japon**
 
-**Le pays abrite la plus haute montagne du monde, le mont Everest, avec une altitude de 8 848 mètres **
+### Solution n°41
 
-Népal
+C'est le pays où se situe la cité antique de Pétra, un site classé au patrimoine mondial de l'UNESCO. Pétra est célèbre pour ses bâtiments taillés dans la roche, elle est considérée comme l'une des merveilles du monde.
 
-**Le pays compte le plus grand nombre de tunnels routiers au monde en raison de son paysage montagneux et de ses fjords**
+**Jordanie**
 
-Norvège
+### Solution n°42
 
-**Le pays abrite la plus grande grotte du monde par volume, la grotte de Majlis Al Jinn**
+C'est le pays du monde avec le plus grand nombre de lacs de montagne.
 
-Oman
+**Kazakhstan**
 
-**Le pays abrite certaines des plus anciennes villes bien préservées de la Route de la Soie, notamment Samarcande, Boukhara et Khiva**
+### Solution n°43
 
-Ouzbékistan
+Le pays abrite le lac Issyk-Koul, le deuxième plus grand lac de montagne au monde.
 
-**Le pays abrite la plus haute autoroute pavée au monde, la route de la Karakoram**
+**Kirghizistan**
 
-Pakistan
+### Solution n°44
 
-**Le pays avec le plus grand nombre de moulins à vent historiques préservés**
+C'est le pays le plus récent d'Europe, ayant déclaré son indépendance en 2008.
 
-Pays-Bas
+**Kosovo**
 
-**Le pays est le seul majoritairement catholique en Asie, héritage de plus de 300 ans de colonisation espagnole**
+### Solution n°45
 
-Philippines
+C'est le pays du monde qui a le plus grand nombre de gratte-ciel par habitant.
 
-**C'est le pays d'origine de Marie Curie, la seule personne à avoir remporté des prix Nobel dans deux domaines scientifiques différents (physique et chimie)**
+**Koweït**
 
-Pologne
+### Solution n°46
 
-**Le pays est le plus gros producteur de liège dans le monde**
+Le pays abrite la ville de Luang Prabang, un site classé au patrimoine mondial de l'UNESCO. Luang Prabang est célèbre pour son architecture coloniale française bien préservée et ses temples bouddhistes.
 
-Portugal
+**Laos**
 
-**Le pays le plus riche au monde en termes de PIB par habitant, en grande partie grâce à ses vastes réserves de gaz naturel**
+### Solution n°47
 
-Qatar
+Le pays célèbre le festival du chant et de la danse, qui est inscrit sur la liste représentative du patrimoine culturel immatériel de l'humanité de l'UNESCO.
 
-**C'est le pays de naissance du Pilsner, le premier type de bière blond pâle au monde, qui est maintenant produit dans le monde entier**
+**Lettonie**
 
-République tchèque
+### Solution n°48
 
-**C'est le pays où se situe le château de Bran, souvent associé au légendaire comte Dracula**
+Le pays abrite la plus ancienne ville en activité continue, Byblos (ou Jbeil en arabe). Byblos a une histoire qui remonte à plus de 7 000 ans et est associée à l'invention de l'alphabet.
 
-Roumanie
+**Liban**
 
-**C'est le seul pays au monde à avoir des gardes royaux portant des coiffes en poil d'ours en guise de couvre-chef**
+### Solution n°49
 
-Royaume-Uni
+C'est le seul pays entièrement situé dans les Alpes.
 
-**Le pays possède le plus long chemin de fer du monde, qui s'étend sur environ 9 289 kilomètres, traversant huit fuseaux horaires**
+**Liechtenstein**
 
-Russie
+### Solution n°50
 
-**C'est le plus ancien État constitutionnel au monde, avec une constitution écrite adoptée en 1600**
+Le pays possède la plus grande dune de sable mobile d'Europe, la dune de Parnidis.
 
-Saint-Marin
+**Lituanie**
 
-**C'est le pays natal du célèbre inventeur Nikola Tesla qui a fait des contributions majeures dans les domaines de l'électricité et de la technologie**
+### Solution n°51
 
-Serbie
+C'est le seul pays dans le monde dirigé par un grand-duc.
 
-**C'est la ville-État la plus propre au monde, grâce à des politiques strictes de gestion des déchets et à un fort engagement en faveur de la propreté**
+**Luxembourg**
 
-Singapour
+### Solution n°52
 
-**Le pays possède le plus grand nombre de châteaux par habitant au monde**
+C'est le pays natal de Mère Teresa, la célèbre religieuse catholique et missionnaire, lauréate du prix Nobel de la paix, qui a consacré sa vie à aider les pauvres et les malades à travers le monde.
 
-Slovaquie
+**Macédoine du Nord**
 
-**Le pays abrite la plus ancienne vigne du monde, la vigne Žametovka, qui est cultivée depuis plus de 400 ans**
+### Solution n°53
 
-Slovénie
+Le pays où se trouve l'une des plus anciennes forêts tropicales du monde, la forêt tropicale de Belum-Temengor.
 
-**Le pays abrite le rocher de Sigirîya, un site classé au patrimoine mondial de l'UNESCO**
+**Malaisie**
 
-Sri Lanka
+### Solution n°54
 
-**C'est le premier pays au monde à avoir introduit une loi sur la liberté de presse en 1766**
+Le pays le plus plat du monde, avec une altitude maximale d'environ 2,4 mètres au-dessus du niveau de la mer.
 
-Suède
+**Maldives**
 
-**Le pays produit certaines des montres les plus prestigieuses et les plus recherchées au monde, avec des marques telles que Rolex, Patek Philippe, et Omega**
+### Solution n°55
 
-Suisse
+Le pays possède l'une des plus anciennes structures monumentales sur Terre, les temples mégalithiques de Ġgantija, qui datent d'environ 3 600 avant J.-C.
 
-**Le pays où se situe la ville antique de Palmyre, également connue sous le nom de Tadmor en arabe. Palmyre était un centre commercial et culturel important de l'Antiquité, situé au carrefour des routes commerciales reliant l'Orient et l'Occident**
+**Malte**
 
-Syrie
+### Solution n°56
 
-**Le pays abrite le plus haut sommet du monde situé entièrement à l'intérieur des frontières d'un seul pays, le pic Ismoil Somoni (anciennement connu sous le nom de pic du Communisme)**
+Le pays où se situe la plus grande cave à vin du monde. Elle abrite des millions de bouteilles de vin, dont certaines ont plus de 100 ans.
 
-Tadjikistan
+**Moldavie**
 
-**C'est le pays natal de l'acteur Bruce Lee, qui est devenu une icône mondiale des arts martiaux et du cinéma d'action**
+### Solution n°57
 
-Taïwan
+C'est le pays le plus densément peuplé au monde.
 
-**Le pays du monde où se trouve le plus grand nombre de temples bouddhistes**
+**Monaco**
 
-Thaïlande
+### Solution n°58
 
-**C'est le premier pays d'Asie à devenir indépendant au XXIe siècle**
+Le pays natal de Gengis Khan, le célèbre chef de guerre du XIIIe siècle, qui est devenu l'un des plus grands conquérants de l'histoire.
 
-Timor oriental
+**Mongolie**
 
-**Le pays où se situe la porte de l'Enfer, également connue sous le nom de Darvaza**
+### Solution n°59
 
-Turkménistan
+Le pays possède la plage la plus longue de la mer Adriatique.
 
-**C'est le pays où se situe la ville de Troie, le site légendaire de la guerre de Troie, qui est décrit dans l'Iliade d'Homère**
+**Monténégro**
 
-Turquie
+### Solution n°60
 
-**Le pays abrite la ville de Tchernobyl, le site du pire accident nucléaire de l'histoire en 1986**
+Le pays abrite la pagode Shwedagon, l'un des sites religieux les plus sacrés au monde. Cette pagode dorée s'élève à plus de 99 mètres de hauteur et est ornée de milliers de diamants, de rubis, d'émeraudes et d'autres pierres précieuses.
 
-Ukraine
+**Myanmar**
 
-**C'est le plus petit État indépendant au monde, avec une superficie d'environ 44 hectares**
+### Solution n°61
 
-Vatican
+Le pays abrite la plus haute montagne du monde, le mont Everest, avec une altitude de 8 848 mètres.
 
-**C'est le pays où se trouve la baie d'Along, un site classé au patrimoine mondial de l'UNESCO**
+**Népal**
 
-Vietnam
+### Solution n°62
+
+Le pays compte le plus grand nombre de tunnels routiers au monde en raison de son paysage montagneux et de ses fjords.
+
+**Norvège**
+
+### Solution n°63
+
+Le pays abrite la plus grande grotte du monde par volume, la grotte de Majlis Al Jinn.
+
+**Oman**
+
+### Solution n°64
+
+Le pays abrite certaines des plus anciennes villes bien préservées de la Route de la Soie, notamment Samarcande, Boukhara et Khiva.
+
+**Ouzbékistan**
+
+### Solution n°65
+
+Le pays abrite la plus haute autoroute pavée au monde, la route de la Karakoram.
+
+**Pakistan**
+
+### Solution n°66
+
+Le pays avec le plus grand nombre de moulins à vent historiques préservés.
+
+**Pays-Bas**
+
+### Solution n°67
+
+Le pays est le seul majoritairement catholique en Asie, héritage de plus de 300 ans de colonisation espagnole.
+
+**Philippines**
+
+### Solution n°68
+
+C'est le pays d'origine de Marie Curie, la seule personne à avoir remporté des prix Nobel dans deux domaines scientifiques différents (physique et chimie).
+
+**Pologne**
+
+### Solution n°69
+
+Le pays est le plus gros producteur de liège dans le monde.
+
+**Portugal**
+
+### Solution n°70
+
+Le pays le plus riche au monde en termes de PIB par habitant, en grande partie grâce à ses vastes réserves de gaz naturel.
+
+**Qatar**
+
+### Solution n°71
+
+C'est le pays de naissance du Pilsner, le premier type de bière blond pâle au monde, qui est maintenant produit dans le monde entier.
+
+**République tchèque**
+
+### Solution n°72
+
+Le pays où se situe le château de Bran, souvent associé au légendaire comte Dracula
+
+**Roumanie**
+
+### Solution n°73
+
+C'est le seul pays au monde à avoir des gardes royaux portant des coiffes en poil d'ours en guise de couvre-chef
+
+**Royaume-Uni**
+
+### Solution n°74
+
+Le pays possède le plus long chemin de fer du monde, qui s'étend sur environ 9 289 kilomètres, traversant huit fuseaux horaires
+
+**Russie**
+
+### Solution n°75
+
+C'est le plus ancien État constitutionnel au monde, avec une constitution écrite adoptée en 1600
+
+**Saint-Marin**
+
+### Solution n°76
+
+C'est le pays natal du célèbre inventeur Nikola Tesla qui a fait des contributions majeures dans les domaines de l'électricité et de la technologie
+
+**Serbie**
+
+### Solution n°77
+
+C'est la ville-État la plus propre au monde, grâce à des politiques strictes de gestion des déchets et à un fort engagement en faveur de la propreté
+
+**Singapour**
+
+### Solution n°78
+
+Le pays possède le plus grand nombre de châteaux par habitant au monde
+
+**Slovaquie**
+
+### Solution n°79
+
+Le pays abrite la plus ancienne vigne du monde, la vigne Žametovka, qui est cultivée depuis plus de 400 ans
+
+**Slovénie**
+
+### Solution n°80
+
+Le pays abrite le rocher de Sigirîya, un site classé au patrimoine mondial de l'UNESCO
+
+**Sri Lanka**
+
+### Solution n°81
+
+C'est le premier pays au monde à avoir introduit une loi sur la liberté de presse en 1766
+
+**Suède**
+
+### Solution n°82
+
+Le pays produit certaines des montres les plus prestigieuses et les plus recherchées au monde, avec des marques telles que Rolex, Patek Philippe, et Omega
+
+**Suisse**
+
+### Solution n°83
+
+Le pays où se situe la ville antique de Palmyre, également connue sous le nom de Tadmor en arabe. Palmyre était un centre commercial et culturel important de l'Antiquité, situé au carrefour des routes commerciales reliant l'Orient et l'Occident
+
+**Syrie**
+
+### Solution n°84
+
+Le pays abrite le plus haut sommet du monde situé entièrement à l'intérieur des frontières d'un seul pays, le pic Ismoil Somoni (anciennement connu sous le nom de pic du Communisme)
+
+**Tadjikistan**
+
+### Solution n°85
+
+C'est le pays natal de l'acteur Bruce Lee, qui est devenu une icône mondiale des arts martiaux et du cinéma d'action
+
+**Taïwan**
+
+### Solution n°86
+
+Le pays du monde où se trouve le plus grand nombre de temples bouddhistes
+
+**Thaïlande**
+
+### Solution n°87
+
+C'est le premier pays d'Asie à devenir indépendant au XXIe siècle
+
+**Timor oriental**
+
+### Solution n°88
+
+Le pays où se situe la porte de l'Enfer, également connue sous le nom de Darvaza
+
+**Turkménistan**
+
+### Solution n°89
+
+C'est le pays où se situe la ville de Troie, le site légendaire de la guerre de Troie, qui est décrit dans l'Iliade d'Homère
+
+**Turquie**
+
+### Solution n°90
+
+Le pays abrite la ville de Tchernobyl, le site du pire accident nucléaire de l'histoire en 1986
+
+**Ukraine**
+
+### Solution n°91
+
+C'est le plus petit État indépendant au monde, avec une superficie d'environ 44 hectares
+
+**Vatican**
+
+### Solution n°92
+
+C'est le pays où se trouve la baie d'Along, un site classé au patrimoine mondial de l'UNESCO
+
+**Vietnam**
 
 ## Simon
 
