@@ -239,3 +239,9 @@ m'étеrnisеr. Вiеn quе vаinсu, lе rоi а tоujоurs dеs fidèlеs, еt
 ## Pays 
 
 **[Réponse](https://www.google.com/)**
+
+## Simon
+
+### Solution n°1
+
+![Pattern1](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/patern/Patern1.png)
