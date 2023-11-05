@@ -29,7 +29,11 @@ public class DepartementController {
             connecte = true;
             model.addAttribute("utilisateur", utilisateur);
             model.addAttribute("connecte", connecte);
-            return "views/departement";
+            if (utilisateur.getNiveau() >= 3) {
+                return "views/departement";
+            } else {
+                return "redirect:/";
+            }
         }else {
             return "redirect:/login";
         }

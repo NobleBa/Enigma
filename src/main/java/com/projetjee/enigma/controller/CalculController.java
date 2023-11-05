@@ -45,11 +45,15 @@ public class CalculController {
             connecte = true;
             model.addAttribute("utilisateur", utilisateur);
             model.addAttribute("connecte", connecte);
-            BlocCalcul bloc = getRandomBlocFromDatabase();
-            List<Calcul> allCalcul = calculDAO.findAllByIdBloc(bloc);
-            model.addAttribute("bloc", bloc);
-            model.addAttribute("allCalcul", allCalcul);
-            return "views/calcul";
+            if (utilisateur.getNiveau() >= 2) {
+                BlocCalcul bloc = getRandomBlocFromDatabase();
+                List<Calcul> allCalcul = calculDAO.findAllByIdBloc(bloc);
+                model.addAttribute("bloc", bloc);
+                model.addAttribute("allCalcul", allCalcul);
+                return "views/calcul";
+            } else {
+                return "redirect:/";
+            }
         }else {
             return "redirect:/login";
         }

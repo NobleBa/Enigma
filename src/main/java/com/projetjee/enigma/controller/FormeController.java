@@ -35,9 +35,13 @@ public class FormeController {
             connecte = true;
             model.addAttribute("utilisateur", utilisateur);
             model.addAttribute("connecte", connecte);
-            Forme forme = getRandomFormeFromDatabase();
-            model.addAttribute("forme", forme);
-            return "views/forme";
+            if (utilisateur.getNiveau() >= 8){
+                Forme forme = getRandomFormeFromDatabase();
+                model.addAttribute("forme", forme);
+                return "views/forme";
+            } else {
+                return "redirect:/";
+            }
         }else {
             return "redirect:/login";
         }

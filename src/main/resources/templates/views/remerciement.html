@@ -49,9 +49,9 @@
         <main>
             <div class="card">
                 <h1 id="0" >Enigma</h1>
-                <h3 id="1">Merci beaucoup d'avoir joué</h3>
-                <p id="2">Score : 23</p>
-                <p id="3">Nombre d'essai : 4</p>
+                <h3 id="1" th:object="${utilisateur}">Merci <span th:text="${utilisateur.prenom}"></span> <span th:text="${utilisateur.nom}"></span> d'avoir joué !</h3>
+                <img src="img/fin.png">
+                <h4>On se reverra pour des prochaines énigmes !</h4>
                 <div class="card-footer" style="display: flex; justify-content: space-between;">
                     <p>Crée par Rémi Depreter, Ugo Latry et Raphaël Jeanningros</p>
                 </div>        
