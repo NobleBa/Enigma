@@ -31,9 +31,16 @@ http://localhost:8081/
 
 ## Solutions
 
-
+Pour les solutions aux énigmes, allez lire [SOLUTIONS.md](https://github.com/NobleBa/Enigma/blob/master/SOLUTIONS.md)
 
 ## Construit avec
 
-* [Spring](https://spring.io/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
+* [Spring](https://spring.io/) - Le framework utilisé
+* [Maven](https://maven.apache.org/) - Gestion des dépendances
+* [phpMyAdmin](https://www.phpmyadmin.net/) - Gestion des bases de données
+
+## Auteurs
+
+* **Rémi Deprêter** - Création des bases de données et liaisons avec le back-end - [DEPRETER-REMI](https://github.com/DEPRETER-Remi)
+* **Ugo Latry** - Back-end - [Ugolty](https://github.com/Ugolty)
+* **Raphaël Jeanningros** - Front-end - [NobleBa](https://github.com/NobleBa)
