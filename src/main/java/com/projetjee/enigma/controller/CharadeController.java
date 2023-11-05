@@ -70,8 +70,6 @@ public class CharadeController {
         return response;
     }
 
-
-
     private Charade getRandomCharadeFromDatabase() {
         List<Charade> allCharades = charadeDAO.findAll();
 
