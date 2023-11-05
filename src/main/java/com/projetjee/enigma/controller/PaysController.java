@@ -37,9 +37,13 @@ public class PaysController {
             connecte = true;
             model.addAttribute("utilisateur", utilisateur);
             model.addAttribute("connecte", connecte);
-            Pays pays = getRandomPaysFromDatabase();
-            model.addAttribute("pays", pays);
-            return "views/pays";
+            if (utilisateur.getNiveau() >= 5) {
+                Pays pays = getRandomPaysFromDatabase();
+                model.addAttribute("pays", pays);
+                return "views/pays";
+            } else {
+                return "redirect:/";
+            }
         }else {
             return "redirect:/login";
         }
