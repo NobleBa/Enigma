@@ -19,6 +19,8 @@
                     <h5 class="card-title">Charade n°1</h5>
                     <p class="card-text" th:utext="${charade1.charade}"></p>
                     <input type="hidden" name="idUser" th:value="${utilisateur.getEmail()}" />
+                </div>
+                <div>
                     <form id="charadeForm1" th:object="${charade1}">
                         <input type="hidden" name="charadeId1" th:value="${charade1.idCharade}" />
                         <input type="text" name="inputSolution1" placeholder="Entrez la solution" />
