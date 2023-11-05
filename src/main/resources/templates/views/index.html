@@ -52,10 +52,8 @@
                     type: 'POST',
                     url: '/vieDebut',
                     data: {idUser:idUser},
-                    success: function (response) {
-                        if(response){
+                    success: function () {
                             window.location.href = '/charade'
-                        }
                     }
                 });
             });
