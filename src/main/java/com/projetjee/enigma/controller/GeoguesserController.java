@@ -1,6 +1,5 @@
 package com.projetjee.enigma.controller;
 
-import com.projetjee.enigma.models.Charade;
 import com.projetjee.enigma.models.Pays;
 import com.projetjee.enigma.models.Utilisateur;
 import com.projetjee.enigma.repository.PaysDAO;
@@ -15,9 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Random;
 
 @Controller
@@ -72,7 +69,7 @@ public class GeoguesserController {
         }else{
             Utilisateur user = utilisateurDAO.getById(idUser);
             if (user.getVie() == 1) {
-                user.setVie(user.getVie() - 1);
+                user.setVie(0);
                 user.setNiveau(0);
                 utilisateurDAO.save(user);
                 response = "/";

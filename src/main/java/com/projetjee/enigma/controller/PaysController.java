@@ -14,9 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Random;
 
 @Controller
@@ -80,14 +78,14 @@ public class PaysController {
     @PostMapping("/verifySurface")
     @ResponseBody
     public boolean verifySurface(@RequestParam String pays, @RequestParam boolean fine, @RequestParam String continent, @RequestParam boolean littoral, @RequestParam boolean population, @RequestParam boolean surface) {
-        boolean response = paysDAO.existsByNompaysAndContinentAndFineAndLittoralAndPopulationHuitMillionsAndAndSurfaceMillion(pays, continent, fine, littoral, population, surface);
+        boolean response = paysDAO.existsByNompaysAndContinentAndFineAndLittoralAndPopulationHuitMillionsAndSurfaceMillion(pays, continent, fine, littoral, population, surface);
         return response;
     }
 
     @PostMapping("/verifyUnique")
     @ResponseBody
     public boolean verifyUnique(@RequestParam String pays, @RequestParam boolean fine, @RequestParam String continent, @RequestParam boolean littoral, @RequestParam boolean population, @RequestParam boolean surface, @RequestParam String unique) {
-        boolean response = paysDAO.existsByNompaysAndContinentAndFineAndLittoralAndPopulationHuitMillionsAndAndSurfaceMillionAndQuestionUnique(pays, continent, fine, littoral, population, surface, unique);
+        boolean response = paysDAO.existsByNompaysAndContinentAndFineAndLittoralAndPopulationHuitMillionsAndSurfaceMillionAndQuestionUnique(pays, continent, fine, littoral, population, surface, unique);
         return response;
     }
     @PostMapping("/checkVie")

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="html">
+<html class="html" lang="">
     <head>
         <meta charset="UTF-8">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -10,7 +10,7 @@
     </head>
     <body>
         <main>
-            <div class="card" style="max-height: 450px; margin-left: 5%;">
+            <div class="card" style="max-height: 500px; margin-left: 5%;">
                 <div th:if="${connecte}">
                     <h2>Bonjour <span th:text="${utilisateur.prenom}"></span> <span th:text="${utilisateur.nom}"></span> !</h2>
                 </div>
@@ -23,8 +23,8 @@
                     <button style="margin-bottom: 3%;" type="submit" id="btn">Commencer</button>
                 </form>
                 <div th:if="${connecte}">
-                    <a th:href="@{/logout}"><button>Déconnexion</button></a>
-                    <button id="deleteCompte">Supprimer mon compte</button>
+                    <a th:href="@{/logout}"><button style="margin-bottom: 3%;">Déconnexion</button></a>
+                    <button id="deleteCompte" style="margin-left: 29%;">Supprimer mon compte</button>
                 </div>
                 <div class="card-footer" style="display: flex; justify-content: space-between;">
                     <p>Crée par Rémi Depreter, Ugo Latry et Raphaël Jeanningros</p>
