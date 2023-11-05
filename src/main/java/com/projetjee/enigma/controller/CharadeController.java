@@ -70,24 +70,7 @@ public class CharadeController {
         return response;
     }
 
-    @PostMapping("/perdreVie")
-    @ResponseBody
-    public String perdreVie(@RequestParam String idUser) {
-        Utilisateur user = utilisateurDAO.getById(idUser);
-        if (user.getVie() > 0) {
-            user.setVie(user.getVie() - 1);
-            utilisateurDAO.save(user);
-            return "success";
-        }
-        return "error";
-    }
 
-    @GetMapping("/nombreDeVies")
-    @ResponseBody
-    public int getNombreDeVies(@RequestParam String idUser) {
-        Utilisateur user = utilisateurDAO.getById(idUser);
-        return user.getVie();
-    }
 
     private Charade getRandomCharadeFromDatabase() {
         List<Charade> allCharades = charadeDAO.findAll();
