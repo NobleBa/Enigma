@@ -121,7 +121,7 @@ CREATE TABLE `forme` (
 -- Dumping data for table `forme`
 --
 
-INSERT INTO `forme` (`id_forme`, `nb_carre`, `nb_croix`, `nb_etoile`, `nb_rond`, `nb_triangle`, `nb_gris`, `nb_bleu`, `nb_orange`, `nom`, `couleur`, `image`, `nombre`) VALUES
+INSERT INTO `forme` (`id_forme`, `nom`, `couleur`, `image`, `nombre`) VALUES
 ('1', 'CARRE', 'BLEU', 'img/formes/CarreBleu.png', 16),
 ('10', 'ETOILE', 'GRIS', 'img/formes/EtoileGris.png', 20),
 ('11', 'ETOILE', 'ORANGE', 'img/formes/EtoileOrange.png', 14),
