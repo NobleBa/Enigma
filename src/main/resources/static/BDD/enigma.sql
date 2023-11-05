@@ -122,26 +122,26 @@ CREATE TABLE `forme` (
 --
 
 INSERT INTO `forme` (`id_forme`, `nb_carre`, `nb_croix`, `nb_etoile`, `nb_rond`, `nb_triangle`, `nb_gris`, `nb_bleu`, `nb_orange`, `nom`, `couleur`, `image`, `nombre`) VALUES
-('1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'CARRE', 'BLEU', 'img/formes/CarreBleu.png', 16),
-('10', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'ETOILE', 'GRIS', 'img/formes/EtoileGris.png', 20),
-('11', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'ETOILE', 'ORANGE', 'img/formes/EtoileOrange.png', 14),
-('12', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'ETOILE', 'VERT', 'img/formes/EtoileVert.png', 23),
-('13', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'ROND', 'BLEU', 'img/formes/RondBleu.png', 17),
-('14', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'ROND', 'GRIS', 'img/formes/RondGris.png', 15),
-('15', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'ROND', 'ORANGE', 'img/formes/RondOrange.png', 16),
-('16', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'ROND', 'VERT', 'img/formes/RondVert.png', 23),
-('17', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'TRIANGLE', 'BLEU', 'img/formes/TriangleBleu.png', 18),
-('18', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'TRIANGLE', 'GRIS', 'img/formes/TriangleGris.png', 21),
-('19', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'TRIANGLE', 'ORANGE', 'img/formes/TriangleOrange.png', 19),
-('2', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'CARRE', 'GRIS', 'img/formes/CarreGris.png', 15),
-('20', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'TRIANGLE', 'VERT', 'img/formes/TriangleVert.png', 21),
-('3', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'CARRE', 'ORANGE', 'img/formes/CarreOrange.png', 17),
-('4', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'CARRE', 'VERT', 'img/formes/CarreVert.png', 20),
-('5', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'CROIX', 'BLEU', 'img/formes/CroixBleu.png', 12),
-('6', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'CROIX', 'GRIS', 'img/formes/CroixGris.png', 25),
-('7', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'CROIX', 'ORANGE', 'img/formes/CroixOrange.png', 14),
-('8', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'CROIX', 'VERT', 'img/formes/CroixVert.png', 20),
-('9', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'ETOILE', 'BLEU', 'img/formes/EtoileBleu.png', 20);
+('1', 'CARRE', 'BLEU', 'img/formes/CarreBleu.png', 16),
+('10', 'ETOILE', 'GRIS', 'img/formes/EtoileGris.png', 20),
+('11', 'ETOILE', 'ORANGE', 'img/formes/EtoileOrange.png', 14),
+('12', 'ETOILE', 'VERT', 'img/formes/EtoileVert.png', 23),
+('13', 'ROND', 'BLEU', 'img/formes/RondBleu.png', 17),
+('14', 'ROND', 'GRIS', 'img/formes/RondGris.png', 15),
+('15', 'ROND', 'ORANGE', 'img/formes/RondOrange.png', 16),
+('16', 'ROND', 'VERT', 'img/formes/RondVert.png', 23),
+('17', 'TRIANGLE', 'BLEU', 'img/formes/TriangleBleu.png', 18),
+('18', 'TRIANGLE', 'GRIS', 'img/formes/TriangleGris.png', 21),
+('19', 'TRIANGLE', 'ORANGE', 'img/formes/TriangleOrange.png', 19),
+('2', 'CARRE', 'GRIS', 'img/formes/CarreGris.png', 15),
+('20', 'TRIANGLE', 'VERT', 'img/formes/TriangleVert.png', 21),
+('3', 'CARRE', 'ORANGE', 'img/formes/CarreOrange.png', 17),
+('4', 'CARRE', 'VERT', 'img/formes/CarreVert.png', 20),
+('5', 'CROIX', 'BLEU', 'img/formes/CroixBleu.png', 12),
+('6', 'CROIX', 'GRIS', 'img/formes/CroixGris.png', 25),
+('7', 'CROIX', 'ORANGE', 'img/formes/CroixOrange.png', 14),
+('8', 'CROIX', 'VERT', 'img/formes/CroixVert.png', 20),
+('9', 'ETOILE', 'BLEU', 'img/formes/EtoileBleu.png', 20);
 
 -- --------------------------------------------------------
 
