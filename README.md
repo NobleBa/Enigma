@@ -6,7 +6,45 @@ Enigma est un site web interactif vous permettant de résoudre une série d'éni
 
 ### Installation de la base de données
 
-Nanana jsp c est le travail de Rémi ou Ugo
+Notre base de données est sous MySQL, ouvrez MySQL depuis votre terminal ou PhpMyAdmin.
+
+####MySQL depuis le terminal
+
+Connectez vous à votre MySQL, remplacez *username* par votre identifiant
+```
+$ mysql -u username -p
+```
+
+Entrez votre mot de passe si demandé
+
+Créez une base de données nommée *enigma* avec cette commande :
+```
+mysql> CREATE DATABASE enigma;
+```
+
+Sélectionnez cette base de données
+```
+ mysql> USE enigma;
+```
+
+Importez les données avec le fichier *enigma.sql*
+```
+mysql> SOURCE /chemin/du/fichier/enigma.sql.
+```
+
+####PhpMyAdmin
+
+Connectez vous avec le même identifiant et mot de passe que MySQL
+
+Créez une base de données sur le menu de gauche en le nommant *enigma*
+
+Il y a deux possibilités pour la suite :
+
+- Sélectionnez *SQL* sur la bar en haut est rentrez le contenu de *enigma.sql*
+
+- Sélectionnez *Import* sur la bar en haut et soumettez le fichier *enigma.sql*
+
+***
 
 Ensuite une fois la BDD installée, a partir de la racine du dossier Enigma, exécutez la commande :
 ```
