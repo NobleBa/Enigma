@@ -243,7 +243,7 @@ m'étеrnisеr. Вiеn quе vаinсu, lе rоi а tоujоurs dеs fidèlеs, еt
 
 ## Pays 
 
-[Réponse](https://www.google.com/){:target="_blank"}
+**[Réponse](https://www.google.com/)**
 
 ## Simon
 
