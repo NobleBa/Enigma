@@ -34,13 +34,14 @@
                 <div class="card-body">
                     <h5 class="card-title">Charade n°2</h5>
                     <p class="card-text" th:utext="${charade2.charade}"></p>
+                </div>
+                <div>
                     <form id="charadeForm2" th:object="${charade2}">
                         <input type="hidden" name="charadeId2" th:value="${charade2.idCharade}" />
                         <input type="text" name="inputSolution2" placeholder="Entrez la solution" />
                         <button type="submit">Soumettre</button>
                     </form>
                     <div id="message2"></div>
-
                 </div>
             </div>
         </div>
@@ -50,6 +51,8 @@
                 <div class="card-body">
                     <h5 class="card-title">Charade n°3</h5>
                     <p class="card-text" th:utext="${charade3.charade}"></p>
+                </div>
+                <div>
                     <form id="charadeForm3" th:object="${charade3}">
                         <input type="hidden" name="charadeId3" th:value="${charade3.idCharade}" />
                         <input type="text" name="inputSolution3" placeholder="Entrez la solution" />
