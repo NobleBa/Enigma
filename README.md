@@ -8,7 +8,7 @@ Enigma est un site web interactif vous permettant de résoudre une série d'éni
 
 Notre base de données est sous MySQL, ouvrez MySQL depuis votre terminal ou PhpMyAdmin.
 
-####MySQL depuis le terminal
+**MySQL depuis le terminal**
 
 Connectez vous à votre MySQL, remplacez *username* par votre identifiant
 ```
@@ -32,7 +32,7 @@ Importez les données avec le fichier *enigma.sql*
 mysql> SOURCE /chemin/du/fichier/enigma.sql.
 ```
 
-####PhpMyAdmin
+**PhpMyAdmin**
 
 Connectez vous avec le même identifiant et mot de passe que MySQL
 
