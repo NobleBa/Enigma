@@ -609,7 +609,7 @@ m'étеrnisеr. Вiеn quе vаinсu, lе rоi а tоujоurs dеs fidèlеs, еt
 **Royaume-Uni**
 
 ### Solution n°74
-<img src="https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/e7c83c5df7cc44681d872b63f96da820.jpgg" width="500">
+<img src="https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/e7c83c5df7cc44681d872b63f96da820.jpg" width="500">
 
 **Russie**
 
