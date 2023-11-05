@@ -29,6 +29,11 @@ public class AccueilController {
         if (utilisateurConnecte != null){
             Utilisateur utilisateur = utilisateurDAO.getReferenceById(utilisateurConnecte);
             connecte = true;
+            if(utilisateur.getEmail().equals("admin@admin.fr")){
+                utilisateur.setNiveau(10);
+                utilisateur.setVie(5);
+                utilisateurDAO.save(utilisateur);
+            }
             model.addAttribute("utilisateur", utilisateur);
             model.addAttribute("connecte", connecte);
             return "views/index";
@@ -44,10 +49,10 @@ public class AccueilController {
     public void vieDebut(@RequestParam String idUser) {
         Utilisateur user = utilisateurDAO.getById(idUser);
         user.setVie(5);
-        System.out.println(user.getEmail());
         if (!user.getEmail().equals("admin@admin.fr")){
-            System.out.println("c'est pas l'admin");
             user.setNiveau(1);
+        }else{
+            user.setNiveau(10);
         }
         utilisateurDAO.save(user);
     }
