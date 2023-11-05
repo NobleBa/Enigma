@@ -67,6 +67,14 @@ Une fois l'application exécuter, ouvrez votre navigateur internet et entrez l'a
 http://localhost:8080/
 ```
 
+## Admin
+
+Pour se balader sur toutes les pages du site sans avoir à faire toutes les énigmes, il existe un compte qui n'est soumis à aucune contrainte, voici les identifiants :
+ Email :
+   admin@admin.fr
+ Mot de passe :
+   admin
+
 ## Solutions
 
 Pour les solutions aux énigmes, allez lire [SOLUTIONS.md](https://github.com/NobleBa/Enigma/blob/master/SOLUTIONS.md)
