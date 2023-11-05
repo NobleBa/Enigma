@@ -244,7 +244,7 @@ m'étеrnisеr. Вiеn quе vаinсu, lе rоi а tоujоurs dеs fidèlеs, еt
 ## Geoguesser 
 
 ### Solution n°1
-![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/a8424b7baae263918301406bdc884e28.jpg)
+![geoguessr](https://github.com/NobleBa/Enigma/blob/master/src/main/resources/static/img/geoguesser/a8424b7baae263918301406bdc884e28.jpg =250x)
 
 **Afghanistan**
 
