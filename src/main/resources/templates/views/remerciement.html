@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="html">
+<html class="html" lang="">
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="app.css" />
@@ -57,17 +57,9 @@
                 </div>        
             </div>
             <div class="row" style="margin-top:5%; margin-left: -20%;">
-                <a th:href="@{/forme}"><button id="btn">Enigme précedente</button></a>
+                <a th:href="@{/forme}"><button >Enigme précedente</button></a>
                 <a th:href="@{/}"><button id="btn">Accueil</button></a>
             </div>
         </main>
     </body>
-    <script>
-        document.querySelector(".card").addEventListener("mouseover",(e)=>{
-            magic()
-        })
-        document.querySelector("#rules").addEventListener("click",(e)=>{
-            regles()
-        })
-    </script>
 </html>
