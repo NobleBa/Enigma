@@ -214,7 +214,7 @@
             });
         }
         function removeSpecialChars(text) {
-            return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/-/g, '');
+            return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/-/g, ' ');
         }
     </script>
 </html>
