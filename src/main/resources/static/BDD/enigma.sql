@@ -111,14 +111,6 @@ INSERT INTO `charade` (`id_charade`, `charade`, `solution`) VALUES
 
 CREATE TABLE `forme` (
   `id_forme` varchar(50) NOT NULL,
-  `nb_carre` varchar(10) DEFAULT NULL,
-  `nb_croix` int DEFAULT NULL,
-  `nb_etoile` varchar(10) DEFAULT NULL,
-  `nb_rond` int DEFAULT NULL,
-  `nb_triangle` varchar(10) DEFAULT NULL,
-  `nb_gris` varchar(10) DEFAULT NULL,
-  `nb_bleu` int DEFAULT NULL,
-  `nb_orange` varchar(10) DEFAULT NULL,
   `nom` varchar(50) DEFAULT NULL,
   `couleur` varchar(50) DEFAULT NULL,
   `image` varchar(250) DEFAULT NULL,
