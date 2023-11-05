@@ -1,7 +1,11 @@
 package com.projetjee.enigma.controller;
 
 import com.projetjee.enigma.models.Forme;
+import com.projetjee.enigma.models.Utilisateur;
 import com.projetjee.enigma.repository.FormeDAO;
+import com.projetjee.enigma.repository.UtilisateurDAO;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,22 +23,43 @@ import java.util.Random;
 public class FormeController {
     @Autowired
     private FormeDAO formeDAO;
+    @Autowired
+    private UtilisateurDAO utilisateurDAO;
     @GetMapping("/forme")
-    public String forme(Model model) {
-        Forme forme = getRandomFormeFromDatabase();
-        model.addAttribute("forme",forme);
-        return "views/forme";
+    public String forme(HttpServletRequest request,Model model) {
+        boolean connecte = false;
+        HttpSession session = request.getSession();
+        String utilisateurConnecte = (String) session.getAttribute("email");
+        if (utilisateurConnecte != null) {
+            Utilisateur utilisateur = utilisateurDAO.getReferenceById(utilisateurConnecte);
+            connecte = true;
+            model.addAttribute("utilisateur", utilisateur);
+            model.addAttribute("connecte", connecte);
+            Forme forme = getRandomFormeFromDatabase();
+            model.addAttribute("forme", forme);
+            return "views/forme";
+        }else {
+            return "redirect:/login";
+        }
     }
 
     @PostMapping("/checkSolutionForme")
     @ResponseBody
-    public boolean checkSolutionForme(@RequestParam String inputSolution, @RequestParam String formeId) {
-        boolean response = false;
+    public String checkSolutionForme(@RequestParam String inputSolution, @RequestParam String formeId,@RequestParam String idUser) {
+        String response = "ko";
 
         Forme forme = formeDAO.findById(formeId).orElse(null);
 
         if (forme != null && inputSolution.equals(String.valueOf(forme.getNombre()))) {
-            response = true;
+            response = "ok";
+        }else{
+            Utilisateur user = utilisateurDAO.getById(idUser);
+            if (user.getVie() == 1) {
+                user.setVie(user.getVie() - 1);
+                user.setNiveau(0);
+                utilisateurDAO.save(user);
+                response = "/";
+            }
         }
         return response;
     }
