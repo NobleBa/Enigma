@@ -86,7 +86,7 @@
                         inputSolution += vers;
                     }
                 }
-                inputSolution=inputSolution.trim();
+                inputSolution=inputSolution.trim().replace(/\s/g, '');
 
                 $.ajax({
                     type: 'POST',
