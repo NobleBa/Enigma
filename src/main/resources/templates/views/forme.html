@@ -10,6 +10,8 @@
     </head>
     <body>
         <main>
+            <div id="viesContainer"></div>
+            <input type="hidden" name="idUser" th:value="${utilisateur.getEmail()}" />
             <div class="card" style="align-items: center;">
                 <h1 id="0">Le jeu des symboles</h1>
                 <h3 id="1">Pour la dernières épreuves des formes de couleurs différentes sont cachés a travers tous le site.</h3>
@@ -30,26 +32,77 @@
     </body>
     <script>
         $(document).ready(function() {
+            var idUser = $('input[name="idUser"]').val();
+
+            $.get('/nombreDeVies', { idUser: idUser }, function(response) {
+                generateVies(response);
+            });
+
+            function generateVies(totalVies) {
+                var viesContainer = $('#viesContainer');
+                for (var i = 1; i <= totalVies; i++) {
+                    var imgSrc = '/img/Vie.png';
+                    var img = $('<img/>', { id: 'vie_' + i, src: imgSrc });
+                    viesContainer.append(img);
+                }
+                for (var j = totalVies + 1; j <= 5; j++) {
+                    var imgSrc = '/img/VieBrise.png';
+                    var img = $('<img/>', { id: 'vie_' + j, src: imgSrc });
+                    viesContainer.append(img);
+                }
+            }
+        });
+        $(document).ready(function() {
             $('#formeForm').submit(function (event) {
                 event.preventDefault();
                 var inputSolution = $('input[name="inputSolution"]').val();
                 var formeId = $('input[name="formeId"]').val();
                 inputSolution = inputSolution.trim();
+                var idUser = $('input[name="idUser"]').val();
                 $.ajax({
                     type: 'POST',
                     url: '/checkSolutionForme',
-                    data: {inputSolution: inputSolution, formeId: formeId},
+                    data: {inputSolution: inputSolution, formeId: formeId,idUser:idUser},
                     success: function (response) {
-                        if (response){
+                        if (response === "ok"){
                             $('#message').text("Bonne réponse !");
                             $('#btn').css('display', 'block');
-                        }else{
+                        }else if(response === "ko"){
                             $('#message').text("Mauvaise réponse. Essayez à nouveau.");
                             $('#btn').css('display', 'none');
+                            perdreUneVie();
+                        }else{
+                            window.location.href = response;
                         }
                     }
                 });
             });
         });
+        function perdreUneVie() {
+            var idUser = $('input[name="idUser"]').val();
+            $.ajax({
+                type: 'POST',
+                url: '/perdreVie',
+                data: { idUser: idUser },
+                success: function (response) {
+                    if (response === "success") {
+                        actualiserVies();
+                    }
+                }
+            });
+        }
+        function actualiserVies() {
+            var idUser = $('input[name="idUser"]').val();
+            $.get('/nombreDeVies', { idUser: idUser }, function (response) {
+                for (var i = 1; i <= response; i++) {
+                    var img = document.getElementById('vie_' + i);
+                    img.src = '/img/Vie.png';
+                }
+                for (var j = response +1; j <= 5; j++) {
+                    var imgVide = document.getElementById('vie_' + j);
+                    imgVide.src = '/img/VieBrise.png';
+                }
+            });
+        }
     </script>
 </html>
