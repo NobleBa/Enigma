@@ -36,9 +36,13 @@ public class SimonController {
             connecte = true;
             model.addAttribute("utilisateur", utilisateur);
             model.addAttribute("connecte", connecte);
-            Simon simon = getRandomSimonFromDatabase();
-            model.addAttribute("simon", simon);
-            return "views/simon";
+            if (utilisateur.getNiveau() >= 6){
+                Simon simon = getRandomSimonFromDatabase();
+                model.addAttribute("simon", simon);
+                return "views/simon";
+            } else {
+                return "redirect:/";
+            }
         }else {
             return "redirect:/login";
         }

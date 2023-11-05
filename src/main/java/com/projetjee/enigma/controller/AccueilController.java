@@ -42,6 +42,11 @@ public class AccueilController {
         boolean response = false;
         Utilisateur user = utilisateurDAO.getById(idUser);
         user.setVie(5);
+        System.out.println(user.getEmail());
+        if (!user.getEmail().equals("admin@admin.fr")){
+            System.out.println("c'est pas l'admin");
+            user.setNiveau(1);
+        }
         utilisateurDAO.save(user);
         return response=true;
     }
@@ -62,5 +67,15 @@ public class AccueilController {
     public int getNombreDeVies(@RequestParam String idUser) {
         Utilisateur user = utilisateurDAO.getById(idUser);
         return user.getVie();
+    }
+
+    @PostMapping("/gainNiveau")
+    @ResponseBody
+    public void gainNiveau(@RequestParam String idUser) {
+        Utilisateur user = utilisateurDAO.getById(idUser);
+        if (user.getNiveau() < 9) {
+            user.setNiveau(user.getNiveau()+1);
+            utilisateurDAO.save(user);
+        }
     }
 }

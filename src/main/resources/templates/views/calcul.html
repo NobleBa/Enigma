@@ -76,6 +76,11 @@
                     if (response === "ok"){
                         $('#message').text("Bonne réponse !");
                         $('#btn').css('display', 'block');
+                        $.ajax({
+                            type: 'POST',
+                            url: '/gainNiveau',
+                            data: { idUser: idUser }
+                        });
                     }else if(response === "ko"){
                         $('#message').text("Mauvaise réponse. Essayez à nouveau.");
                         $('#btn').css('display', 'none');

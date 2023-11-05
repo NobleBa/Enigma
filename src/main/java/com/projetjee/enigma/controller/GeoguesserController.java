@@ -37,19 +37,24 @@ public class GeoguesserController {
             connecte = true;
             model.addAttribute("utilisateur", utilisateur);
             model.addAttribute("connecte", connecte);
-            Pays pays1 = getRandomPaysFromDatabase();
-            Pays pays2 = getRandomPaysFromDatabase();
-            Pays pays3 = getRandomPaysFromDatabase();
-            while (pays2.equals(pays1)) {
-                pays2 = getRandomPaysFromDatabase();
+            if (utilisateur.getNiveau() >= 7) {
+                Pays pays1 = getRandomPaysFromDatabase();
+                Pays pays2 = getRandomPaysFromDatabase();
+                Pays pays3 = getRandomPaysFromDatabase();
+                while (pays2.equals(pays1)) {
+                    pays2 = getRandomPaysFromDatabase();
+                }
+                while (pays3.equals(pays2) || pays3.equals(pays1)) {
+                    pays3 = getRandomPaysFromDatabase();
+                }
+                model.addAttribute("pays1", pays1);
+                model.addAttribute("pays2", pays2);
+                model.addAttribute("pays3", pays3);
+                return "views/geoguesser";
+            } else {
+                return "redirect:/";
             }
-            while (pays3.equals(pays2) || pays3.equals(pays1)) {
-                pays3 = getRandomPaysFromDatabase();
-            }
-            model.addAttribute("pays1", pays1);
-            model.addAttribute("pays2", pays2);
-            model.addAttribute("pays3", pays3);
-            return "views/geoguesser";
+
         }else {
             return "redirect:/login";
         }

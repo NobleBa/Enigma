@@ -32,19 +32,23 @@ public class CharadeController {
             connecte = true;
             model.addAttribute("utilisateur", utilisateur);
             model.addAttribute("connecte", connecte);
-            Charade charade1 = getRandomCharadeFromDatabase();
-            Charade charade2 = getRandomCharadeFromDatabase();
-            Charade charade3 = getRandomCharadeFromDatabase();
-            while (charade2.equals(charade1)){
-                charade2 = getRandomCharadeFromDatabase();
+            if (utilisateur.getNiveau() >= 1){
+                Charade charade1 = getRandomCharadeFromDatabase();
+                Charade charade2 = getRandomCharadeFromDatabase();
+                Charade charade3 = getRandomCharadeFromDatabase();
+                while (charade2.equals(charade1)){
+                    charade2 = getRandomCharadeFromDatabase();
+                }
+                while (charade3.equals(charade2) || charade3.equals(charade1)){
+                    charade3 = getRandomCharadeFromDatabase();
+                }
+                model.addAttribute("charade1", charade1);
+                model.addAttribute("charade2", charade2);
+                model.addAttribute("charade3", charade3);
+                return "views/charade";
+            } else {
+                return "redirect:/";
             }
-            while (charade3.equals(charade2) || charade3.equals(charade1)){
-                charade3 = getRandomCharadeFromDatabase();
-            }
-            model.addAttribute("charade1", charade1);
-            model.addAttribute("charade2", charade2);
-            model.addAttribute("charade3", charade3);
-            return "views/charade";
         }else {
             return "redirect:/login";
         }
