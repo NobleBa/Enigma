@@ -9,6 +9,8 @@
 </head>
 <body>
 <main>
+    <div id="viesContainer"></div>
+    <input type="hidden" name="idUser" th:value="${utilisateur.getEmail()}" />
     <div class="row" style="margin-top: -5%;">
         <div class="table1">
             <div class="table-cell" style="width: 100%;">
@@ -91,6 +93,70 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(document).ready(function() {
+        var idUser = $('input[name="idUser"]').val();
+
+        $.get('/nombreDeVies', { idUser: idUser }, function(response) {
+            generateVies(response);
+            checkVie();
+        });
+
+        function generateVies(totalVies) {
+            var viesContainer = $('#viesContainer');
+            for (var i = 1; i <= totalVies; i++) {
+                var imgSrc = '/img/Vie.png';
+                var img = $('<img/>', { id: 'vie_' + i, src: imgSrc });
+                viesContainer.append(img);
+            }
+            for (var j = totalVies + 1; j <= 5; j++) {
+                var imgSrc = '/img/VieBrise.png';
+                var img = $('<img/>', { id: 'vie_' + j, src: imgSrc });
+                viesContainer.append(img);
+            }
+            checkVie();
+        }
+    });
+
+    function checkVie(){
+        var idUser = $('input[name="idUser"]').val();
+        $.ajax({
+            type: 'POST',
+            url: '/checkVie',
+            data: { idUser: idUser },
+            success: function(response){
+                if(!response){
+                    window.location.href= "/";
+                }
+            }
+        });
+    }
+    function perdreUneVie() {
+        var idUser = $('input[name="idUser"]').val();
+        $.ajax({
+            type: 'POST',
+            url: '/perdreVie',
+            data: { idUser: idUser },
+            success: function (response) {
+                if (response === "success") {
+                    actualiserVies();
+                    checkVie();
+                }
+            }
+        });
+    }
+    function actualiserVies() {
+        var idUser = $('input[name="idUser"]').val();
+        $.get('/nombreDeVies', { idUser: idUser }, function (response) {
+            for (var i = 1; i <= response; i++) {
+                var img = document.getElementById('vie_' + i);
+                img.src = '/img/Vie.png';
+            }
+            for (var j = response +1; j <= 5; j++) {
+                var imgVide = document.getElementById('vie_' + j);
+                imgVide.src = '/img/VieBrise.png';
+            }
+        });
+    }
+    $(document).ready(function() {
         $('#r1').on('change', function() {
             var pays = $('#r1').val();
             var continent = $('input[name="paysContinent"]').val();
@@ -123,6 +189,7 @@
                         $('#r4').val(null);
                         $('#r5').val(null);
                         $('#r6').val(null);
+                        perdreUneVie();
                     }
                 }
             });
@@ -157,6 +224,7 @@
                         $('#r4').val(null);
                         $('#r5').val(null);
                         $('#r6').val(null);
+                        perdreUneVie();
                     }
                 }
             });
@@ -189,6 +257,7 @@
                         $('#r4').val(null);
                         $('#r5').val(null);
                         $('#r6').val(null);
+                        perdreUneVie();
                     }
                 }
             });
@@ -219,6 +288,7 @@
                         $('#botn').css('display', 'none');
                         $('#r5').val(null);
                         $('#r6').val(null);
+                        perdreUneVie();
                     }
                 }
             });
@@ -247,6 +317,7 @@
                         $('#q6').css('visibility', 'hidden');
                         $('#botn').css('display', 'none');
                         $('#r6').val(null);
+                        perdreUneVie();
                     }
                 }
             });
@@ -273,6 +344,7 @@
                         console.log("Mauvaise réponse");
                         $('#r6').removeClass('correct');
                         $('#botn').css('display', 'none');
+                        perdreUneVie();
                     }
                 }
             });

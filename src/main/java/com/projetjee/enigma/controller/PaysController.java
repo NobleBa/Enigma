@@ -1,7 +1,11 @@
 package com.projetjee.enigma.controller;
 
 import com.projetjee.enigma.models.Pays;
+import com.projetjee.enigma.models.Utilisateur;
 import com.projetjee.enigma.repository.PaysDAO;
+import com.projetjee.enigma.repository.UtilisateurDAO;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
 import org.springframework.ui.Model;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -20,12 +24,25 @@ public class PaysController {
 
     @Autowired
     private PaysDAO paysDAO;
+    @Autowired
+    private UtilisateurDAO utilisateurDAO;
 
     @GetMapping("/pays")
-    public String pays(Model model) {
-        Pays pays = getRandomPaysFromDatabase();
-        model.addAttribute("pays", pays);
-        return "views/pays";
+    public String pays(HttpServletRequest request,Model model) {
+        boolean connecte = false;
+        HttpSession session = request.getSession();
+        String utilisateurConnecte = (String) session.getAttribute("email");
+        if (utilisateurConnecte != null) {
+            Utilisateur utilisateur = utilisateurDAO.getReferenceById(utilisateurConnecte);
+            connecte = true;
+            model.addAttribute("utilisateur", utilisateur);
+            model.addAttribute("connecte", connecte);
+            Pays pays = getRandomPaysFromDatabase();
+            model.addAttribute("pays", pays);
+            return "views/pays";
+        }else {
+            return "redirect:/login";
+        }
     }
 
     @PostMapping("/verifyContinent")
@@ -69,6 +86,16 @@ public class PaysController {
         boolean response = paysDAO.existsByNompaysAndContinentAndFineAndLittoralAndPopulationHuitMillionsAndAndSurfaceMillionAndQuestionUnique(pays, continent, fine, littoral, population, surface, unique);
         return response;
     }
+    @PostMapping("/checkVie")
+    @ResponseBody
+    public boolean checkVie(@RequestParam String idUser){
+        boolean response = false;
+        Utilisateur user = utilisateurDAO.getById(idUser);
+        if(user.getVie()!=0){
+            response = true;
+        }
+        return response;
+    }
 
     private Pays getRandomPaysFromDatabase() {
         List<Pays> allPays = paysDAO.findAll();
@@ -77,4 +104,5 @@ public class PaysController {
 
         return allPays.get(randomIndex);
     }
+
 }

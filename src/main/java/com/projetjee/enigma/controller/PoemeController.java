@@ -38,10 +38,10 @@ public class PoemeController {
             model.addAttribute("connecte", connecte);
             Poeme poeme = getRandomPoemeFromDatabase();
             model.addAttribute("poeme", poeme);
+            return "views/poeme";
         }else {
             return "redirect:/login";
         }
-        return "views/poeme";
     }
 
     @PostMapping("/checkSolutionPoeme")
